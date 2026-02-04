@@ -1,0 +1,52 @@
+#extension_title {
+    color: #2c3e50;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Arial', sans-serif;
+}
+#extension_description {
+    width: 60%;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #34495e;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+#extension_content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+    gap: 24px;
+    width: 80%;
+    margin: 40px auto 60px;
+}
+.extension_card {
+    background: #f7f9fc;
+    border: 1px solid #e3e8f0;
+    border-radius: 16px;
+    padding: 20px 24px;
+    box-shadow: 0 6px 16px rgba(44, 62, 80, 0.08);
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.extension_card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 22px rgba(44, 62, 80, 0.14);
+}
+.extension_card h3 {
+    margin: 0 0 10px;
+    color: #2c3e50;
+    font-size: 20px;
+}
+.extension_card p {
+    margin: 0;
+    color: #34495e;
+    line-height: 1.6;
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+    #extension_content {
+        grid-template-columns: 1fr;
+    }
+}

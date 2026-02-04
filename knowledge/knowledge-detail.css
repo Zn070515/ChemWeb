@@ -1,0 +1,139 @@
+body {
+	margin: 0;
+	font-family: 'Arial', sans-serif;
+	background: #f5f7fb;
+	color: #2c3e50;
+}
+
+.header {
+	background: linear-gradient(135deg, #3d6ef7, #6aa7ff);
+	color: #fff;
+	padding: 40px 20px 32px;
+	text-align: center;
+}
+
+.header h1 {
+	margin: 0 0 10px;
+	font-size: 30px;
+}
+
+.header p {
+	margin: 0;
+	opacity: 0.9;
+	font-size: 16px;
+}
+
+.container {
+	width: min(1000px, 90%);
+	margin: 30px auto 60px;
+	background: #fff;
+	border-radius: 18px;
+	padding: 28px;
+	box-shadow: 0 10px 24px rgba(44, 62, 80, 0.08);
+}
+
+.back-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	color: #3d6ef7;
+	text-decoration: none;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.section-title {
+	margin: 20px 0 12px;
+	font-size: 20px;
+	color: #2c3e50;
+}
+
+.topic-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 16px;
+}
+
+.topic-list li {
+	background: #f7f9fc;
+	border: 1px solid #e3e8f0;
+	border-radius: 12px;
+	padding: 14px 16px;
+	color: #34495e;
+	line-height: 1.6;
+}
+
+details {
+	border: 1px solid #e3e8f0;
+	border-radius: 12px;
+	padding: 12px 16px;
+	background: #f9fbff;
+	margin: 14px 0;
+	transition: box-shadow 0.2s ease, background 0.2s ease;
+}
+
+details[open] {
+	background: #ffffff;
+	box-shadow: 0 8px 18px rgba(44, 62, 80, 0.08);
+}
+
+details > summary {
+	cursor: pointer;
+	font-weight: 600;
+	color: #2c3e50;
+	list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+	display: none;
+}
+
+details details {
+	margin: 12px 0 0;
+	background: #f7f9fc;
+}
+
+details ol {
+	margin: 10px 0 0 18px;
+	color: #34495e;
+	line-height: 1.7;
+}
+
+.container li {
+	position: relative;
+	cursor: pointer;
+}
+
+.point-detail {
+	display: none;
+	margin: 6px 0 0;
+	padding: 8px 10px;
+	border-radius: 8px;
+	background: #f1f5ff;
+	color: #566573;
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+li.is-open > .point-detail {
+	display: block;
+}
+
+.note {
+	margin-top: 20px;
+	color: #7f8c8d;
+	font-size: 14px;
+}
+
+@media (max-width: 640px) {
+	.header h1 {
+		font-size: 24px;
+	}
+
+	.container {
+		padding: 20px;
+	}
+}
