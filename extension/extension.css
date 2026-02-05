@@ -30,6 +30,9 @@
     font-family: 'Arial', sans-serif;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+.extension_card.is-link {
+    cursor: pointer;
+}
 .extension_card:hover {
     transform: scale(1.03);
     box-shadow: 0 10px 22px rgba(44, 62, 80, 0.14);
@@ -39,14 +42,192 @@
     color: #2c3e50;
     font-size: 20px;
 }
+.extension_card h4 {
+    margin: 16px 0 8px;
+    color: #2c3e50;
+    font-size: 16px;
+}
+.extension_link {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+.extension_link:hover {
+    text-decoration: underline;
+}
 .extension_card p {
     margin: 0;
     color: #34495e;
     line-height: 1.6;
     font-size: 16px;
 }
+.extension_card ul {
+    margin: 0 0 8px 18px;
+    padding: 0;
+    color: #34495e;
+    line-height: 1.6;
+    font-size: 15px;
+}
+.extension_card li {
+    margin-bottom: 6px;
+}
+.extension_section + .extension_section {
+    margin-top: 14px;
+}
+.extension_detail {
+    max-width: 900px;
+    margin: 40px auto 60px;
+    padding: 0 20px;
+    color: #2c3e50;
+    font-family: 'Arial', sans-serif;
+}
+.extension_detail h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.extension_detail .extension_meta {
+    margin: 0 0 18px;
+    color: #4c6075;
+}
+.extension_detail .summary_title {
+    margin: 18px 0 8px;
+    font-size: 18px;
+    color: #2c3e50;
+}
+.extension_detail ul {
+    margin: 0 0 20px 18px;
+    padding: 0;
+    line-height: 1.7;
+    color: #34495e;
+}
+.extension_detail li {
+    margin-bottom: 8px;
+}
+.extension_detail .summary_list {
+    margin-bottom: 26px;
+}
+.detail_section {
+    margin-top: 26px;
+}
+.detail_section h2 {
+    font-size: 22px;
+    margin: 0 0 10px;
+    color: #253444;
+}
+.detail_section h3 {
+    font-size: 17px;
+    margin: 16px 0 8px;
+    color: #2c3e50;
+}
+.detail_section p {
+    margin: 0 0 12px;
+    color: #34495e;
+    line-height: 1.75;
+}
+.highlight {
+    background: #fff4cc;
+    padding: 0 4px;
+    border-radius: 4px;
+}
+.callout {
+    background: #f2f6fb;
+    border-left: 4px solid #8aa2c1;
+    padding: 10px 14px;
+    border-radius: 10px;
+    margin: 12px 0 16px;
+}
+.extension_detail a {
+    color: #2c3e50;
+}
+#extension_reading {
+    width: 80%;
+    margin: 20px auto 80px;
+    font-family: 'Arial', sans-serif;
+}
+#extension_reading h2 {
+    color: #2c3e50;
+    font-size: 26px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.extension_note {
+    text-align: center;
+    color: #5d6d7e;
+    margin-bottom: 20px;
+}
+.news_nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto 30px;
+}
+.news_nav a {
+    text-decoration: none;
+    color: #2c3e50;
+    background: #f7f9fc;
+    border: 1px solid #e3e8f0;
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 14px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.news_nav a:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(44, 62, 80, 0.12);
+}
+.news_month {
+    margin-bottom: 32px;
+}
+.news_month h3 {
+    color: #2c3e50;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.news_list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 20px;
+}
+.news_card {
+    background: #ffffff;
+    border: 1px solid #e3e8f0;
+    border-radius: 14px;
+    padding: 16px 18px;
+    box-shadow: 0 6px 16px rgba(44, 62, 80, 0.08);
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.news_card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(44, 62, 80, 0.14);
+}
+.news_card.is-empty {
+    background: #f7f9fc;
+    border-style: dashed;
+    cursor: default;
+}
+.news_card.is-empty:hover {
+    transform: none;
+    box-shadow: 0 6px 16px rgba(44, 62, 80, 0.08);
+}
+.news_title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+.news_summary {
+    color: #34495e;
+    line-height: 1.6;
+    font-size: 14px;
+}
 @media (max-width: 768px) {
     #extension_content {
+        grid-template-columns: 1fr;
+    }
+    .news_list {
         grid-template-columns: 1fr;
     }
 }

@@ -1,29 +1,42 @@
-document.addEventListener('DOMContentLoaded', () => {
-	const container = document.querySelector('.container');
-	if (!container) {
-		return;
-	}
-
-	container.addEventListener('click', (event) => {
-		const target = event.target;
-		if (!(target instanceof Element)) {
+const setupTopicDetails = () => {
+	const items = document.querySelectorAll(".container ol li");
+	items.forEach((item) => {
+		const detail = item.querySelector(".point-detail");
+		if (detail) {
+			item.classList.add("topic-item");
+			item.addEventListener("click", (event) => {
+				if (event.target.closest("a")) {
+					return;
+				}
+				item.classList.toggle("is-open");
+			});
 			return;
 		}
-
-		if (target.closest('.point-detail')) {
+		const text = item.textContent.trim();
+		if (!text) {
 			return;
 		}
+		item.textContent = "";
+		item.classList.add("topic-item");
 
-		const li = target.closest('li');
-		if (!li || !container.contains(li)) {
-			return;
-		}
+		const button = document.createElement("button");
+		button.type = "button";
+		button.className = "topic-toggle";
+		button.setAttribute("aria-expanded", "false");
+		button.textContent = text;
 
-		const detail = li.querySelector('.point-detail');
-		if (!detail) {
-			return;
-		}
+		const generatedDetail = document.createElement("p");
+		generatedDetail.className = "topic-detail";
+		generatedDetail.textContent = "（待补充：点击此条目展开具体知识点）";
 
-		li.classList.toggle('is-open');
+		button.addEventListener("click", () => {
+			const isOpen = item.classList.toggle("is-open");
+			button.setAttribute("aria-expanded", String(isOpen));
+		});
+
+		item.appendChild(button);
+		item.appendChild(generatedDetail);
 	});
-});
+};
+
+document.addEventListener("DOMContentLoaded", setupTopicDetails);
