@@ -1,0 +1,540 @@
+--- page 1 ---
+-- table 1 --
+电对符号	电极反应	电极电势E°(V)	备注
+N /N(-1/3)
+2	3N +2H++2e-=2HN (g)
+2 3	-3.4(V)	气体(g)
+N /N(-1/3)
+2	3N +2H++2e-=2HN (aq)
+2 3	-3.1	水溶液(aq)
+Li+/Li	Li＋＋e－＝Li	-3.045	注释1
+Cs+/Cs	Cs＋＋e－＝Cs	-3.026	注1
+Rb+/Rb	Rb＋＋e－＝Rb	-2.98	注1
+K+/K	K＋＋e－＝K	-2.928	注1
+Ba2+/Ba	Ba2＋＋2e－＝Ba	-2.912	注1
+Sr2+/Sr	Sr2＋＋2e－＝Sr	-2.894	注1
+Ca2+/Ca	Ca2＋＋2e－＝Ca	-2.868	注1
+Na+/Na	Na＋＋e－＝Na	-2.714	注1
+Mg2+/Mg	Mg2＋＋2e－＝Mg	-2.372	
+Ce3+/Ce	Ce3＋＋3e－＝Ce	-2.336	注2
+H /H(-1)
+2	H (g)＋2e－＝2H－
+2	-2.23	
+H+/H (g)
+2	H＋＋e－＝H(g)	-2.107	
+Sc3+/Sc	Sc3＋＋3e－＝Sc	-2.077	注3
+Al3+/Al	AlF 3－＋3e－＝Al＋6F－
+6	-2.069	
+Be2+/Be	Be2＋＋2e－＝Be	-1.847	
+Al3+/Al	Al3＋＋3e－＝Al	-1.662	
+Si4+/Si	[SiF ]2－＋4e－＝Si＋6F－
+6	-1.24	
+Mn2+/Mn	Mn2＋＋2e－＝Mn	-1.18	
+Cr2+/Cr	Cr2＋＋2e－＝Cr	-0.913	
+B3+(硼酸)/B	H BO ＋3H＋＋3e－＝B＋3H O
+3 3 2	-0.87	
+SiO2(石英)4+/Si	SiO2＋4H＋＋4e－＝Si+2H2O	-0.857	
+SiO(2+)/Si	SiO＋2H＋＋2e－＝Si+H2O	-0.8	
+Te/H2Te(2+)	Te＋2H＋＋2e－＝H2Te	-0.793	
+Zn2+/Zn	Zn2＋＋2e－＝Zn	-0.7618	
+Cr3+/Cr	Cr3＋＋3e－＝Cr	-0.744	
+H2SeO3(4+)/Se	H2SeO3＋4H＋＋4e－＝Se+3H2O	-0.74	
+As/AsH3(-3)	As＋3H＋＋3e－＝AsH
+3	-0.608	
+H3PO2(+1)次磷酸/P	H3PO2+H＋＋e－＝P+2H2O	-0.508	
+H3PO3(+3)/P+(aq)	H PO＋2H＋＋2e－＝H PO＋H O
+3 3 3 2 2	-0.499	水溶液(aq)
+C4+/C3+(草酸)	2CO＋2H＋＋2e－＝H CO
+2 2 2 4	-0.49	
+Fe2+/Fe	Fe2＋＋2e－＝Fe	-0.447	
+Cr3+/Cr2+	Cr3＋＋e－＝Cr2＋	-0.408	
+Se/Se(-2)	Se＋2H＋＋2e－＝H Se(aq)
+2	-0.399	水溶液(aq)
+PbI2(+2)/Pb	PbI ＋2e－＝Pb＋2I－
+2	-0.365	
+--- page 2 ---
+-- table 1 --
+PbSO(+2)/Pb
+4	PbSO＋2e－＝Pb＋SO 2－
+4 4	-0.3588	
+PbBr2(+2)/Pb	PbBr ＋2e－＝Pb＋2Br－
+2	-0.284	
+Co2+/Co	Co2＋＋2e－＝Co	-0.28	
+H3PO4/H3PO3	H PO＋2H＋＋2e－＝H PO＋H O
+3 4 3 3 2	-0.276	
+PbCl2(+2)/Pb	PbI ＋2e－＝Pb＋2I－
+2	-0.2675	
+Ni2+/Ni	Ni2＋＋2e－＝Ni	-0.257	
+CO2/HCOOH(甲酸)	CO2(g) ＋2H＋＋2e－＝HCOOH(aq)	-0.199	
+CuI(+1)/Cu	CuI＋e－＝Cu＋I	-0.1852	
+AgI(+1)/Ag	AgI＋e－＝Ag＋I	-0.15224	
+Sn2+/Sn	Sn2＋＋2e－＝Sn	-0.1375	
+Pb2+/Pb	Pb2＋＋2e－＝Pb	-0.1262	
+C4+/C2+	CO (g)＋2H＋＋2e－＝CO＋H O
+2 2	-0.12	
+P/PH3	P(白磷)＋3H＋＋3e－＝PH (g)
+3	-0.063	气体(g)
+Hg2I2(+1)/Hg	Hg I ＋2e－＝2Hg＋2I－
+2 2	-0.0405	
+Fe3+/Fe	Fe3＋＋3e－＝Fe	-0.037	
+Ag2S(+1)/Ag	Ag S＋2H＋＋2e－＝2Ag＋HS
+2 2	-0.0366	
+H+/H2	2H＋＋2e－＝H
+2	0.00	
+CuBr(+1)/Cu	CuBr＋e－＝Cu＋Br－	0.033	
+AgBr(+1)/Ag	AgBr＋e－＝Ag＋Br－	0.07133	
+Si/SiH4	Si＋4H＋＋4e－＝SiH
+4	0.102	
+C(石墨)/CH4	C＋4H＋＋4e－＝CH
+4	0.1316	
+CuCl(+1)/Cu	CuCl＋e－＝Cu＋Cl－	0.137	
+Hg2Br2(+1)/Hg	Hg Br ＋2e－＝2Hg＋2Br－
+2 2	0.13923	
+S/H2S(aq)	S＋2H＋＋2e－＝H S(aq)
+2	0.142	水溶液
+Sn4+/Sn2+	Sn4＋＋2e－＝Sn2＋	0.151	
+Cu2+/Cu+	Cu2＋＋e－＝Cu＋	0.153	
+S6+/S4+	SO2－＋4H＋＋2e－＝H SO＋H O
+4 2 3 2	0.172	
+AgCl(+1)/Ag	AgCl＋e－＝Ag＋Cl－	0.2223	
+As3+/As(亚砷酸)	HAsO(aq)＋3H＋＋3e－＝As＋2H O
+2 2	0.2476	HAsO .HO
+2 2
+Hg2Cl2/Hg	Hg Cl ＋2e－＝2Hg＋2Cl－
+2 2	0.268	
+Bi3+/Bi	Bi3＋＋3e－＝Bi	0.308	
+Cu2+/Cu	Cu2＋＋2e－＝Cu	0.337	
+AgIO3/Ag	AgIO＋e－＝Ag＋IO－
+3 3	0.354	
+S6+/S	SO2－＋8H＋＋6e－＝S+4H O
+4 2	0.3572	
+Ag2CrO4/Ag	Ag CrO＋2e－＝2Ag＋CrO2－
+2 4 4	0.447	铬酸银
+S4+/S	H SO＋4H＋＋4e－＝S＋3H O
+2 3 2	0.449	
+Ag2C2O4/Ag	Ag CO ＋2e－＝2Ag＋C O 2－
+2 2 4 2 4	0.4647	草酸银
+Cu+/Cu	Cu＋＋e－＝Cu	0.521	
+I2/I-	I ＋2e－＝2I－
+2	0.5355	
+AgBrO3/Ag	AgBrO ＋e－＝Ag＋BrO －
+3 3	0.546	
+As5+/As3+	H AsO (aq)＋2H＋＋2e－＝HAsO ＋2H O
+3 4 2 2	0.56	水溶液
+AgNO2/Ag	AgNO ＋e－＝Ag＋NO －
+2 2	0.564	
+Te4+/Te	TeO＋4H＋＋4e－＝Te＋2H O
+2 2	0.593	
+--- page 3 ---
+-- table 1 --
+Hg2SO4/Hg	Hg SO4＋2e－＝2Hg＋SO2－
+2 4	0.614	
+Ag2SO4/Ag	Ag SO4＋2e－＝2Ag＋SO2－
+2 4	0.654	
+Pt4+(氯铂酸)/Pt2+	[PtCl ]2－＋2e－＝[PtCl ]2－＋2Cl－
+6 4	0.68	
+O2/O-	O ＋2H＋＋2e－＝H O
+2 2 2	0.695	
+Pt2+/Pt(二氯化铂)	[PtCl ]2－＋2e－＝Pt＋4Cl－
+4	0.73	
+Se4+/Se	H SeO＋4H＋＋4e－＝Se＋3H O
+2 3 2	0.74	
+Fe3+/Fe2+	Fe3＋＋e－＝Fe2＋	0.771	
+AgF/Ag	AgF＋e－＝Ag＋F－	0.779	
+Hg+/Hg	Hg 2＋＋2e－＝2Hg
+2	0.788	
+Ag+/Ag	Ag＋＋e－＝Ag	0.7991	
+N5+/N4+(硝酸)	2NO －＋4H＋＋2e－＝N O(g)＋2H O
+3 2 4 2	0.803	气体(g)
+Hg2+/Hg	Hg2＋＋2e－＝Hg(lq)	0.853	液态(水银)
+Si4+(石英)/Si	SiO ＋4H＋＋4e－＝Si＋2H O
+2 2	0.857	
+Hg2+/Hg+	2Hg2＋＋2e－＝Hg 2＋
+2	0.92	
+N5+/N3+(亚硝酸)	NO －＋3H＋＋2e－＝HNO ＋H O
+3 2 2	0.934	
+Pd2+/Pd	Pd2＋＋2e－＝Pd	0.951	
+N5+/N2+	NO －＋4H＋＋3e－＝NO＋2H O
+3 2	0.957	
+Au3+/Au(三溴化金)	AuBr －＋e－＝Au+2Br－
+2	0.959	
+N3+/2+	HNO ＋H＋＋e－＝NO＋H O
+2 2	0.983	
+Au3+/Au(三氯化金)	[AuCl ]－＋3e－＝Au＋4Cl－
+4	1.002	
+Te6+/Te4+	H TeO＋2H＋＋2e－＝TeO ＋4H O
+6 6 2 2	1.02	
+N4+/N2+	N O＋4H＋＋4e－＝2NO＋2H O
+2 4 2	1.03	
+Pt4+/Pt	PtO＋4H＋＋4e－＝Pt＋2H O
+2 2	1.045	
+Br2(lq)/Br-	Br (lq)＋2e－＝2Br－
+2	1.0652	液溴(lq)
+N4+/N3+	N O＋2H＋＋2e－＝2HNO
+2 4 2	1.07	
+Br2(aq)/Br-	Br (aq)＋2e－＝2Br－
+2	1.087	水溶液(aq)
+Se6+/Se4+	SeO 2－＋4H＋＋2e－＝H SeO ＋H O
+4 2 3 2	1.151	
+Cl5+/Cl4+	ClO －＋2H＋＋e－＝ClO ＋H O
+3 2 2	1.152	
+O2/H2O(g)	O ＋4H＋＋4e－＝2H O(g)
+2 2	1.185	水蒸汽(g)
+Pt2+/Pt	Pt2＋＋2e－＝Pt	1.188	
+Cl7+/Cl5+	ClO －＋2H＋＋2e－＝ClO －＋H O
+4 3 2	1.189	
+I5+/I2	2IO－＋12H＋＋10e－＝I (s)＋6H O
+3 2 2	1.195	碘单质(s)
+Cl5+/Cl3+	ClO －＋3H＋＋2e－＝HClO ＋H O
+3 2 2	1.21	
+Mn4+/Mn2+	MnO ＋4H＋＋2e－＝Mn2＋＋2H O
+2 2	1.224	
+O2/H2O(液态水)	O ＋4H＋＋4e－＝2H O
+2 2	1.229	常温水
+S+(S2Cl2)/S	S Cl ＋2e－＝2S＋2Cl－
+2 2	1.23	
+Fe3O4/Fe2+	FeO ＋8H＋＋2e－＝3Fe2＋＋4H O
+3 4 2	1.23	
+Tl3+/Tl+	T13＋＋2e－＝Tl＋	1.25	注4
+Cl4+/Cl3+	ClO ＋H＋＋e－＝HClO
+2 2	1.277	
+N3+/N+	2HNO (aq)＋4H＋＋4e－＝NO(g)＋3H O
+2 2 2	1.297	
+Cr6+/Cr3+	Cr O 2－＋14H＋＋6e－＝2Cr3＋＋7H O
+2 7 2	1.33	重铬酸根
+Br+/Br-	HBrO＋H＋＋2e－＝Br－＋H O
+2	1.331	
+Cr6+/Cr3+	HCrO －＋7H＋＋3e－＝Cr3＋＋4H O
+4 2	1.35	铬酸根
+--- page 4 ---
+-- table 1 --
+Cl2/Cl-	Cl (g)＋2e－＝2Cl－
+2	1.358	(g)氯气
+Au2O3(+3)/Au	Au O＋6H＋＋6e－＝2Au＋3H O
+2 3 2	1.36	
+Cl7+/Cl-	ClO －＋8H＋＋8e－＝Cl－＋4H O
+4 2	1.388	
+Cl7+/Cl2	ClO －＋8H＋＋7e－＝1/2Cl ＋4H O
+4 2 2	1.392	
+Au3+/Au+	Au3＋＋2e－＝Au＋	1.41	
+Br5+/Br-	BrO －＋6H＋＋6e－＝Br－＋3H O
+3 2	1.424	
+I+/I2	2HIO＋2H＋＋2e－＝I ＋2H O
+2 2	1.439	
+Cl5+/Cl-	ClO －＋6H＋＋6e－＝Cl－＋3H O
+3 2	1.451	
+Pb4+/Pb2+	PbO＋4H＋＋2e－＝Pb2＋＋2H O
+2 2	1.455	
+Cl5+/Cl2	ClO －＋6H＋＋5e－＝1/2Cl ＋3H O
+3 2 2	1.47	
+CrO2(+4)/Cr3+	CrO2＋4H＋＋e－＝Cr3＋＋2H O
+2	1.48	二氧化铬
+Cl+/Cl-	HClO＋H＋＋2e－＝Cl－＋H O
+2	1.482	
+Au3+/Au	Au3＋＋3e－＝Au	1.498	
+Mn7+/Mn2+	MnO －＋8H＋＋5e－＝Mn2＋＋4H O
+4 2	1.507	
+Cl4+/Cl-	ClO ＋4H＋＋5e－＝Cl－＋2H O
+2 2	1.511	
+Br5+/Br2	BrO －＋6H＋＋5e－＝l/2Br ＋3H O
+3 2 2	1.52	
+Mn3+/Mn2+	Mn3＋＋e－＝Mn2＋	1.5415	注5
+Cl3+/Cl-	HClO ＋3H＋＋4e－＝Cl－＋2H O
+2 2	1.57	
+N2+/N+	2NO＋2H＋＋2e－＝N O＋H O
+2 2	1.59	
+Br+/Br2	HBrO＋H＋＋e－＝l/2Br (aq)＋H O
+2 2	1.595	
+I7+/I5+	H IO＋H＋＋2e－＝IO－＋3H O
+5 6 3 2	1.603	注6
+Cl+/Cl2	HClO＋H＋＋e－＝1/2Cl ＋H O
+2 2	1.611	
+Cl3+/Cl2	HClO ＋3H＋＋2e－＝1/2Cl ＋2H O
+2 2 2	1.628	
+Cl3+/Cl+	HClO ＋2H＋＋2e－＝HClO＋H O
+2 2	1.645	
+Ni4+/Ni2+	NiO ＋4H＋＋2e－＝Ni2＋＋2H O
+2 2	1.678	
+Mn7+/Mn4+	MnO －＋4H＋＋3e－＝MnO ＋2H O
+4 2 2	1.68	注7
+Pb4+/Pb2+	PbO＋SO 2－＋4H＋＋2e－＝PbSO＋2H O
+2 4 4 2	1.69	
+Au+/Au	Au＋＋e－＝Au	1.691	
+Ce4+/Ce3+	Ce4＋＋e－＝Ce3＋	1.74	注8
+Br7+/Br5+	BrO －＋2H＋＋2e－＝BrO －＋H O
+4 3 2	1.763	注9
+N+/N2	N O＋2H＋＋2e－＝N ＋H O
+2 2 2	1.766	
+O-(H2O2)/O2-(H2O)	H O＋2H＋＋2e－＝2H O
+2 2 2	1.776	
+NiO42－/NiO2	NiO 2－＋4H＋＋2e－＝NiO ＋2H O
+4 2 2	1.8	
+Co3+/Co2+	Co3＋＋e－＝Co2＋	1.808	
+Co3+/Co2+	Co3＋＋e－＝Co2＋	1.83	稀硫酸中
+Co3+/Co2+	Co3＋＋e－＝Co2＋	1.92	稀高氯酸
+Ag2+/Ag+	Ag2＋＋e－＝Ag＋	1.93	稀硝酸
+Ag2+/Ag+	Ag2＋＋e－＝Ag＋	1.98	稀硫酸
+Ag2+/Ag+	Ag2＋＋e－＝Ag＋	2.0	稀高氯酸
+S O 2－/ SO2－
+2 8 4	S O 2－＋2e－＝2SO2－
+2 8 4	2.01	
+Bi5+/Bi3+	BiO －＋2H＋＋2e－＝Bi3＋＋H O
+3 2	2.03	铋酸盐
+O3/O2-	O ＋2H＋＋2e－＝O ＋H O
+3 2 2	2.076	
+XeO3/Xe	XeO ＋6H＋＋6e－＝Xe＋3H O
+3 2	2.1	
+--- page 5 ---
+-- table 1 --
+S O 2－/ HSO－
+2 8 4	S O 2－＋2H＋＋2e－＝2HSO－
+2 8 4	2.123	
+O2+/O2-	OF ＋2H＋＋4e－＝H O＋2F－
+2 2	2.153	二氟化氧
+Fe6+/Fe3+	FeO 2－＋8H＋＋3e－＝Fe3＋＋4H O
+4 2	2.2	高铁酸盐
+O2+/O2-	OF ＋3H＋＋4e－＝H O＋HF －
+2 2 2	2.21	注24
+H4XeO6/XeO3	H XeO ＋2H＋＋2e－＝XeO ＋3H O
+4 6 3 2	2.6	注10
+XeF2/Xe	XeF ＋2e－＝Xe＋2F－
+2	2.64	注11
+O(g)/O2-	O(g)＋2H＋＋2e－＝H O
+2	2.422	
+XeF4/Xe	XeF ＋2e－＝Xe＋4F－
+4	2.7	注14
+ClF3/Cl+	2ClF ＋2e－＝2ClF＋4F－
+3	2.82	注15
+OH－(羟基自由基)	OH－＋H＋＋e－＝H O
+2	2.85	注22
+XeF6/Xe	XeF ＋6e－＝Xe＋6F－
+6	2.857	注16
+F2/F-	F (g)＋2e－＝2F－
+2	2.866	注17
+PtF6/PtF6－	PtF ＋e－＝PtF －
+6 6	2.924	注12
+O2+/O2	2OF ＋4e－＝O＋4F－
+2 2	2.962	注23
+F2/HF2－	F ＋H＋＋2e－＝HF －
+2 2	2.979	氢氟酸中
+Tb4+/Tb3+	Tb4＋＋e－＝Tb3＋	3.1±0.2	注13
+Pr4+/Pr3+	Pr4＋＋e－＝Pr3＋	3.2±0.2	注18
+KrF2/Kr	KrF ＋2e－＝Kr＋2F－(25度以下进行)
+2	3.05	注19
+O+/O2(O2F2/O2)	O F ＋2e－＝O ＋2F－(约零下100度观测)
+2 2 2	3.03	注20
+F2/HF	F ＋2H＋＋2e－＝2HF
+2	3.057	注21
+			
+--- page 6 ---
+--- page 7 ---
+-- table 1 --
+电对符号	电极反应	电极电势E°(V)	备注
+N-/N2（羟胺）	N +4HO+2e－=2NH OH＋2OH－
+2 2 2	-3.04	注释1
+Ca2+/Ca	Ca(OH) ＋2e－＝Ca＋2OH－
+2	-3.02	
+Ba2+/Ba	Ba(OH) ·8H O＋2e－＝Ba＋2OH－＋·8H O
+2 2 2	-2.99	
+La3+/La(镧)	La(OH) ＋3e－＝La＋3OH－
+3	-2.9	
+Sr2+/Sr	Sr(OH) ＋2e－＝Sr＋2OH－
+2	-2.88	
+Ce3+/Ce(铈)	Ce(OH) ＋3e－＝Ce＋3OH－
+3	-2.87	
+Pr3+/Pr(镨)	Pr(OH) ＋3e－＝Pr＋3OH－
+3	-2.85	
+Ba2+/Ba	Ba(OH) ＋2e－＝Ba＋2OH－
+2	-2.81	
+Tb3+/Tb(铽)	Tb(OH) ＋3e－＝Tb＋3OH－
+3	-2.79	
+Mg2+/Mg	Mg(OH) ＋2e－＝Mg＋2OH－
+2	-2.69	
+Be2+/Be	Be O 2－＋3H O＋4e－＝2Be＋6OH－
+2 3 2	-2.63	
+BeO/Be	BeO＋H O＋e－＝Be＋2OH－
+2	-2.613	
+Sc3+/Sc	Sc(OH) ＋3e－＝Sc＋3OH－
+3	-2.61	
+Al3+/Al	H AlO －＋H O＋3e－＝Al＋OH－
+2 3 2	-2.33	
+Al3+/Al	Al(OH) ＋3e－＝Al＋3OH－
+3	-2.3	
+P+/P	H PO－＋e－＝P＋2OH－
+2 2	-1.82	
+B3+/B	H BO －＋H O＋3e－＝B＋4OH－
+2 3 2	-1.79	
+P3+/P	HPO2－＋2H O＋3e－＝P＋5OH－
+3 2	-1.71	
+Si4+/Si	SiO 2－＋3H O＋4e－＝Si＋6OH－
+3 2	-1.697	
+P3+/P+	HPO2－＋2H O＋2e－＝H PO－＋3OH－
+3 2 2 2	-1.65	
+Mn2+/Mn	Mn(OH) ＋2e－＝Mn＋2OH－
+2	-1.55	
+Cr3+/Cr	Cr(OH) ＋3e－＝Cr＋3OH－
+3	-1.48	
+Zn2+/Zn	Zn(OH) ＋2e－＝Zn＋2OH－
+2	-1.249	
+Te//Te2-	Te＋2e－＝Te2－	-1.143	
+Zn2+/Zn(碳酸锌)	ZnCO ＋2e－＝Zn＋CO 2－
+3 3	-1.06	
+P5+/P3+	PO3－＋2H O＋2e－＝HPO 2－＋3OH－
+4 2 3	-1.05	
+Sn4+/Sn	SnO＋2H O＋4e－＝Sn＋4OH－
+2 2	-0.954	
+FeS(g)/Fe	FeS(g) ＋2e－＝Fe＋S2－	-0.95	
+S6+/S4+	SO2－＋H O＋2e－＝SO2－＋2OH－
+4 2 3	-0.93	
+Se/Se2-	Se＋2e－＝Se2－	-0.92	
+Sn2+/Sn(亚锡酸)	HSnO－＋H O＋2e－＝Sn＋3OH－
+2 2	-0.909	
+--- page 8 ---
+-- table 1 --
+S4+/S	SO2－＋3H O＋4e－＝S＋6OH－
+3 2	-0.9	
+Cu2S/Cu	Cu S(g) ＋2e－＝Cu＋S2－
+2	-0.89	
+P/P3-(磷化氢)	P＋3H O＋3e－＝PH(g)＋3OH－
+2 3	-0.88	
+Fe2+/Fe	Fe(OH) ＋2e－＝Fe＋2OH－
+2	-0.877	
+N5+/N4+	2NO －＋2H O＋2e－＝NO ＋4OH－
+3 2 2 4	-0.85	
+H+/H2	2H O＋2e－＝H ＋2OH－
+2 2	-0.828	
+Co2+/Co	Co(OH) ＋2e－＝Co＋2OH－
+2	-0.73	
+Ni2+/Ni	Ni(OH) ＋2e－＝Ni＋2OH－
+2	-0.72	
+As5+/As3+	AsO3－＋2H O＋2e－＝AsO －＋4OH－
+4 2 2	-0.71	
+Ag2S/Ag	Ag S ＋2e－＝Ag＋S2－
+2	-0.691	
+HgS/Hg	HgS ＋2e－＝Hg＋S2－	-0.69	
+As3+/As	AsO－＋2H O＋3e－＝As＋4OH－
+2 2	-0.68	
+CoCO3/Co-(碳酸钴)	CoCO ＋2e－＝Co＋CO2－
+3 3	-0.64	
+PbO/Pb	PbO＋H O＋2e－＝Pb＋2OH－
+2	-0.581	
+S4+/S2+(硫代硫酸)	2SO2－＋3H O＋4e－＝S O 2－＋6OH－
+3 2 2 3	-0.576	
+Te4+/Te	TeO2－＋3H O＋4e－＝Te＋6OH
+3 2	-0.57	
+O2/O2－	O ＋e－＝O－
+2 2	-0.563	
+Fe3+/Fe2+	Fe(OH) ＋e－＝Fe(OH) ＋OH－
+3 2	-0.56	
+Pb2+/Pb(氢氧化铅)	HPbO－＋H O＋2e－＝Pb＋3OH－
+2 2	-0.54	
+PbCO3/Pb	PbCO ＋2e－＝Pb＋CO2－
+3 3	-0.509	
+S/S2-	S＋2e－＝S2－	-0.47627	
+Bi3+/Bi	Bi O＋3H O＋6e－＝2Bi＋6OH－
+2 3 2	-0.46	
+N3+/N2+	NO －＋H O＋e－＝NO＋2OH－
+2 2	-0.46	
+Se4+/Se	SeO 2－＋3H O＋4e－＝Se＋6OH－
+3 2	-0.366	
+Cu+/Cu	Cu O＋H O＋2e－＝2Cu＋2OH－
+2 2	-0.358	
+Tl+/Tl(氢氧化亚铊)	Tl(OH)＋e－＝Tl＋OH－	-0.343	
+Cu2+/Cu	Cu(OH) ＋2e－＝Cu＋2OH－
+2	-0.222	
+O2/H2O2	O ＋2H O＋2e－＝H O ＋2OH－
+2 2 2 2	-0.146	
+Cr6+/Cr3+	CrO 2－＋4H O＋3e－＝Cr(OH) ＋5OH－
+4 2 3	-0.13	
+Cu2+/Cu	2Cu(OH) ＋2e－＝CuO＋2OH－＋H O
+2 2 2	-0.08	
+Tl3+/Tl+	Tl(OH) ＋2e－＝TlOH＋2OH－
+3	-0.05	
+Mn4+/Mn2+	MnO ＋2H O＋2e－＝Mn(OH) ＋2OH－
+2 2 2	-0.05	
+AgCN/Ag	AgCN＋e－＝Ag＋CN－	-0.017	
+N5+/N3+	NO －＋H O＋2e－＝NO－＋2OH－
+3 2 2	0.01	
+Se6+/Se4+	SeO 2－＋H O＋2e－＝SeO 2－＋2OH－
+4 2 3	0.05	
+Pd2+/Pd	Pd(OH) ＋2e－＝Pd＋2OH－
+2	0.07	
+Hg2+/Hg	HgO＋H O＋2e－＝Hg＋2OH－
+2	0.0977	
+Co3+/Co2+(氨配体)	[Co(NH) ]3＋＋e－＝[Co(NH) ]2＋
+3 6 3 6	0.108	
+Pt2+/Pt	Pt(OH) ＋2e－＝Pt＋2OH－
+2	0.14	
+I5+/I+	IO－＋2H O＋4e－＝IO－＋4OH－
+3 2	0.15	
+Mn3+/Mn2+	Mn(OH) ＋e－＝Mn(OH) ＋OH－
+3 2	0.15	
+N3+/N+	2NO －＋3H O＋4e－＝NO＋6OH－
+2 2 2	0.15	
+Co3+/Co2+	Co(OH) ＋e－＝Co(OH) ＋OH－
+3 2	0.17	
+--- page 9 ---
+-- table 1 --
+Pb4+/Pb2+	PbO＋H O＋2e－＝PbO＋2OH－
+2 2	0.247	
+I5+/I-	IO－＋3H O＋6e－＝I－＋6OH－
+3 2	0.26	
+Cl5+/Cl3+	ClO －＋H O＋2e－＝ClO －＋2OH－
+3 2 2	0.33	
+Ag2O/Ag(+1价银)	Ag O＋H O＋2e－＝2Ag＋2OH－
+2 2	0.345	
+Cl7+/Cl5+	ClO －＋H O＋2e－＝ClO －＋2OH－
+4 2 3	0.36	
+Te6+/Te4+	TeO 2－＋H O＋2e－＝TeO 2－＋2OH－
+4 2 3	0.4	
+O2/O2-	O ＋2H O＋4e－＝4OH－
+2 2	0.401	
+I+/I-	IO－＋H O＋2e－＝I－＋2OH－
+2	0.485	
+Ni4+/Ni2+	NiO ＋2H O＋2e－＝Ni(OH) ＋2OH－
+2 2 2	0.49	
+Mn7+/Mn6+	MnO －＋e－＝MnO 2－
+4 4	0.558	
+Mn7+/Mn4+	MnO －＋2H O＋3e－＝MnO ＋4OH－
+4 2 2	0.595	
+Mn6+/Mn4+	MnO 2－＋2H O＋2e－＝MnO ＋4OH－
+4 2 2	0.6	
+Ag2+/Ag+	2AgO＋H O＋2e－＝Ag O＋2OH－
+2 2	0.607	
+Br5+/Br-	BrO －＋3H O＋6e－＝Br－＋6OH－
+3 2	0.61	
+Cl5+/Cl-	ClO －＋3H O＋6e－＝Cl－＋6OH－
+3 2	0.62	
+Cl3+/Cl+	ClO －＋H O＋2e－＝ClO－＋2OH－
+2 2	0.66	
+I7+/I5+高碘酸/碘酸	H IO2－＋2e－＝IO－＋3OH－
+3 6 3	0.7	
+Fe6+/Fe3+	FeO 2－＋4H O＋3e－＝Fe(OH) ＋5OH－
+4 2 3	0.72	
+N-/N2-	2NH2OH＋2e－＝NH ＋2OH－
+2 4	0.73	N2H4联氨
+N2+/N+	2NO＋ H O＋2e－＝N O＋2OH－
+2 2	0.76	
+Cl3+/Cl-	ClO －＋2H O＋4e－＝Cl－＋4OH－
+2 2	0.76	
+Br+/Br-	BrO－＋H O＋2e－＝Br－＋2OH－
+2	0.761	
+Cl+/Cl-	ClO－＋H O＋2e－＝Cl－＋2OH－
+2	0.89	
+Br7+/Br5+	BrO －＋H O＋2e－＝BrO－＋2OH－
+4 2 3	0.93	
+Xe8+/Xe6+	HXeO63－＋2H O＋2e－＝HXeO －＋4OH－
+2 4	0.94	高氙酸
+Cl4+/Cl3+	ClO (aq)＋e－＝ClO －
+2 2	0.954	(aq)水溶液
+Ru8+/Ru7+	RuO ＋e－＝RuO －
+4 4	1.0	四氧化钌
+Cl4+/Cl3+	ClO (g)＋e－＝ClO －
+2 2	1.16	(g)气体
+Xe6+/Xe	HXeO－＋3H O＋6e－＝Xe+7OH－
+4 2	1.24；0.9	注2
+O3/O2-	O (g)＋H O＋2e－＝O＋2OH－
+3 2 2	1.24	臭氧气体
+OH/OH-	OH(g) ＋e－＝OH－	2.02	氢氧根
+			
+--- page 10 ---

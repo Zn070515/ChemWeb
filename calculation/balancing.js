@@ -244,6 +244,76 @@ const divFrac = (a, b) => fraction(a.n * b.d, a.d * b.n);
 
 const isZeroFrac = (value) => value.n === 0;
 
+const addVector = (a, b) => a.map((value, index) => value + b[index]);
+const scaleVector = (vector, factor) => vector.map((value) => value * factor);
+
+const isAllPositive = (values) => values.every((value) => value > 0);
+const isAllNegative = (values) => values.every((value) => value < 0);
+
+const normalizeVectorSign = (values) => (isAllNegative(values) ? values.map((value) => -value) : values);
+
+const reduceVector = (values) => {
+    const nonZero = values.filter((value) => value !== 0).map((value) => Math.abs(value));
+    if (nonZero.length === 0) {
+        return values;
+    }
+    const divisor = nonZero.reduce((acc, value) => gcd(acc, value), nonZero[0]);
+    return values.map((value) => value / divisor);
+};
+
+const ensurePositiveCoefficients = (values) => {
+    if (values.some((value) => value === 0)) {
+        return null;
+    }
+    if (isAllPositive(values)) {
+        return values;
+    }
+    if (isAllNegative(values)) {
+        return values.map((value) => -value);
+    }
+    return null;
+};
+
+const normalizePositiveSolution = (values) => {
+    if (!values || values.length === 0) {
+        return null;
+    }
+    if (values.some((value) => value === 0)) {
+        return null;
+    }
+    if (!isAllPositive(values) && !isAllNegative(values)) {
+        return null;
+    }
+    const normalized = normalizeVectorSign(values);
+    return reduceVector(normalized);
+};
+
+const toFraction = (n, d = 1) => fraction(n, d);
+
+const multiplyFractions = (a, b) => fraction(a.n * b.n, a.d * b.d);
+
+const scaleFraction = (value, factor) => fraction(value.n * factor.n, value.d * factor.d);
+
+const formatFraction = (value) => {
+    if (value.d === 1) {
+        return String(value.n);
+    }
+    return `<span class="fraction"><span class="num">${value.n}</span><span class="bar"></span><span class="den">${value.d}</span></span>`;
+};
+
+const formatCoeffText = (value, showFraction, hideOne) => {
+    if (!value) {
+        return "";
+    }
+    if (value.d === 1) {
+        if (hideOne && value.n === 1) {
+            return "";
+        }
+        return String(value.n);
+    }
+    return showFraction ? formatFraction(value) : String(value.n / value.d);
+};
+
 const rref = (matrix) => {
     const rows = matrix.length;
     const cols = matrix[0]?.length || 0;
@@ -284,7 +354,7 @@ const rref = (matrix) => {
     return matrix;
 };
 
-const solveNullSpace = (matrix) => {
+const getNullSpaceBasis = (matrix) => {
     const rows = matrix.length;
     const cols = matrix[0]?.length || 0;
     const rrefMatrix = rref(matrix.map((row) => row.map((value) => fraction(value, 1))));
@@ -307,34 +377,99 @@ const solveNullSpace = (matrix) => {
         }
     }
     if (freeCols.length === 0) {
-        freeCols.push(cols - 1);
+        return [];
     }
 
-    const solution = Array.from({ length: cols }, () => fraction(0, 1));
-    freeCols.forEach((col) => {
-        solution[col] = fraction(1, 1);
-    });
+    const buildBasisVector = (freeCol) => {
+        const solution = Array.from({ length: cols }, () => fraction(0, 1));
+        solution[freeCol] = fraction(1, 1);
 
-    Array.from(pivotCols).forEach((col) => {
-        const rowIndex = pivotRowForCol[col];
-        const row = rrefMatrix[rowIndex];
-        let sum = fraction(0, 1);
-        for (let c = col + 1; c < cols; c += 1) {
-            if (!isZeroFrac(row[c])) {
-                sum = addFrac(sum, mulFrac(row[c], solution[c]));
+        Array.from(pivotCols).forEach((col) => {
+            const rowIndex = pivotRowForCol[col];
+            const row = rrefMatrix[rowIndex];
+            let sum = fraction(0, 1);
+            for (let c = col + 1; c < cols; c += 1) {
+                if (!isZeroFrac(row[c])) {
+                    sum = addFrac(sum, mulFrac(row[c], solution[c]));
+                }
             }
+            solution[col] = mulFrac(fraction(-1, 1), sum);
+        });
+
+        const denominators = solution.map((value) => value.d);
+        const commonDen = denominators.reduce((acc, val) => lcm(acc, val), 1);
+        const integers = solution.map((value) => (value.n * commonDen) / value.d);
+        return reduceVector(integers);
+    };
+
+    return freeCols.map((col) => buildBasisVector(col));
+};
+
+const solvePositiveSolutions = (matrix, options = {}) => {
+    const basisVectors = getNullSpaceBasis(matrix);
+    const maxCoeff = options.maxCoeff ?? 6;
+    const maxSolutions = options.maxSolutions ?? 12;
+
+    if (basisVectors.length === 0) {
+        return { solutions: [] };
+    }
+
+    if (basisVectors.length === 1) {
+        const normalized = normalizePositiveSolution(basisVectors[0]);
+        return { solutions: normalized ? [normalized] : [] };
+    }
+
+    const solutions = new Map();
+    let infinite = false;
+
+    const search = (index, current, usedAny) => {
+        if (infinite) {
+            return;
         }
-        solution[col] = mulFrac(fraction(-1, 1), sum);
+        if (index === basisVectors.length) {
+            if (!usedAny || !current) {
+                return;
+            }
+            const normalized = normalizePositiveSolution(current);
+            if (!normalized) {
+                return;
+            }
+            const key = normalized.join(",");
+            if (!solutions.has(key)) {
+                solutions.set(key, normalized);
+                if (solutions.size > maxSolutions) {
+                    infinite = true;
+                }
+            }
+            return;
+        }
+
+        for (let coeff = 0; coeff <= maxCoeff; coeff += 1) {
+            const scaled = coeff === 0 ? null : scaleVector(basisVectors[index], coeff);
+            const next = scaled ? (current ? addVector(current, scaled) : scaled) : current;
+            search(index + 1, next, usedAny || coeff !== 0);
+        }
+    };
+
+    search(0, null, false);
+
+    if (infinite) {
+        return { infinite: true };
+    }
+
+    return { solutions: Array.from(solutions.values()) };
+};
+
+const formatBalancedEquation = (parsed, coefficients) => {
+    const left = parsed.left.map((item, index) => {
+        const coeff = coefficients[index];
+        return `${coeff === 1 ? "" : coeff}${item.display}`;
     });
-
-    const denominators = solution.map((value) => value.d);
-    const commonDen = denominators.reduce((acc, val) => lcm(acc, val), 1);
-    const integers = solution.map((value) => (value.n * commonDen) / value.d);
-
-    const sign = integers.find((value) => value !== 0) < 0 ? -1 : 1;
-    const normalized = integers.map((value) => value * sign);
-    const divisor = normalized.reduce((acc, val) => gcd(acc, val), normalized[0] || 1) || 1;
-    return normalized.map((value) => value / divisor);
+    const right = parsed.right.map((item, index) => {
+        const coeff = coefficients[index + parsed.left.length];
+        return `${coeff === 1 ? "" : coeff}${item.display}`;
+    });
+    return `${left.join(" + ")} -> ${right.join(" + ")}`;
 };
 
 const balanceEquation = (input) => {
@@ -365,21 +500,19 @@ const balanceEquation = (input) => {
         matrix.push(chargeRow);
     }
 
-    const coefficients = solveNullSpace(matrix);
-    if (coefficients.some((value) => !Number.isFinite(value) || value === 0)) {
-        return { error: "无法完成配平，请检查输入。" };
+    const solutionResult = solvePositiveSolutions(matrix);
+    if (solutionResult.infinite) {
+        return { infinite: true };
     }
-
-    const left = parsed.left.map((item, index) => {
-        const coeff = coefficients[index];
-        return `${coeff === 1 ? "" : coeff}${item.display}`;
-    });
-    const right = parsed.right.map((item, index) => {
-        const coeff = coefficients[index + parsed.left.length];
-        return `${coeff === 1 ? "" : coeff}${item.display}`;
-    });
-
-    return { balanced: `${left.join(" + ")} -> ${right.join(" + ")}` };
+    if (!solutionResult.solutions || solutionResult.solutions.length === 0) {
+        return { error: "方程式输入有误" };
+    }
+    if (solutionResult.solutions.length === 1) {
+        return { balanced: formatBalancedEquation(parsed, solutionResult.solutions[0]) };
+    }
+    return {
+        balancedList: solutionResult.solutions.map((coeffs) => formatBalancedEquation(parsed, coeffs))
+    };
 };
 
 const balanceEquationWithCoefficients = (input) => {
@@ -410,13 +543,16 @@ const balanceEquationWithCoefficients = (input) => {
         matrix.push(chargeRow);
     }
 
-    const coefficients = solveNullSpace(matrix);
-    if (coefficients.some((value) => !Number.isFinite(value) || value === 0)) {
-        return { error: "无法完成配平，请检查输入。" };
+    const solutionResult = solvePositiveSolutions(matrix);
+    if (solutionResult.infinite) {
+        return { infinite: true };
+    }
+    if (!solutionResult.solutions || solutionResult.solutions.length === 0) {
+        return { error: "方程式输入有误" };
     }
 
     return {
-        coefficients,
+        solutions: solutionResult.solutions,
         parsed
     };
 };
@@ -531,11 +667,50 @@ const formatChargeSuperscript = (raw) => {
     return `${formatWithSubscripts(base)}<sup>${charge}</sup>`;
 };
 
-const createEquationItem = (raw, removeHandler, coefficient) => {
+const createEquationItem = (raw, displayCoeff, controlCoeff, onCoeffChange, removeHandler, showFraction, isThermoTarget) => {
     const wrapper = document.createElement("div");
     wrapper.className = "equation_item";
-    const coeffText = coefficient && coefficient !== 1 ? String(coefficient) : "";
-    wrapper.innerHTML = `${coeffText}${formatChargeSuperscript(raw)}`;
+    if (isThermoTarget) {
+        wrapper.classList.add("is-thermo-target");
+    }
+    const coeffBox = document.createElement("div");
+    coeffBox.className = "equation_coeff";
+
+    const minusBtn = document.createElement("button");
+    minusBtn.type = "button";
+    minusBtn.className = "coeff_btn";
+    minusBtn.textContent = "-";
+
+    const plusBtn = document.createElement("button");
+    plusBtn.type = "button";
+    plusBtn.className = "coeff_btn";
+    plusBtn.textContent = "+";
+
+    const coeffValue = document.createElement("span");
+    coeffValue.className = "coeff_value";
+    coeffValue.innerHTML = formatCoeffText(displayCoeff, showFraction, false);
+
+    const updateCoeff = (value) => {
+        const next = Number.parseInt(value, 10);
+        if (!Number.isFinite(next) || next < 1) {
+            return;
+        }
+        onCoeffChange(next);
+    };
+
+    minusBtn.addEventListener("click", () => updateCoeff((controlCoeff ?? 1) - 1));
+    plusBtn.addEventListener("click", () => updateCoeff((controlCoeff ?? 1) + 1));
+
+    coeffBox.appendChild(minusBtn);
+    coeffBox.appendChild(coeffValue);
+    coeffBox.appendChild(plusBtn);
+
+    const label = document.createElement("span");
+    label.className = "equation_label";
+    label.innerHTML = formatChargeSuperscript(raw);
+
+    wrapper.appendChild(coeffBox);
+    wrapper.appendChild(label);
     const removeBtn = document.createElement("button");
     removeBtn.type = "button";
     removeBtn.innerHTML = "&times;";
@@ -563,61 +738,154 @@ const initBalancingUI = () => {
     const suggestionModal = document.getElementById("suggestion_modal");
     const suggestionCards = document.getElementById("suggestion_cards");
     const suggestionClose = document.getElementById("suggestion_close");
+    const lockToggle = document.getElementById("lock_coeffs");
+    const thermoToggle = document.getElementById("thermo_toggle");
+    const thermoList = document.getElementById("thermo_list");
+    const thermoSelector = document.getElementById("thermo_selector");
+    const thermoEmpty = document.getElementById("thermo_empty");
 
-    if (!leftContent || !rightContent || !leftZone || !rightZone || !moleculesContainer || !cationsContainer || !anionsContainer || !preview || !input || !sideSelect || !addBtn || !balanceBtn || !resetBtn || !result || !error || !suggestionModal || !suggestionCards || !suggestionClose) {
+    if (!leftContent || !rightContent || !leftZone || !rightZone || !moleculesContainer || !cationsContainer || !anionsContainer || !preview || !input || !sideSelect || !addBtn || !balanceBtn || !resetBtn || !result || !error || !suggestionModal || !suggestionCards || !suggestionClose || !lockToggle || !thermoToggle || !thermoList || !thermoSelector || !thermoEmpty) {
         return;
     }
 
     let leftList = [];
     let rightList = [];
-    let coefficients = null;
+    let thermoTargetIndex = null;
+    let lastBaseSolutions = null;
+
+    const showFraction = () => lockToggle.checked || thermoToggle.checked;
+
+    const clearDisplayCoeffs = () => {
+        leftList = leftList.map((item) => ({ ...item, displayCoeff: null }));
+        rightList = rightList.map((item) => ({ ...item, displayCoeff: null }));
+    };
+
+    const getDisplayCoeff = (item) => item.displayCoeff || toFraction(item.userCoeff, 1);
 
     const renderEquation = () => {
+        const totalItems = leftList.length + rightList.length;
+        if (thermoTargetIndex != null && (thermoTargetIndex < 0 || thermoTargetIndex >= totalItems)) {
+            thermoTargetIndex = null;
+        }
+
         leftContent.innerHTML = "";
         rightContent.innerHTML = "";
 
-        const leftCoeffs = coefficients ? coefficients.slice(0, leftList.length) : leftList.map(() => 1);
-        const rightCoeffs = coefficients ? coefficients.slice(leftList.length) : rightList.map(() => 1);
-
         leftList.forEach((item, index) => {
-            const element = createEquationItem(item, () => {
-                leftList = leftList.filter((_, i) => i !== index);
-                coefficients = null;
-                renderEquation();
-            }, leftCoeffs[index]);
+            const element = createEquationItem(
+                item.raw,
+                getDisplayCoeff(item),
+                item.userCoeff,
+                (value) => {
+                    leftList[index].userCoeff = value;
+                    leftList[index].userSet = true;
+                    leftList[index].displayCoeff = null;
+                    lastBaseSolutions = null;
+                    result.textContent = "";
+                    error.textContent = "";
+                    renderEquation();
+                },
+                () => {
+                    leftList = leftList.filter((_, i) => i !== index);
+                    lastBaseSolutions = null;
+                    thermoTargetIndex = null;
+                    result.textContent = "";
+                    error.textContent = "";
+                    renderEquation();
+                },
+                showFraction(),
+                thermoToggle.checked && thermoTargetIndex === index
+            );
             leftContent.appendChild(element);
         });
 
         rightList.forEach((item, index) => {
-            const element = createEquationItem(item, () => {
-                rightList = rightList.filter((_, i) => i !== index);
-                coefficients = null;
-                renderEquation();
-            }, rightCoeffs[index]);
+            const element = createEquationItem(
+                item.raw,
+                getDisplayCoeff(item),
+                item.userCoeff,
+                (value) => {
+                    rightList[index].userCoeff = value;
+                    rightList[index].userSet = true;
+                    rightList[index].displayCoeff = null;
+                    lastBaseSolutions = null;
+                    result.textContent = "";
+                    error.textContent = "";
+                    renderEquation();
+                },
+                () => {
+                    rightList = rightList.filter((_, i) => i !== index);
+                    lastBaseSolutions = null;
+                    thermoTargetIndex = null;
+                    result.textContent = "";
+                    error.textContent = "";
+                    renderEquation();
+                },
+                showFraction(),
+                thermoToggle.checked && thermoTargetIndex === index + leftList.length
+            );
             rightContent.appendChild(element);
         });
 
-        const leftText = leftList.map((item, index) => {
-            const coeff = leftCoeffs[index];
-            const coeffText = coeff && coeff !== 1 ? String(coeff) : "";
-            return `${coeffText}${formatChargeSuperscript(item)}`;
+        const leftText = leftList.map((item) => {
+            const coeff = getDisplayCoeff(item);
+            const coeffText = formatCoeffText(coeff, showFraction(), true);
+            return `${coeffText}${formatChargeSuperscript(item.raw)}`;
         }).join(" + ");
-        const rightText = rightList.map((item, index) => {
-            const coeff = rightCoeffs[index];
-            const coeffText = coeff && coeff !== 1 ? String(coeff) : "";
-            return `${coeffText}${formatChargeSuperscript(item)}`;
+        const rightText = rightList.map((item) => {
+            const coeff = getDisplayCoeff(item);
+            const coeffText = formatCoeffText(coeff, showFraction(), true);
+            return `${coeffText}${formatChargeSuperscript(item.raw)}`;
         }).join(" + ");
 
         preview.innerHTML = leftText || rightText ? `${leftText || "?"} = ${rightText || "?"}` : "";
+
+        if (thermoToggle.checked) {
+            renderThermoSelector();
+        }
+    };
+
+    const parseCoefficientInput = (raw) => {
+        const parts = raw.trim().split(/\s+/).filter(Boolean);
+        if (parts.length === 0) {
+            return null;
+        }
+        const possibleCoeff = Number.parseInt(parts[0], 10);
+        if (Number.isFinite(possibleCoeff) && possibleCoeff > 0 && String(possibleCoeff) === parts[0]) {
+            const rest = parts.slice(1).join(" ");
+            if (!rest) {
+                return null;
+            }
+            return { coeff: possibleCoeff, raw: rest, userSet: true };
+        }
+        return { coeff: 1, raw: raw.trim(), userSet: false };
     };
 
     const addSpecies = (raw, side) => {
         if (!raw) {
             return;
         }
+        const parsed = parseCoefficientInput(raw);
+        if (!parsed) {
+            return;
+        }
         const target = side === "right" ? rightList : leftList;
-        target.push(raw);
-        coefficients = null;
+        const existing = target.find((item) => item.raw === parsed.raw);
+        if (existing) {
+            existing.userCoeff += parsed.coeff;
+            existing.userSet = existing.userSet || parsed.userSet;
+        } else {
+            target.push({
+                raw: parsed.raw,
+                userCoeff: parsed.coeff,
+                userSet: parsed.userSet,
+                displayCoeff: null
+            });
+        }
+        lastBaseSolutions = null;
+        thermoTargetIndex = null;
+        result.textContent = "";
+        error.textContent = "";
         renderEquation();
     };
 
@@ -717,8 +985,8 @@ const initBalancingUI = () => {
     });
 
     const toEquationText = () => {
-        const left = leftList.map((item) => normalizeChargeInput(item)).join(" + ");
-        const right = rightList.map((item) => normalizeChargeInput(item)).join(" + ");
+        const left = leftList.map((item) => normalizeChargeInput(item.raw)).join(" + ");
+        const right = rightList.map((item) => normalizeChargeInput(item.raw)).join(" + ");
         return `${left} = ${right}`;
     };
 
@@ -740,8 +1008,8 @@ const initBalancingUI = () => {
     };
 
     const buildSuggestions = () => {
-        const present = new Set([...leftList, ...rightList].map((item) => item.trim()));
-        const elements = collectElements([...leftList, ...rightList]);
+        const present = new Set([...leftList, ...rightList].map((item) => item.raw.trim()));
+        const elements = collectElements([...leftList, ...rightList].map((item) => item.raw));
         const pool = [
             ...COMMON_SPECIES.molecules,
             ...COMMON_SPECIES.cations,
@@ -749,7 +1017,7 @@ const initBalancingUI = () => {
         ];
 
         const sumCharge = (items) => items.reduce((total, item) => {
-            const normalized = normalizeChargeInput(item);
+            const normalized = normalizeChargeInput(item.raw);
             const { charge } = extractCharge(normalized);
             return total + charge;
         }, 0);
@@ -758,8 +1026,8 @@ const initBalancingUI = () => {
         const rightCharge = sumCharge(rightList);
         const chargeDelta = leftCharge - rightCharge;
 
-        const isAcidic = [...leftList, ...rightList].some((item) => /\bH\s*1\+/.test(item));
-        const isBasic = [...leftList, ...rightList].some((item) => /\bOH\s*1-/.test(item));
+        const isAcidic = [...leftList, ...rightList].some((item) => /\bH\s*1\+/.test(item.raw));
+        const isBasic = [...leftList, ...rightList].some((item) => /\bOH\s*1-/.test(item.raw));
 
         const redoxHints = [
             "MnO4 1-",
@@ -845,6 +1113,115 @@ const initBalancingUI = () => {
         return Array.from(candidates).slice(0, 20);
     };
 
+    const applyLockScaling = (solution) => {
+        if (!lockToggle.checked) {
+            return solution.map((value) => toFraction(value, 1));
+        }
+        const allItems = [...leftList, ...rightList];
+        const locked = allItems
+            .map((item, index) => ({ index, item }))
+            .filter(({ item }) => item.userCoeff > 1);
+
+        if (locked.length === 0) {
+            return solution.map((value) => toFraction(value, 1));
+        }
+
+        const first = locked[0];
+        const baseCoeff = solution[first.index];
+        if (baseCoeff === 0) {
+            return null;
+        }
+        const factor = toFraction(first.item.userCoeff, baseCoeff);
+
+        for (let i = 1; i < locked.length; i += 1) {
+            const { index, item } = locked[i];
+            const compare = item.userCoeff * baseCoeff;
+            const expected = first.item.userCoeff * solution[index];
+            if (compare !== expected) {
+                return null;
+            }
+        }
+
+        return solution.map((value) => toFraction(value * factor.n, factor.d));
+    };
+
+    const applyThermoScaling = (coeffs, targetIndex) => {
+        if (targetIndex == null) {
+            return coeffs;
+        }
+        const target = coeffs[targetIndex];
+        if (!target || target.n === 0) {
+            return null;
+        }
+        const scale = toFraction(target.d, target.n);
+        return coeffs.map((value) => scaleFraction(value, scale));
+    };
+
+    const formatEquationFromFractions = (coeffs) => {
+        const left = leftList.map((item, index) => {
+            const coeffText = formatCoeffText(coeffs[index], showFraction(), true);
+            return `${coeffText}${formatChargeSuperscript(item.raw)}`;
+        }).join(" + ");
+        const right = rightList.map((item, index) => {
+            const coeffText = formatCoeffText(coeffs[index + leftList.length], showFraction(), true);
+            return `${coeffText}${formatChargeSuperscript(item.raw)}`;
+        }).join(" + ");
+        return `${left} -> ${right}`;
+    };
+
+    const renderSolutionCoeffs = (coeffs) => {
+        leftList = leftList.map((item, index) => ({
+            ...item,
+            displayCoeff: coeffs[index]
+        }));
+        rightList = rightList.map((item, index) => ({
+            ...item,
+            displayCoeff: coeffs[index + leftList.length]
+        }));
+        renderEquation();
+    };
+
+    const applyThermoFromBase = () => {
+        if (!thermoToggle.checked || thermoTargetIndex == null || !lastBaseSolutions) {
+            return;
+        }
+        const scaled = lastBaseSolutions.map((coeffs) => applyThermoScaling(coeffs, thermoTargetIndex)).filter(Boolean);
+        if (scaled.length === 0) {
+            error.textContent = "方程式输入有误";
+            clearDisplayCoeffs();
+            renderEquation();
+            return;
+        }
+        if (scaled.length > 1) {
+            const lines = scaled.map((coeffs, index) => `解 ${index + 1}: ${formatEquationFromFractions(coeffs)}`);
+            result.innerHTML = lines.join("<br>");
+            renderSolutionCoeffs(scaled[0]);
+            return;
+        }
+        renderSolutionCoeffs(scaled[0]);
+        result.textContent = "配平完成，系数已自动填充。";
+    };
+
+    const renderThermoSelector = () => {
+        thermoList.innerHTML = "";
+        const allItems = [...leftList.map((item) => ({ ...item, side: "反应物" })), ...rightList.map((item) => ({ ...item, side: "生成物" }))];
+        thermoEmpty.style.display = allItems.length === 0 ? "block" : "none";
+        allItems.forEach((item, index) => {
+            const option = document.createElement("button");
+            option.type = "button";
+            option.className = "thermo_option";
+            option.innerHTML = `${item.side}<br>${formatChargeSuperscript(item.raw)}`;
+            option.addEventListener("click", () => {
+                thermoTargetIndex = index;
+                result.textContent = "";
+                error.textContent = "";
+                renderEquation();
+                applyThermoFromBase();
+            });
+            thermoList.appendChild(option);
+        });
+    };
+
     balanceBtn.addEventListener("click", () => {
         result.textContent = "";
         error.textContent = "";
@@ -856,6 +1233,7 @@ const initBalancingUI = () => {
         const equationText = toEquationText();
         const output = balanceEquationWithCoefficients(equationText);
         if (output.error) {
+            lastBaseSolutions = null;
             error.textContent = output.error;
             const suggestions = buildSuggestions();
             if (suggestions.length > 0) {
@@ -864,23 +1242,114 @@ const initBalancingUI = () => {
             return;
         }
 
-        coefficients = output.coefficients;
-        renderEquation();
+        if (output.infinite) {
+            lastBaseSolutions = null;
+            error.textContent = "配平结果为无穷多解";
+            clearDisplayCoeffs();
+            renderEquation();
+            return;
+        }
+
+        if (!output.solutions || output.solutions.length === 0) {
+            lastBaseSolutions = null;
+            error.textContent = "方程式输入有误";
+            clearDisplayCoeffs();
+            renderEquation();
+            return;
+        }
+
+        const lockedSolutions = output.solutions
+            .map((solution) => applyLockScaling(solution))
+            .filter(Boolean);
+
+        if (lockedSolutions.length === 0) {
+            lastBaseSolutions = null;
+            error.textContent = "方程式输入有误";
+            clearDisplayCoeffs();
+            renderEquation();
+            return;
+        }
+
+        lastBaseSolutions = lockedSolutions;
+
+        if (thermoToggle.checked) {
+            if (thermoTargetIndex == null) {
+                renderThermoSelector();
+                return;
+            }
+            applyThermoFromBase();
+            return;
+        }
+
+        if (lockedSolutions.length > 1) {
+            const lines = lockedSolutions.map((solution, index) => {
+                const label = `解 ${index + 1}`;
+                return `${label}: ${formatEquationFromFractions(solution)}`;
+            });
+            result.innerHTML = lines.join("<br>");
+            renderSolutionCoeffs(lockedSolutions[0]);
+            return;
+        }
+
+        renderSolutionCoeffs(lockedSolutions[0]);
         result.textContent = "配平完成，系数已自动填充。";
     });
 
     resetBtn.addEventListener("click", () => {
         leftList = [];
         rightList = [];
-        coefficients = null;
+        thermoTargetIndex = null;
+        lastBaseSolutions = null;
         result.textContent = "";
         error.textContent = "";
         closeSuggestionModal();
+        if (thermoToggle.checked) {
+            thermoSelector.classList.remove("is-hidden");
+            thermoSelector.setAttribute("aria-hidden", "false");
+            renderThermoSelector();
+        } else {
+            thermoSelector.classList.add("is-hidden");
+            thermoSelector.setAttribute("aria-hidden", "true");
+        }
         renderEquation();
     });
 
     suggestionClose.addEventListener("click", closeSuggestionModal);
     suggestionModal.querySelector(".modal_overlay").addEventListener("click", closeSuggestionModal);
+
+    lockToggle.addEventListener("change", () => {
+        result.textContent = "";
+        error.textContent = "";
+        if (lockToggle.checked && thermoToggle.checked) {
+            thermoToggle.checked = false;
+            thermoSelector.classList.add("is-hidden");
+            thermoSelector.setAttribute("aria-hidden", "true");
+        }
+        lastBaseSolutions = null;
+        clearDisplayCoeffs();
+        renderEquation();
+    });
+
+    thermoToggle.addEventListener("change", () => {
+        result.textContent = "";
+        error.textContent = "";
+        if (thermoToggle.checked && lockToggle.checked) {
+            lockToggle.checked = false;
+            clearDisplayCoeffs();
+        }
+        if (!thermoToggle.checked) {
+            thermoSelector.classList.add("is-hidden");
+            thermoSelector.setAttribute("aria-hidden", "true");
+            clearDisplayCoeffs();
+            renderEquation();
+            return;
+        }
+        thermoSelector.classList.remove("is-hidden");
+        thermoSelector.setAttribute("aria-hidden", "false");
+        renderThermoSelector();
+        renderEquation();
+        applyThermoFromBase();
+    });
 
     renderEquation();
 };

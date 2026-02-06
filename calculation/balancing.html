@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="./balancing.css">
 </head>
 <body>
+    <nav class="site-nav">
+        <a class="nav-brand" href="../index.html">ChemWeb</a>
+        <div class="nav-links">
+            <a href="../index.html">首页</a>
+            <a href="../knowledge/knowledge.html">知识速览</a>
+            <a href="../elements/elements.html">元素速查</a>
+            <a href="./calculation.html">式量计算</a>
+            <a href="../extension/extension.html">拓展知识</a>
+        </div>
+    </nav>
     <h1 id="balancing_title">化学方程式配平</h1>
     <div id="balancing_description">
         <p>支持化学方程式与离子方程式配平，自动识别守恒元素与电荷。</p>
@@ -48,19 +58,39 @@
             <div id="custom_input">
                 <label for="custom_species">不常见离子/分子</label>
                 <div class="custom_row">
-                    <input id="custom_species" type="text" placeholder="例如：SO4 2-、Fe 3+、NH4 +、H2O" />
+                    <input id="custom_species" type="text" placeholder="例如：SO4 2-、Fe 3+、NH4 +、3 H2O" />
                     <select id="custom_side">
                         <option value="left">放入反应物</option>
                         <option value="right">放入生成物</option>
                     </select>
                     <button id="add_species_btn" type="button">添加</button>
                 </div>
-                <p class="custom_hint">电荷与主体用空格隔开，输入后会自动进行上下标美化。</p>
+                <p class="custom_hint">电荷、指定的系数与主体用空格隔开，输入后会自动进行上下标美化。</p>
             </div>
 
             <div class="balancing_actions">
                 <button id="balance_btn" type="button">开始配平</button>
                 <button id="reset_btn" type="button">清空</button>
+            </div>
+
+            <div class="balancing_options">
+                <label class="toggle_option">
+                    <input id="lock_coeffs" type="checkbox" />
+                    锁定系数
+                </label>
+                <label class="toggle_option">
+                    <input id="thermo_toggle" type="checkbox" />
+                    改为热化学方程式
+                </label>
+            </div>
+
+            <div id="thermo_selector" class="thermo_selector is-hidden" aria-hidden="true">
+                <div class="thermo_header">
+                    <span>选择标准物质</span>
+                    <span class="thermo_hint">点击后将系数定为 1</span>
+                </div>
+                <div id="thermo_list" class="thermo_list"></div>
+                <p id="thermo_empty" class="thermo_empty">请先添加方程式里的物质。</p>
             </div>
 
             <div id="balance_result" aria-live="polite"></div>
@@ -81,6 +111,10 @@
             <div id="suggestion_cards" class="species_grid"></div>
         </div>
     </div>
+    <footer class="site-footer">
+        <div>&copy; 2026 ChemWeb · 302025510036@zjut.edu.cn</div>
+        <div><a href="https://github.com/Zn070515/ChemWeb" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+    </footer>
 
     <script src="./balancing.js"></script>
 </body>

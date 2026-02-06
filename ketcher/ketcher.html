@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChemWeb - 化学结构式编辑器</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./ketcher.css">
+</head>
+<body>
+    <nav class="site-nav">
+        <a class="nav-brand" href="../index.html">ChemWeb</a>
+        <div class="nav-links">
+            <a href="../index.html">首页</a>
+            <a href="../knowledge/knowledge.html">知识速览</a>
+            <a href="../elements/elements.html">元素速查</a>
+            <a href="../calculation/calculation.html">式量计算与配平</a>
+            <a href="../extension/extension.html">拓展知识</a>
+            <a href="./ketcher.html">结构式编辑</a>
+        </div>
+    </nav>
+    <main class="ketcher-page">
+        <h1 class="ketcher-title">化学结构式编辑器</h1>
+        <p class="ketcher-subtitle">使用 Ketcher 绘制结构式，支持常见格式的导入与导出。</p>
+        <div class="ketcher-panel">
+            <iframe
+                class="ketcher-iframe"
+                src="./offline/index.html"
+                title="Ketcher Editor"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+            ></iframe>
+            <p class="ketcher-hint">当前使用离线版资源，无需联网。3D 预览已默认连接本机 Indigo 服务 (http://127.0.0.1:8002/v2/)，可用 ?api_path=地址 覆盖。</p>
+            <a class="ketcher-link" href="https://github.com/epam/ketcher" target="_blank" rel="noopener noreferrer">访问 Ketcher GitHub</a>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div>&copy; 2026 ChemWeb · 302025510036@zjut.edu.cn</div>
+        <div><a href="https://github.com/Zn070515/ChemWeb" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+    </footer>
+    <script>
+        (function () {
+            const iframe = document.querySelector('.ketcher-iframe');
+            if (!iframe) {
+                return;
+            }
+            const params = new URLSearchParams(window.location.search);
+            const apiPath = params.get('api_path') || 'http://127.0.0.1:8002/v2/';
+            const baseSrc = iframe.getAttribute('src') || './offline/index.html';
+            const url = new URL(baseSrc, window.location.href);
+            url.searchParams.set('api_path', apiPath);
+            iframe.src = url.toString();
+        })();
+    </script>
+</body>
+</html>

@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+    <nav class="site-nav">
+        <a class="nav-brand" href="./index.html">ChemWeb</a>
+        <div class="nav-links">
+            <a href="./index.html">首页</a>
+            <a href="./knowledge/knowledge.html">知识速览</a>
+            <a href="./elements/elements.html">元素速查</a>
+            <a href="./calculation/calculation.html">式量计算与配平</a>
+            <a href="./extension/extension.html">拓展知识</a>
+        </div>
+    </nav>
     <h1 id="top_title">欢迎来到 ChemWeb，高中化学学习平台！</h1>
     <div id="discription">
         <p>ChemWeb 是一个专为高中生设计的化学学习平台，旨在帮助学生更好地理解化学概念、提升实验技能，并为高考做好准备。</p>
@@ -21,6 +31,7 @@
             <li>全面的化学课程覆盖高中所有章节</li>
             <li>元素性质速查</li>
             <li>式量计算与方程式配平</li>
+            <li>化学结构式编辑器</li>
             <li>拓展知识</li>
         </ul>
     </div>
@@ -30,7 +41,7 @@
             <p>针对高中书本内容的整理</p>
         </div>
         <div id="section_2" onclick="window.location.href='./calculation/calculation.html'">
-            <h3>化学式量计算</h3>
+            <h3>化学式量计算与配平</h3>
             <p>支持式量计算与化学方程式配平。</p>
         </div>
         <div id="section_3" onclick="window.location.href='./elements/elements.html'">
@@ -41,9 +52,14 @@
             <h3>拓展知识</h3>
             <p>补充竞赛与高考中的重难点内容。</p>
         </div>
+        <div id="section_5" onclick="window.location.href='./ketcher/ketcher.html'">
+            <h3>化学结构式编辑器</h3>
+            <p>基于 Ketcher 的结构式绘制与导出。</p>
+        </div>
     </div>
-    <footer id="footer" style="text-align: center; margin-top: 20px;">
-        <p>&copy; 2026 ChemWeb. 版权归作者所有，转载、二创等行为请注明出处。</p> 
+    <footer class="site-footer">
+        <div>&copy; 2026 ChemWeb · 302025510036@zjut.edu.cn</div>
+        <div><a href="https://github.com/Zn070515/ChemWeb" target="_blank" rel="noopener noreferrer">GitHub</a></div>
     </footer>
 </body>
 </html>

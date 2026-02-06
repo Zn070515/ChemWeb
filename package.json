@@ -1,0 +1,24 @@
+{
+  "name": "chemweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zn070515/ChemWeb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Zn070515/ChemWeb/issues"
+  },
+  "homepage": "https://github.com/Zn070515/ChemWeb#readme",
+  "dependencies": {
+    "esbuild": "^0.27.3"
+  }
+}
