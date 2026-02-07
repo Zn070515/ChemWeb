@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap');
+
+:root {
+	--ink: #0f172a;
+	--muted: #475569;
+	--soft: #f1f5f9;
+	--card: #f8fafc;
+	--stroke: #dbe3ef;
+	--accent: #10b981;
+	--accent-strong: #0ea5e9;
+	--shadow: rgba(15, 23, 42, 0.12);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: 'Source Sans 3', sans-serif;
+	color: var(--ink);
+	background:
+		radial-gradient(circle at 12% 10%, rgba(16, 185, 129, 0.18), transparent 45%),
+		radial-gradient(circle at 88% 12%, rgba(14, 165, 233, 0.16), transparent 45%),
+		#f8fafc;
+}
+
+.site-nav {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	padding: 12px 8%;
+	background: rgba(248, 250, 252, 0.9);
+	border-bottom: 1px solid var(--stroke);
+	backdrop-filter: blur(8px);
+}
+
+.nav-brand {
+	font-family: 'Space Grotesk', sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	color: var(--ink);
+	letter-spacing: 0.4px;
+}
+
+.nav-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: var(--muted);
+	font-size: 14px;
+	padding: 6px 10px;
+	border-radius: 999px;
+	transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-links a:hover {
+	color: var(--ink);
+	background: rgba(14, 165, 233, 0.12);
+}
+
+.site-footer {
+	width: min(900px, 90%);
+	margin: 30px auto 24px;
+	padding: 16px 20px 4px;
+	border-top: 1px solid var(--stroke);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	color: var(--muted);
+	font-size: 14px;
+}
+
+.site-footer a {
+	color: var(--ink);
+	text-decoration: none;
+}
+
+.site-footer a:hover {
+	text-decoration: underline;
+}
+
+#knowledge_title {
+	color: var(--ink);
+	font-size: 34px;
+	text-align: center;
+	margin-top: 60px;
+	font-family: 'Space Grotesk', sans-serif;
+}
+#knowledge_description {
+	width: min(720px, 85%);
+	margin: 16px auto 28px;
+	font-size: 18px;
+	line-height: 1.7;
+	color: var(--muted);
+	text-align: center;
+}
+#knowledge_content {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(240px, 1fr));
+	gap: 24px;
+	width: 80%;
+	margin: 40px auto 60px;
+}
+.knowledge_card {
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(248, 250, 252, 0.8));
+	border: 1px solid var(--stroke);
+	border-radius: 16px;
+	padding: 20px 24px;
+	box-shadow: 0 10px 22px rgba(15, 23, 42, 0.1);
+	text-decoration: none;
+	color: inherit;
+	display: block;
+	cursor: pointer;
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+	position: relative;
+	overflow: hidden;
+}
+.knowledge_card:hover {
+	transform: translateY(-4px) scale(1.01);
+	box-shadow: 0 16px 30px rgba(15, 23, 42, 0.16);
+}
+.knowledge_card h3 {
+	margin: 0 0 10px;
+	color: var(--ink);
+	font-size: 20px;
+	font-family: 'Space Grotesk', sans-serif;
+}
+.knowledge_card p {
+	margin: 0;
+	color: var(--muted);
+	line-height: 1.6;
+	font-size: 16px;
+}
+.knowledge_card::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.12), transparent 55%);
+	opacity: 0;
+	transition: opacity 0.25s ease;
+	pointer-events: none;
+}
+.knowledge_card:hover::after {
+	opacity: 1;
+}
+@media (max-width: 768px) {
+	.site-nav {
+		padding: 12px 6%;
+	}
+	.site-footer {
+		flex-direction: column;
+		text-align: center;
+	}
+	#knowledge_content {
+		grid-template-columns: 1fr;
+	}
+}

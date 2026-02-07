@@ -1,0 +1,34 @@
+<script setup>
+import '../assets/knowledge.css'
+</script>
+
+<template>
+  <h1 id="knowledge_title">高中知识速览</h1>
+  <div id="knowledge_description">
+    <p>本部分内容涵盖高中化学的核心知识点，帮助学生系统复习和巩固所学内容。</p>
+    <p>该模块旨在说明<strong>回归课本</strong>的重要性，内容仅供参考复习。</p>
+    <p>勘误请致信302025510036@zjut.edu.cn</p>
+  </div>
+  <div id="knowledge_content">
+    <RouterLink class="knowledge_card" to="/knowledge/compulsory-1">
+      <h3>必修一</h3>
+      <p>基础概念、常见元素与物质性质梳理。</p>
+    </RouterLink>
+    <RouterLink class="knowledge_card" to="/knowledge/compulsory-2">
+      <h3>必修二</h3>
+      <p>继续介绍了一些元素的性质与反应规律。</p>
+    </RouterLink>
+    <RouterLink class="knowledge_card" to="/knowledge/elective-1">
+      <h3>选修一</h3>
+      <p>化学反应原理与计算方法强化。</p>
+    </RouterLink>
+    <RouterLink class="knowledge_card" to="/knowledge/elective-2">
+      <h3>选修二</h3>
+      <p>物质结构与性质、晶体与化学键。</p>
+    </RouterLink>
+    <RouterLink class="knowledge_card" to="/knowledge/elective-3">
+      <h3>选修三</h3>
+      <p>有机化学入门。</p>
+    </RouterLink>
+  </div>
+</template>

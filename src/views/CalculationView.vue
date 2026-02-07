@@ -1,0 +1,21 @@
+<script setup>
+import { onMounted } from 'vue'
+import '../assets/calculation.css'
+
+onMounted(() => {
+  import('../modules/calculation.js')
+})
+</script>
+
+<template>
+  <h1 id="calculation_title">化学式量计算</h1>
+  <div id="calculation_description">
+    <p>目前仅支持式量计算与化学方程式配平相关功能。</p>
+  </div>
+  <div id="calculation_content">
+    <div class="calculation_card" id="balance_card">
+      <h3>化学方程式配平</h3>
+      <p>点击进入配平工具。</p>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>氧化还原 + 电化学 - ChemWeb</title>
+    <link rel="stylesheet" href="../../extension.css">
+</head>
+<body>
+    <nav class="site-nav">
+        <a class="nav-brand" href="../../index.html">ChemWeb</a>
+        <div class="nav-links">
+            <a href="../../index.html">首页</a>
+            <a href="../../knowledge/knowledge.html">知识速览</a>
+            <a href="../../elements/elements.html">元素速查</a>
+            <a href="../../calculation/calculation.html">式量计算</a>
+            <a href="../../extension/extension.html">拓展知识</a>
+        </div>
+    </nav>
+    <div class="extension_detail">
+        <h1>氧化还原 + 电化学</h1>
+        <p class="extension_meta">竞赛重点模块</p>
+
+        <h2 class="summary_title">摘要</h2>
+        <ul class="summary_list">
+            <li>电极电势的物理图像与标准氢电极基准</li>
+            <li>E<sup>θ</sup>、ΔG<sup>θ</sup> 与 K 的关系：ΔG<sup>θ</sup> = -nF E<sup>θ</sup></li>
+            <li>能斯特方程：E = E<sup>θ</sup> - (0.0592/n) lgQ（25℃）</li>
+            <li>用电极电势定量判断放电顺序</li>
+            <li>氯碱工业电解与离子交换膜作用</li>
+            <li>E<sup>θ</sup> 正负与氧化性/还原性强弱</li>
+        </ul>
+
+        <section class="detail_section">
+            <h2>电极电势：核心概念</h2>
+            <h3>写在前面</h3>
+            <p>本节以电化学为切入点拓展氧化还原概念，重点解释电极电势及其热力学意义。原文作者提示自己可能久未翻阅教材，建议结合课本核对。</p>
+
+            <h3>电势差从何而来</h3>
+            <p>在 Zn-Cu 原电池中（CuSO<sub>4</sub> 电解质），Zn 更易失电子，Cu<sup>2+</sup> 更易得电子沉积。Zn 电极失电子后带负电，附近溶液带正电，从而形成 <span class="highlight">电极电势</span>。</p>
+            <p>电极电势不仅存在于金属，任何能发生氧化还原的固体、液体、气体都可能具有电极电势。</p>
+
+            <h3>标准氢电极（SHE）</h3>
+            <p>实验只能测电势差，因此规定标准氢电极（100 kPa H<sub>2</sub>、1 mol/L H<sup>+</sup>、铂黑电极）电势为 0.00 V。与其组成原电池测得的电势差即该电极电势。</p>
+            <p>标准条件下（室温、1 mol/L、100 kPa）测得的电势称 <span class="highlight">标准电极电势</span> E<sup>θ</sup>。例：E<sup>θ</sup>(Zn<sup>2+</sup>/Zn) = -0.76 V，E<sup>θ</sup>(Cu<sup>2+</sup>/Cu) = +0.34 V，电池电压为 1.10 V。</p>
+            <p>该例假设有盐桥连接 1 mol/L 的 ZnSO<sub>4</sub> 与 CuSO<sub>4</sub> 溶液。</p>
+
+            <h3>记法与正负</h3>
+            <p>Ox + n e- -> Red，记作 E<sup>θ</sup>(Ox/Red)。例如：</p>
+            <p class="callout">Zn<sup>2+</sup> + 2 e<sup>-</sup> -> Zn，E<sup>θ</sup>(Zn<sup>2+</sup>/Zn) = -0.76 V。</p>
+            <p>同一对电极的氧化/还原电势数值相等、符号相反，很多表格默认给出氧化电势。</p>
+            <p>E<sup>θ</sup> 越正氧化性越强，越负还原性越强。</p>
+        </section>
+
+        <section class="detail_section">
+            <h2>热力学联系：ΔG 与能斯特方程</h2>
+            <h3>ΔG 与 Etheta</h3>
+            <p>电池的最大非体积功等于电功。W = Q E，Q = nF，则：</p>
+            <p class="callout">ΔG<sup>θ</sup> = -nF E<sup>θ</sup>。</p>
+            <p>又有 ΔG<sup>θ</sup> = -RT ln K，因此：</p>
+            <p class="callout">E<sup>θ</sup> = (RT / nF) ln K。</p>
+            <p>F 为法拉第常数（1 mol 电子电量，F = e NA）。</p>
+
+            <h3>能斯特方程</h3>
+            <p>非标准条件下：Δ G = ΔG<sup>θ</sup> + RT ln Q，得到：</p>
+            <p class="callout">E = E<sup>θ</sup> - (RT / nF) ln Q；25℃ 时 E = E<sup>θ</sup> - (0.0592 / n) lgQ。</p>
+            <p>例：Zn<sup>2+</sup> = 0.01 mol/L 时，E(Zn<sup>2+</sup>/Zn) = -0.76 - 0.0592/2 * lg(0.01) = -0.708 V。</p>
+        </section>
+
+        <section class="detail_section">
+            <h2>应用：氯碱工业</h2>
+            <p>总反应：2 NaCl + 2 H<sub>2</sub>O（电解）-> 2 NaOH + H<sub>2</sub> + Cl<sub>2</sub>。</p>
+            <p>Cl<sub>2</sub> 与 NaOH 同处一室会歧化：Cl<sub>2</sub> + 2 OH<sup>-</sup> -> Cl<sup>-</sup> + ClO<sup>-</sup> + H<sub>2</sub>O，因此需用离子交换膜隔开。</p>
+
+            <h3>电极反应</h3>
+            <p>阴极：2 H<sub>2</sub>O + 2 e<sup>-</sup> -> 2 OH<sup>-</sup> + H<sub>2</sub>。</p>
+            <p>阳极：2 Cl<sup>-</sup> -> Cl<sub>2</sub> + 2 e<sup>-</sup>。</p>
+
+            <h3>放电顺序定量分析</h3>
+            <p>298 K，0.1 mol/L NaCl：</p>
+            <p>Na<sup>+</sup> + e<sup>-</sup> -> Na，E = -2.71 + 0.0592 lg 0.1 = -2.76 V。</p>
+            <p>Cl<sub>2</sub> + 2 e<sup>-</sup> -> 2 Cl<sup>-</sup>，E = 1.36 - 0.0592/2 * lg 0.12 = +1.42 V。</p>
+            <p>2 H<sup>+</sup> + 2 e<sup>-</sup> -> H<sub>2</sub>，E = 0 + 0.0592/2 * lg(10<sup>-7</sup>)<sup>2</sup> = -0.4144 V。</p>
+            <p>O<sub>2</sub> + 2 H<sub>2</sub>O + 4 e<sup>-</sup> -> 4 OH<sup>-</sup>，E = 0.401 - 0.0592/4 * lg(10<sup>-7</sup>)<sup>4</sup> = +0.8154 V。</p>
+            <p>阳极为氧化过程，电势取反，可判断阳极放电为 Cl<sup>-</sup>，阴极为 H<sub>2</sub>。</p>
+
+            <h3>热力学代价</h3>
+            <p>ΔG = 2 Δf Gm(OH<sup>-</sup>) + Δf Gm(H<sub>2</sub>) + Δf Gm(Cl<sub>2</sub>) - 2 Δf Gm(H<sub>2</sub>O) - 2 Δf Gm(Cl<sup>-</sup>)。</p>
+            <p>代入数值得 ΔG = 422.2 kJ/mol，反应非自发，需输入电能，但产物价值高，工业上可行。</p>
+            <p>提示：ΔG = ΔH - T ΔS，ΔH 为反应焓变，ΔS 为熵变。</p>
+        </section>
+
+        <section class="detail_section">
+            <h2>附录提示</h2>
+            <p>标准电极电势、酸表、碱表常作为附录表格，便于快速解题。</p>
+            
+        </section>
+
+        <p><a href="../../extension.html">返回拓展知识</a></p>
+    </div>
+    <footer class="site-footer">
+        <div>&copy; 2026 ChemWeb · 302025510036@zjut.edu.cn</div>
+        <div><a href="https://github.com/Zn070515/ChemWeb" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+    </footer>
+</body>
+</html>
