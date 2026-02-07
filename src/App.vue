@@ -7,7 +7,7 @@
       <RouterLink to="/elements">元素速查</RouterLink>
       <RouterLink to="/calculation">式量计算与配平</RouterLink>
       <RouterLink to="/extension">拓展知识</RouterLink>
-      <RouterLink to="/ketcher">结构式编辑</RouterLink>
+      <RouterLink to="/chemdoodle">结构式编辑</RouterLink>
     </div>
   </nav>
   <main>

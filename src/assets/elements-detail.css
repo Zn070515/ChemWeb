@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap');
 
 :root {
     --ink: #0f172a;
@@ -17,7 +16,6 @@
 
 body {
     margin: 0;
-    font-family: 'Source Sans 3', sans-serif;
     color: var(--ink);
     background:
         radial-gradient(circle at 12% 10%, rgba(16, 185, 129, 0.18), transparent 45%),
@@ -40,7 +38,6 @@ body {
 }
 
 .nav-brand {
-    font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
     text-decoration: none;
     color: var(--ink);
@@ -94,7 +91,6 @@ body {
     font-size: 34px;
     text-align: center;
     margin-top: 60px;
-    font-family: 'Space Grotesk', sans-serif;
 }
 #detail_description {
     width: min(720px, 85%);
@@ -123,7 +119,6 @@ body {
     font-size: 48px;
     font-weight: 700;
     color: var(--ink);
-    font-family: 'Space Grotesk', sans-serif;
 }
 .detail_name {
     font-size: 24px;
@@ -159,7 +154,6 @@ body {
     margin: 0 0 8px;
     font-size: 16px;
     color: var(--ink);
-    font-family: 'Space Grotesk', sans-serif;
 }
 .detail_property-list {
     list-style: none;
@@ -192,7 +186,6 @@ body {
     margin: 0 0 8px;
     color: var(--ink);
     font-size: 18px;
-    font-family: 'Space Grotesk', sans-serif;
 }
 .detail_section p {
     margin: 0;
@@ -212,11 +205,38 @@ body {
     color: #ffffff;
     text-decoration: none;
     border-radius: 999px;
-    font-family: 'Space Grotesk', sans-serif;
     transition: background 0.2s ease;
 }
 #back_link:hover {
     background: #0b1220;
+}
+.detail_nav-arrow {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(15, 23, 42, 0.9);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.18);
+    z-index: 8;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+.detail_nav-arrow:hover {
+    background: rgba(15, 23, 42, 1);
+    transform: translateY(-50%) scale(1.05);
+}
+.detail_nav-prev {
+    left: 18px;
+}
+.detail_nav-next {
+    right: 18px;
 }
 @media (max-width: 900px) {
     .detail_main {
@@ -224,6 +244,11 @@ body {
     }
     #detail_sections {
         grid-template-columns: 1fr;
+    }
+    .detail_nav-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
     }
 }
 

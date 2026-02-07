@@ -1,0 +1,102 @@
+
+:root {
+    --doc-ink: #0f172a;
+    --doc-muted: #475569;
+    --doc-surface: rgba(255, 255, 255, 0.96);
+    --doc-stroke: #dbe3ef;
+}
+
+.readme-doc {
+    width: min(960px, 92%);
+    margin: 60px auto 80px;
+    color: var(--doc-ink);
+}
+
+.readme-doc__title {
+    margin: 0 0 10px;
+    font-size: 34px;
+}
+
+.readme-doc__subtitle {
+    margin: 0 0 24px;
+    color: var(--doc-muted);
+    font-size: 16px;
+}
+
+.readme-doc__content {
+    margin: 0;
+    padding: 22px 24px;
+    background: var(--doc-surface);
+    border: 1px solid var(--doc-stroke);
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--doc-ink);
+}
+
+.readme-doc__content h1,
+.readme-doc__content h2,
+.readme-doc__content h3 {
+    margin: 18px 0 10px;
+    color: var(--doc-ink);
+}
+
+.readme-doc__content h1 {
+    font-size: 24px;
+}
+
+.readme-doc__content h2 {
+    font-size: 20px;
+}
+
+.readme-doc__content h3 {
+    font-size: 18px;
+}
+
+.readme-doc__content p {
+    margin: 8px 0;
+    color: var(--doc-ink);
+}
+
+.readme-doc__content ul,
+.readme-doc__content ol {
+    margin: 8px 0 12px 20px;
+    padding: 0;
+}
+
+.readme-doc__content li {
+    margin: 6px 0;
+}
+
+.readme-doc__content code {
+    padding: 2px 6px;
+    border-radius: 6px;
+    background: rgba(15, 23, 42, 0.06);
+    font-size: 13px;
+}
+
+.readme-doc__content pre {
+    margin: 12px 0;
+    padding: 14px 16px;
+    background: #0f172a;
+    color: #e2e8f0;
+    border-radius: 12px;
+    overflow: auto;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.readme-doc__content pre code {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+}
+
+.readme-doc__content a {
+    color: #0ea5e9;
+    text-decoration: none;
+}
+
+.readme-doc__content a:hover {
+    text-decoration: underline;
+}

@@ -48,7 +48,7 @@ const go = (path) => {
       <h3>拓展知识</h3>
       <p>补充竞赛与高考中的重难点内容。</p>
     </div>
-    <div id="section_5" @click="go('/ketcher')">
+    <div id="section_5" @click="go('/chemdoodle')">
       <h3>化学结构式编辑器</h3>
       <p>基于 ChemDoodle Web Components 的结构式绘制与导出。</p>
     </div>

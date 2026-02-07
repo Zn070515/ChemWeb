@@ -39,7 +39,7 @@
                                             "ionizationEnergy4":  "-",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "2H<sup>+</sup> + 2e<sup>-</sup> = H<sub>2</sub>（E<sup>°</sup> = 0.00 V）<br>2H<sub>2</sub>O + 2e<sup>-</sup> = H<sub>2</sub> + 2OH<sup>-</sup>（E<sup>°</sup> = -0.828 V）"
+                                            "standardElectrodePotential":  "H<sub>2</sub>(g) + 2e<sup>-</sup> = 2H<sup>-</sup>（E<sup>θ</sup> = -2.23 V）<br>H<sup>+</sup> + e<sup>-</sup> = H(g)（E<sup>θ</sup> = -2.107 V）<br>2H<sup>+</sup> + 2e<sup>-</sup> = H<sub>2</sub>（E<sup>θ</sup> = 0 V）<br>2H<sub>2</sub>O + 2e<sup>-</sup> = H<sub>2</sub> + 2OH<sup>-</sup>（E<sup>θ</sup> = -0.828 V）"
                                         }
                      },
                      {
@@ -111,7 +111,7 @@
                                             "ionizationEnergy4":  "-",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Li<sup>+</sup> + e<sup>-</sup> = Li（E<sup>°</sup> = -3.045 V）"
+                                            "standardElectrodePotential":  "Li<sup>+</sup> + e<sup>-</sup> = Li（E<sup>θ</sup> = -3.045 V）"
                                         }
                      },
                      {
@@ -147,7 +147,7 @@
                                             "ionizationEnergy4":  "21006.6",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Be<sup>2+</sup> + 2e<sup>-</sup> = Be（E<sup>°</sup> = -1.847 V）<br>BeO<sup>2-</sup> + 3HO + 4e<sup>-</sup> = 2Be + 6OH-232（E<sup>°</sup> = -2.63 V）<br>BeO + HO + e<sup>-</sup> = Be + 2OH-2（E<sup>°</sup> = -2.613 V）"
+                                            "standardElectrodePotential":  "Be<sub>2</sub><sup>+</sup> + 2e<sup>-</sup> = Be（E<sup>θ</sup> = -1.847 V）<br>Be<sub>2</sub>O<sub>32</sub><sup>-</sup> + 3H<sub>2</sub>O + 4e<sup>-</sup> = 2Be + 6OH<sup>-</sup>（E<sup>θ</sup> = -2.63 V）<br>BeO + H<sub>2</sub>O + e<sup>-</sup> = Be + 2OH<sup>-</sup>（E<sup>θ</sup> = -2.613 V）"
                                         }
                      },
                      {
@@ -183,7 +183,7 @@
                                             "ionizationEnergy4":  "25025.8",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "HBO + 3H<sup>+</sup> + 3e<sup>-</sup> = B + 3HO<sub>332</sub>（E<sup>°</sup> = -0.87 V）<br>HBO<sup>-</sup> + HO + 3e<sup>-</sup> = B + 4OH-232（E<sup>°</sup> = -1.79 V）"
+                                            "standardElectrodePotential":  "H<sub>3</sub>BO 3 + 3H<sup>+</sup> + 3e<sup>-</sup> = B + 3H<sub>2</sub>O（E<sup>θ</sup> = -0.87 V）<br>H<sub>2</sub>BO 3<sup>-</sup> + H<sub>2</sub>O + 3e<sup>-</sup> = B + 4OH<sup>-</sup>（E<sup>θ</sup> = -1.79 V）"
                                         }
                      },
                      {
@@ -219,7 +219,7 @@
                                             "ionizationEnergy4":  "6222.7",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "2CO + 2H<sup>+</sup> + 2e<sup>-</sup> = HCO<sub>2224</sub>（E<sup>°</sup> = -0.49 V）<br>CO<sub>2</sub>(g) + 2H<sup>+</sup> + 2e<sup>-</sup> = HCOOH(aq)（E<sup>°</sup> = -0.199 V）<br>CO(g) + 2H<sup>+</sup> + 2e<sup>-</sup> = CO + HO<sub>22</sub>（E<sup>°</sup> = -0.12 V）<br>C + 4H<sup>+</sup> + 4e<sup>-</sup> = CH<sub>4</sub>（E<sup>°</sup> = 0.1316 V）"
+                                            "standardElectrodePotential":  "2CO<sub>2</sub> + 2H<sup>+</sup> + 2e<sup>-</sup> = H<sub>2</sub>C<sub>2</sub>O<sub>4</sub>（E<sup>θ</sup> = -0.49 V）<br>CO<sub>2</sub>(g) + 2H<sup>+</sup> + 2e<sup>-</sup> = HCOOH(aq)（E<sup>θ</sup> = -0.199 V）<br>CO<sub>2</sub>(g) + 2H<sup>+</sup> + 2e<sup>-</sup> = CO + H<sub>2</sub>O（E<sup>θ</sup> = -0.12 V）<br>C + 4H<sup>+</sup> + 4e<sup>-</sup> = CH<sub>4</sub>（E<sup>θ</sup> = 0.1316 V）"
                                         }
                      },
                      {
@@ -255,7 +255,7 @@
                                             "ionizationEnergy4":  "7475",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "2NO<sup>-</sup> + 4H<sup>+</sup> + 2e<sup>-</sup> = NO(g) + 2HO<sub>3242</sub>（E<sup>°</sup> = 0.803 V）<br>NO<sup>-</sup> + 3H<sup>+</sup> + 2e<sup>-</sup> = HNO + HO<sub>322</sub>（E<sup>°</sup> = 0.934 V）<br>NO<sup>-</sup> + 4H<sup>+</sup> + 3e<sup>-</sup> = NO + 2HO<sub>32</sub>（E<sup>°</sup> = 0.957 V）<br>HNO + H<sup>+</sup> + e<sup>-</sup> = NO + HO<sub>22</sub>（E<sup>°</sup> = 0.983 V）<br>NO + 4H<sup>+</sup> + 4e<sup>-</sup> = 2NO + 2HO<sub>242</sub>（E<sup>°</sup> = 1.03 V）<br>NO + 2H<sup>+</sup> + 2e<sup>-</sup> = 2HNO<sub>242</sub>（E<sup>°</sup> = 1.07 V）<br>2HNO(aq) + 4H<sup>+</sup> + 4e<sup>-</sup> = NO(g) + 3HO<sub>222</sub>（E<sup>°</sup> = 1.297 V）<br>2NO + 2H<sup>+</sup> + 2e<sup>-</sup> = NO + HO<sub>22</sub>（E<sup>°</sup> = 1.59 V）<br>NO + 2H<sup>+</sup> + 2e<sup>-</sup> = N + HO<sub>222</sub>（E<sup>°</sup> = 1.766 V）<br>N + 4HO + 2e<sup>-</sup> = 2NHOH + 2OH-222（E<sup>°</sup> = -3.04 V）<br>2NO<sup>-</sup> + 2HO + 2e<sup>-</sup> = NO + 4OH-3224（E<sup>°</sup> = -0.85 V）<br>NO<sup>-</sup> + HO + e<sup>-</sup> = NO + 2OH-22（E<sup>°</sup> = -0.46 V）<br>NO<sup>-</sup> + HO + 2e<sup>-</sup> = NO<sup>-</sup> + 2OH-322（E<sup>°</sup> = 0.01 V）<br>2NO<sup>-</sup> + 3HO + 4e<sup>-</sup> = NO + 6OH-222（E<sup>°</sup> = 0.15 V）<br>2NH<sub>2</sub>OH + 2e<sup>-</sup> = NH + 2OH-24（E<sup>°</sup> = 0.73 V）<br>2NO + HO + 2e<sup>-</sup> = NO + 2OH-22（E<sup>°</sup> = 0.76 V）"
+                                            "standardElectrodePotential":  "3N<sub>2</sub> + 2H<sup>+</sup> + 2e<sup>-</sup> = 2HN<sub>3</sub>(g)（E<sup>θ</sup> = -3.4 V）<br>3N<sub>2</sub> + 2H<sup>+</sup> + 2e<sup>-</sup> = 2HN<sub>3</sub>(aq)（E<sup>θ</sup> = -3.1 V）<br>2NO<sub>3</sub><sup>-</sup> + 4H<sup>+</sup> + 2e<sup>-</sup> = N<sub>2</sub>O<sub>4</sub>(g) + 2H<sub>2</sub>O（E<sup>θ</sup> = 0.803 V）<br>NO<sub>3</sub><sup>-</sup> + 3H<sup>+</sup> + 2e<sup>-</sup> = HNO<sub>2</sub> + H<sub>2</sub>O（E<sup>θ</sup> = 0.934 V）<br>NO<sub>3</sub><sup>-</sup> + 4H<sup>+</sup> + 3e<sup>-</sup> = NO + 2H<sub>2</sub>O（E<sup>θ</sup> = 0.957 V）<br>HNO<sub>2</sub> + H<sup>+</sup> + e<sup>-</sup> = NO + H<sub>2</sub>O（E<sup>θ</sup> = 0.983 V）<br>N<sub>2</sub>O<sub>4</sub> + 4H<sup>+</sup> + 4e<sup>-</sup> = 2NO + 2H<sub>2</sub>O（E<sup>θ</sup> = 1.03 V）<br>N<sub>2</sub>O<sub>4</sub> + 2H<sup>+</sup> + 2e<sup>-</sup> = 2HNO<sub>2</sub>（E<sup>θ</sup> = 1.07 V）<br>2HNO<sub>2</sub>(aq) + 4H<sup>+</sup> + 4e<sup>-</sup> = N<sub>2</sub>O(g) + 3H<sub>2</sub>O（E<sup>θ</sup> = 1.297 V）<br>2NO + 2H<sup>+</sup> + 2e<sup>-</sup> = N<sub>2</sub>O + H<sub>2</sub>O（E<sup>θ</sup> = 1.59 V）<br>N<sub>2</sub>O + 2H<sup>+</sup> + 2e<sup>-</sup> = N<sub>2</sub> + H<sub>2</sub>O（E<sup>θ</sup> = 1.766 V）<br>N<sub>2</sub> + 4H<sub>2</sub>O + 2e<sup>-</sup> = 2NH<sub>2</sub>OH + 2OH<sup>-</sup>（E<sup>θ</sup> = -3.04 V）<br>2NO<sub>3</sub><sup>-</sup> + 2H<sub>2</sub>O + 2e<sup>-</sup> = N<sub>2</sub>O<sub>4</sub> + 4OH<sup>-</sup>（E<sup>θ</sup> = -0.85 V）<br>NO<sub>2</sub><sup>-</sup> + H<sub>2</sub>O + e<sup>-</sup> = NO + 2OH<sup>-</sup>（E<sup>θ</sup> = -0.46 V）<br>NO<sub>3</sub><sup>-</sup> + H<sub>2</sub>O + 2e<sup>-</sup> = NO<sub>2</sub><sup>-</sup> + 2OH<sup>-</sup>（E<sup>θ</sup> = 0.01 V）<br>2NO<sub>2</sub><sup>-</sup> + 3H<sub>2</sub>O + 4e<sup>-</sup> = N<sub>2</sub>O + 6OH<sup>-</sup>（E<sup>θ</sup> = 0.15 V）<br>2NH<sub>2</sub>OH + 2e<sup>-</sup> = N<sub>2</sub>H<sub>4</sub> + 2OH<sup>-</sup>（E<sup>θ</sup> = 0.73 V）<br>2NO + H<sub>2</sub>O + 2e<sup>-</sup> = N<sub>2</sub>O + 2OH<sup>-</sup>（E<sup>θ</sup> = 0.76 V）"
                                         }
                      },
                      {
@@ -291,7 +291,7 @@
                                             "ionizationEnergy4":  "7469.2",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "O + 2H<sup>+</sup> + 2e<sup>-</sup> = HO<sub>222</sub>（E<sup>°</sup> = 0.695 V）<br>O + 4H<sup>+</sup> + 4e<sup>-</sup> = 2HO(g)<sub>22</sub>（E<sup>°</sup> = 1.185 V）<br>O + 4H<sup>+</sup> + 4e<sup>-</sup> = 2HO<sub>22</sub>（E<sup>°</sup> = 1.229 V）<br>HO + 2H<sup>+</sup> + 2e<sup>-</sup> = 2HO<sub>222</sub>（E<sup>°</sup> = 1.776 V）<br>O + 2H<sup>+</sup> + 2e<sup>-</sup> = O + HO<sub>322</sub>（E<sup>°</sup> = 2.076 V）<br>OF + 2H<sup>+</sup> + 4e<sup>-</sup> = HO + 2F-22（E<sup>°</sup> = 2.153 V）<br>OF + 3H<sup>+</sup> + 4e<sup>-</sup> = HO + HF-222（E<sup>°</sup> = 2.21 V）<br>O(g) + 2H<sup>+</sup> + 2e<sup>-</sup> = HO<sub>2</sub>（E<sup>°</sup> = 2.422 V）<br>OH<sup>-</sup> + H<sup>+</sup> + e<sup>-</sup> = HO<sub>2</sub>（E<sup>°</sup> = 2.85 V）<br>2OF + 4e<sup>-</sup> = O + 4F-22（E<sup>°</sup> = 2.962 V）<br>OF + 2e<sup>-</sup> = O + 2F-(约零下100度观测)<sub>222</sub>（E<sup>°</sup> = 3.03 V）<br>O + e<sup>-</sup> = O-22（E<sup>°</sup> = -0.563 V）<br>O + 2HO + 2e<sup>-</sup> = HO + 2OH-2222（E<sup>°</sup> = -0.146 V）<br>O + 2HO + 4e<sup>-</sup> = 4OH-22（E<sup>°</sup> = 0.401 V）<br>O(g) + HO + 2e<sup>-</sup> = O + 2OH-322（E<sup>°</sup> = 1.24 V）<br>OH(g) + e<sup>-</sup> = OH<sup>-</sup>（E<sup>°</sup> = 2.02 V）"
+                                            "standardElectrodePotential":  "O<sub>2</sub> + 2H<sup>+</sup> + 2e<sup>-</sup> = H<sub>2</sub>O<sub>2</sub>（E<sup>θ</sup> = 0.695 V）<br>O<sub>2</sub> + 4H<sup>+</sup> + 4e<sup>-</sup> = 2H<sub>2</sub>O(g)（E<sup>θ</sup> = 1.185 V）<br>O<sub>2</sub> + 4H<sup>+</sup> + 4e<sup>-</sup> = 2H<sub>2</sub>O（E<sup>θ</sup> = 1.229 V）<br>H<sub>2</sub>O<sub>2</sub> + 2H<sup>+</sup> + 2e<sup>-</sup> = 2H<sub>2</sub>O（E<sup>θ</sup> = 1.776 V）<br>O<sub>3</sub> + 2H<sup>+</sup> + 2e<sup>-</sup> = O<sub>2</sub> + H<sub>2</sub>O（E<sup>θ</sup> = 2.076 V）<br>OF<sub>2</sub> + 2H<sup>+</sup> + 4e<sup>-</sup> = H<sub>2</sub>O + 2F<sup>-</sup>（E<sup>θ</sup> = 2.153 V）<br>OF<sub>2</sub> + 3H<sup>+</sup> + 4e<sup>-</sup> = H<sub>2</sub>O + HF<sub>2</sub><sup>-</sup>（E<sup>θ</sup> = 2.21 V）<br>O(g) + 2H<sup>+</sup> + 2e<sup>-</sup> = H<sub>2</sub>O（E<sup>θ</sup> = 2.422 V）<br>OH<sup>-</sup> + H<sup>+</sup> + e<sup>-</sup> = H<sub>2</sub>O（E<sup>θ</sup> = 2.85 V）<br>2OF<sub>2</sub> + 4e<sup>-</sup> = O<sub>2</sub> + 4F<sup>-</sup>（E<sup>θ</sup> = 2.962 V）<br>O<sub>2</sub>F<sub>2</sub> + 2e<sup>-</sup> = O<sub>2</sub> + 2F<sup>-</sup>(约零下 100 度观测)（E<sup>θ</sup> = 3.03 V）<br>O<sub>2</sub> + e<sup>-</sup> = O<sub>2</sub><sup>-</sup>（E<sup>θ</sup> = -0.563 V）<br>O<sub>2</sub> + 2H<sub>2</sub>O + 2e<sup>-</sup> = H<sub>2</sub>O<sub>2</sub> + 2OH<sup>-</sup>（E<sup>θ</sup> = -0.146 V）<br>O<sub>2</sub> + 2H<sub>2</sub>O + 4e<sup>-</sup> = 4OH<sup>-</sup>（E<sup>θ</sup> = 0.401 V）<br>O<sub>3</sub>(g) + H<sub>2</sub>O + 2e<sup>-</sup> = O<sub>2</sub> + 2OH<sup>-</sup>（E<sup>θ</sup> = 1.24 V）<br>OH(g) + e<sup>-</sup> = OH<sup>-</sup>（E<sup>θ</sup> = 2.02 V）"
                                         }
                      },
                      {
@@ -327,7 +327,7 @@
                                             "ionizationEnergy4":  "8407.7",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "F<sub>2</sub> + 2e<sup>-</sup> = 2F<sup>-</sup>（E<sup>°</sup> = 2.866 V）<br>F + H<sup>+</sup> + 2e<sup>-</sup> = HF-22（E<sup>°</sup> = 2.979 V）<br>F + 2H<sup>+</sup> + 2e<sup>-</sup> = 2HF<sub>2</sub>（E<sup>°</sup> = 3.057 V）"
+                                            "standardElectrodePotential":  "F<sub>2</sub>(g) + 2e<sup>-</sup> = 2F<sup>-</sup>（E<sup>θ</sup> = 2.866 V）<br>F<sub>2</sub> + H<sup>+</sup> + 2e<sup>-</sup> = HF<sub>2</sub><sup>-</sup>（E<sup>θ</sup> = 2.979 V）<br>F<sub>2</sub> + 2H<sup>+</sup> + 2e<sup>-</sup> = 2HF（E<sup>θ</sup> = 3.057 V）"
                                         }
                      },
                      {
@@ -399,7 +399,7 @@
                                             "ionizationEnergy4":  "9543",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Na<sup>+</sup> + e<sup>-</sup> = Na（E<sup>°</sup> = -2.714 V）"
+                                            "standardElectrodePotential":  "Na<sup>+</sup> + e<sup>-</sup> = Na（E<sup>θ</sup> = -2.714 V）"
                                         }
                      },
                      {
@@ -435,7 +435,7 @@
                                             "ionizationEnergy4":  "10542.5",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Mg<sup>2+</sup> + 2e<sup>-</sup> = Mg（E<sup>°</sup> = -2.372 V）<br>Mg(OH) + 2e<sup>-</sup> = Mg + 2OH-2（E<sup>°</sup> = -2.69 V）"
+                                            "standardElectrodePotential":  "Mg 2<sup>+</sup> + 2e<sup>-</sup> = Mg（E<sup>θ</sup> = -2.372 V）<br>Mg(OH)<sub>2</sub> + 2e<sup>-</sup> = Mg + 2OH<sup>-</sup>（E<sup>θ</sup> = -2.69 V）"
                                         }
                      },
                      {
@@ -471,7 +471,7 @@
                                             "ionizationEnergy4":  "11577",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "AlF<sup>3-</sup> + 3e<sup>-</sup> = Al + 6F-6（E<sup>°</sup> = -2.069 V）<br>Al<sup>3+</sup> + 3e<sup>-</sup> = Al（E<sup>°</sup> = -1.662 V）<br>HAlO<sup>-</sup> + HO + 3e<sup>-</sup> = Al + OH-232（E<sup>°</sup> = -2.33 V）<br>Al(OH) + 3e<sup>-</sup> = Al + 3OH-3（E<sup>°</sup> = -2.3 V）"
+                                            "standardElectrodePotential":  "AlF 63<sup>-</sup> + 3e<sup>-</sup> = Al + 6F<sup>-</sup>（E<sup>θ</sup> = -2.069 V）<br>Al 3<sup>+</sup> + 3e<sup>-</sup> = Al（E<sup>θ</sup> = -1.662 V）<br>H<sub>2</sub>AlO<sub>3</sub><sup>-</sup> + H<sub>2</sub>O + 3e<sup>-</sup> = Al + OH<sup>-</sup>（E<sup>θ</sup> = -2.33 V）<br>Al(OH)<sub>3</sub> + 3e<sup>-</sup> = Al + 3OH<sup>-</sup>（E<sup>θ</sup> = -2.3 V）"
                                         }
                      },
                      {
@@ -507,7 +507,7 @@
                                             "ionizationEnergy4":  "4355.5",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "[SiF]<sup>2-</sup> + 4e<sup>-</sup> = Si + 6F-6（E<sup>°</sup> = -1.24 V）<br>SiO<sub>2</sub> + 4H<sup>+</sup> + 4e<sup>-</sup> = Si + 2H<sub>2</sub>O（E<sup>°</sup> = -0.857 V）<br>SiO + 2H<sup>+</sup> + 2e<sup>-</sup> = Si + H<sub>2</sub>O（E<sup>°</sup> = -0.8 V）<br>Si + 4H<sup>+</sup> + 4e<sup>-</sup> = SiH<sub>4</sub>（E<sup>°</sup> = 0.102 V）<br>SiO + 4H<sup>+</sup> + 4e<sup>-</sup> = Si + 2HO<sub>22</sub>（E<sup>°</sup> = 0.857 V）<br>SiO<sup>2-</sup> + 3HO + 4e<sup>-</sup> = Si + 6OH-32（E<sup>°</sup> = -1.697 V）"
+                                            "standardElectrodePotential":  "[SiF<sub>6</sub>]2<sup>-</sup> + 4e<sup>-</sup> = Si + 6F<sup>-</sup>（E<sup>θ</sup> = -1.24 V）<br>SiO<sub>2</sub> + 4H<sup>+</sup> + 4e<sup>-</sup> = Si + 2H<sub>2</sub>O（E<sup>θ</sup> = -0.857 V）<br>SiO + 2H<sup>+</sup> + 2e<sup>-</sup> = Si + H<sub>2</sub>O（E<sup>θ</sup> = -0.8 V）<br>Si + 4H<sup>+</sup> + 4e<sup>-</sup> = SiH<sub>4</sub>（E<sup>θ</sup> = 0.102 V）<br>SiO<sub>2</sub> + 4H<sup>+</sup> + 4e<sup>-</sup> = Si + 2H<sub>2</sub>O（E<sup>θ</sup> = 0.857 V）<br>SiO<sub>32</sub><sup>-</sup> + 3H<sub>2</sub>O + 4e<sup>-</sup> = Si + 6OH<sup>-</sup>（E<sup>θ</sup> = -1.697 V）"
                                         }
                      },
                      {
@@ -543,7 +543,7 @@
                                             "ionizationEnergy4":  "4963.6",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "H<sub>3</sub>PO<sub>2</sub> + H<sup>+</sup> + e<sup>-</sup> = P + 2H<sub>2</sub>O（E<sup>°</sup> = -0.508 V）<br>HPO + 2H<sup>+</sup> + 2e<sup>-</sup> = HPO + HO<sub>33322</sub>（E<sup>°</sup> = -0.499 V）<br>HPO + 2H<sup>+</sup> + 2e<sup>-</sup> = HPO + HO<sub>34332</sub>（E<sup>°</sup> = -0.276 V）<br>P(白磷) + 3H<sup>+</sup> + 3e<sup>-</sup> = PH(g)<sub>3</sub>（E<sup>°</sup> = -0.063 V）<br>HPO<sup>-</sup> + e<sup>-</sup> = P + 2OH-22（E<sup>°</sup> = -1.82 V）<br>HPO<sup>2-</sup> + 2HO + 3e<sup>-</sup> = P + 5OH-32（E<sup>°</sup> = -1.71 V）<br>HPO<sup>2-</sup> + 2HO + 2e<sup>-</sup> = HPO<sup>-</sup> + 3OH-3222（E<sup>°</sup> = -1.65 V）<br>PO<sup>3-</sup> + 2HO + 2e<sup>-</sup> = HPO<sup>2-</sup> + 3OH-423（E<sup>°</sup> = -1.05 V）<br>P + 3HO + 3e<sup>-</sup> = PH(g) + 3OH-23（E<sup>°</sup> = -0.88 V）"
+                                            "standardElectrodePotential":  "H<sub>3</sub>PO<sub>2</sub> + H<sup>+</sup> + e<sup>-</sup> = P + 2H<sub>2</sub>O（E<sup>θ</sup> = -0.508 V）<br>H<sub>3</sub>PO<sub>3</sub> + 2H<sup>+</sup> + 2e<sup>-</sup> = H<sub>3</sub>PO<sub>2</sub> + H<sub>2</sub>O（E<sup>θ</sup> = -0.499 V）<br>H<sub>3</sub>PO<sub>4</sub> + 2H<sup>+</sup> + 2e<sup>-</sup> = H<sub>3</sub>PO<sub>3</sub> + H<sub>2</sub>O（E<sup>θ</sup> = -0.276 V）<br>P(白磷) + 3H<sup>+</sup> + 3e<sup>-</sup> = PH<sub>3</sub>(g)（E<sup>θ</sup> = -0.063 V）<br>H<sub>2</sub>PO<sub>2</sub><sup>-</sup> + e<sup>-</sup> = P + 2OH<sup>-</sup>（E<sup>θ</sup> = -1.82 V）<br>HPO<sub>32</sub><sup>-</sup> + 2H<sub>2</sub>O + 3e<sup>-</sup> = P + 5OH<sup>-</sup>（E<sup>θ</sup> = -1.71 V）<br>HPO<sub>32</sub><sup>-</sup> + 2H<sub>2</sub>O + 2e<sup>-</sup> = H<sub>2</sub>PO<sub>2</sub><sup>-</sup> + 3OH<sup>-</sup>（E<sup>θ</sup> = -1.65 V）<br>PO<sub>43</sub><sup>-</sup> + 2H<sub>2</sub>O + 2e<sup>-</sup> = HPO<sub>32</sub><sup>-</sup> + 3OH<sup>-</sup>（E<sup>θ</sup> = -1.05 V）<br>P + 3H<sub>2</sub>O + 3e<sup>-</sup> = PH<sub>3</sub>(g) + 3OH<sup>-</sup>（E<sup>θ</sup> = -0.88 V）"
                                         }
                      },
                      {
@@ -579,7 +579,7 @@
                                             "ionizationEnergy4":  "4556",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "S + 2H<sup>+</sup> + 2e<sup>-</sup> = HS(aq)<sub>2</sub>（E<sup>°</sup> = 0.142 V）<br>SO<sup>2-</sup> + 4H<sup>+</sup> + 2e<sup>-</sup> = HSO + HO<sub>4232</sub>（E<sup>°</sup> = 0.172 V）<br>SO<sup>2-</sup> + 8H<sup>+</sup> + 6e<sup>-</sup> = S + 4HO<sub>42</sub>（E<sup>°</sup> = 0.3572 V）<br>HSO + 4H<sup>+</sup> + 4e<sup>-</sup> = S + 3HO<sub>232</sub>（E<sup>°</sup> = 0.449 V）<br>SCl + 2e<sup>-</sup> = 2S + 2Cl-22（E<sup>°</sup> = 1.23 V）<br>SO<sup>2-</sup> + HO + 2e<sup>-</sup> = SO<sup>2-</sup> + 2OH-423（E<sup>°</sup> = -0.93 V）<br>SO<sup>2-</sup> + 3HO + 4e<sup>-</sup> = S + 6OH-32（E<sup>°</sup> = -0.9 V）<br>2SO<sup>2-</sup> + 3HO + 4e<sup>-</sup> = SO<sup>2-</sup> + 6OH-3223（E<sup>°</sup> = -0.576 V）<br>S + 2e<sup>-</sup> = S<sup>2-</sup>（E<sup>°</sup> = -0.47627 V）"
+                                            "standardElectrodePotential":  "S + 2H<sup>+</sup> + 2e<sup>-</sup> = H<sub>2</sub> S(aq)（E<sup>θ</sup> = 0.142 V）<br>SO<sub>4</sub><sup>2-</sup> + 4H<sup>+</sup> + 2e<sup>-</sup> = H<sub>2</sub> SO<sub>3</sub> + H<sub>2</sub>O（E<sup>θ</sup> = 0.172 V）<br>SO<sub>4</sub><sup>2-</sup> + 8H<sup>+</sup> + 6e<sup>-</sup> = S + 4H<sub>2</sub>O（E<sup>θ</sup> = 0.3572 V）<br>H<sub>2</sub> SO<sub>3</sub> + 4H<sup>+</sup> + 4e<sup>-</sup> = S + 3H<sub>2</sub>O（E<sup>θ</sup> = 0.449 V）<br>S<sub>2</sub>Cl<sub>2</sub> + 2e<sup>-</sup> = 2S + 2Cl<sup>-</sup>（E<sup>θ</sup> = 1.23 V）<br>S<sub>2</sub>O<sub>8</sub><sup>-</sup> + 2e<sup>-</sup> = 2SO<sub>4</sub><sup>2-</sup>（E<sup>θ</sup> = 2.01 V）<br>S<sub>2</sub>O<sub>8</sub><sup>-</sup> + 2H<sup>+</sup> + 2e<sup>-</sup> = 2HSO<sub>4</sub><sup>-</sup>（E<sup>θ</sup> = 2.123 V）<br>SO<sub>4</sub><sup>2-</sup> + H<sub>2</sub>O + 2e<sup>-</sup> = SO<sub>3</sub><sup>2-</sup> + 2OH<sup>-</sup>（E<sup>θ</sup> = -0.93 V）<br>SO<sub>3</sub><sup>2-</sup> + 3H<sub>2</sub>O + 4e<sup>-</sup> = S + 6OH<sup>-</sup>（E<sup>θ</sup> = -0.9 V）<br>2SO<sub>3</sub><sup>2-</sup> + 3H<sub>2</sub>O + 4e<sup>-</sup> = S<sub>2</sub>O<sub>3</sub><sup>2-</sup> + 6OH<sup>-</sup>（E<sup>θ</sup> = -0.576 V）<br>S + 2e<sup>-</sup> = S<sub>2</sub><sup>-</sup>（E<sup>θ</sup> = -0.47627 V）"
                                         }
                      },
                      {
@@ -615,7 +615,7 @@
                                             "ionizationEnergy4":  "5158.6",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "ClO<sup>-</sup> + 2H<sup>+</sup> + e<sup>-</sup> = ClO + HO<sub>322</sub>（E<sup>°</sup> = 1.152 V）<br>ClO<sup>-</sup> + 2H<sup>+</sup> + 2e<sup>-</sup> = ClO<sup>-</sup> + HO<sub>432</sub>（E<sup>°</sup> = 1.189 V）<br>ClO<sup>-</sup> + 3H<sup>+</sup> + 2e<sup>-</sup> = HClO + HO<sub>322</sub>（E<sup>°</sup> = 1.21 V）<br>ClO + H<sup>+</sup> + e<sup>-</sup> = HClO<sub>22</sub>（E<sup>°</sup> = 1.277 V）<br>Cl<sub>2</sub> + 2e<sup>-</sup> = 2Cl<sup>-</sup>（E<sup>°</sup> = 1.358 V）<br>ClO<sup>-</sup> + 8H<sup>+</sup> + 8e<sup>-</sup> = Cl<sup>-</sup> + 4HO<sub>42</sub>（E<sup>°</sup> = 1.388 V）<br>ClO<sup>-</sup> + 8H<sup>+</sup> + 7e<sup>-</sup> = 1/2Cl + 4HO<sub>422</sub>（E<sup>°</sup> = 1.392 V）<br>ClO<sup>-</sup> + 6H<sup>+</sup> + 6e<sup>-</sup> = Cl<sup>-</sup> + 3HO<sub>32</sub>（E<sup>°</sup> = 1.451 V）<br>ClO<sup>-</sup> + 6H<sup>+</sup> + 5e<sup>-</sup> = 1/2Cl + 3HO<sub>322</sub>（E<sup>°</sup> = 1.47 V）<br>HClO + H<sup>+</sup> + 2e<sup>-</sup> = Cl<sup>-</sup> + HO<sub>2</sub>（E<sup>°</sup> = 1.482 V）<br>ClO + 4H<sup>+</sup> + 5e<sup>-</sup> = Cl<sup>-</sup> + 2HO<sub>22</sub>（E<sup>°</sup> = 1.511 V）<br>HClO + 3H<sup>+</sup> + 4e<sup>-</sup> = Cl<sup>-</sup> + 2HO<sub>22</sub>（E<sup>°</sup> = 1.57 V）<br>HClO + H<sup>+</sup> + e<sup>-</sup> = 1/2Cl + HO<sub>22</sub>（E<sup>°</sup> = 1.611 V）<br>HClO + 3H<sup>+</sup> + 2e<sup>-</sup> = 1/2Cl + 2HO<sub>222</sub>（E<sup>°</sup> = 1.628 V）<br>HClO + 2H<sup>+</sup> + 2e<sup>-</sup> = HClO + HO<sub>22</sub>（E<sup>°</sup> = 1.645 V）<br>2ClF + 2e<sup>-</sup> = 2ClF + 4F-3（E<sup>°</sup> = 2.82 V）<br>ClO<sup>-</sup> + HO + 2e<sup>-</sup> = ClO<sup>-</sup> + 2OH-322（E<sup>°</sup> = 0.33 V）<br>ClO<sup>-</sup> + HO + 2e<sup>-</sup> = ClO<sup>-</sup> + 2OH-423（E<sup>°</sup> = 0.36 V）<br>ClO<sup>-</sup> + 3HO + 6e<sup>-</sup> = Cl<sup>-</sup> + 6OH-32（E<sup>°</sup> = 0.62 V）<br>ClO<sup>-</sup> + HO + 2e<sup>-</sup> = ClO<sup>-</sup> + 2OH-22（E<sup>°</sup> = 0.66 V）<br>ClO<sup>-</sup> + 2HO + 4e<sup>-</sup> = Cl<sup>-</sup> + 4OH-22（E<sup>°</sup> = 0.76 V）<br>ClO<sup>-</sup> + HO + 2e<sup>-</sup> = Cl<sup>-</sup> + 2OH-2（E<sup>°</sup> = 0.89 V）<br>ClO(aq) + e<sup>-</sup> = ClO-22（E<sup>°</sup> = 0.954 V）<br>ClO(g) + e<sup>-</sup> = ClO-22（E<sup>°</sup> = 1.16 V）"
+                                            "standardElectrodePotential":  "ClO<sub>3</sub><sup>-</sup> + 2H<sup>+</sup> + e<sup>-</sup> = ClO<sub>2</sub> + H<sub>2</sub>O（E<sup>θ</sup> = 1.152 V）<br>ClO<sub>4</sub><sup>-</sup> + 2H<sup>+</sup> + 2e<sup>-</sup> = ClO<sub>3</sub><sup>-</sup> + H<sub>2</sub>O（E<sup>θ</sup> = 1.189 V）<br>ClO<sub>3</sub><sup>-</sup> + 3H<sup>+</sup> + 2e<sup>-</sup> = HClO<sub>2</sub> + H<sub>2</sub>O（E<sup>θ</sup> = 1.21 V）<br>ClO<sub>2</sub> + H<sup>+</sup> + e<sup>-</sup> = HClO<sub>2</sub>（E<sup>θ</sup> = 1.277 V）<br>Cl<sub>2</sub>(g) + 2e<sup>-</sup> = 2Cl<sup>-</sup>（E<sup>θ</sup> = 1.358 V）<br>ClO<sub>4</sub><sup>-</sup> + 8H<sup>+</sup> + 8e<sup>-</sup> = Cl<sup>-</sup> + 4H<sub>2</sub>O（E<sup>θ</sup> = 1.388 V）<br>ClO<sub>4</sub><sup>-</sup> + 8H<sup>+</sup> + 7e<sup>-</sup> = 1/2Cl<sub>2</sub> + 4H<sub>2</sub>O（E<sup>θ</sup> = 1.392 V）<br>ClO<sub>3</sub><sup>-</sup> + 6H<sup>+</sup> + 6e<sup>-</sup> = Cl<sup>-</sup> + 3H<sub>2</sub>O（E<sup>θ</sup> = 1.451 V）<br>ClO<sub>3</sub><sup>-</sup> + 6H<sup>+</sup> + 5e<sup>-</sup> = 1/2Cl<sub>2</sub> + 3H<sub>2</sub>O（E<sup>θ</sup> = 1.47 V）<br>HClO + H<sup>+</sup> + 2e<sup>-</sup> = Cl<sup>-</sup> + H<sub>2</sub>O（E<sup>θ</sup> = 1.482 V）<br>ClO<sub>2</sub> + 4H<sup>+</sup> + 5e<sup>-</sup> = Cl<sup>-</sup> + 2H<sub>2</sub>O（E<sup>θ</sup> = 1.511 V）<br>HClO<sub>2</sub> + 3H<sup>+</sup> + 4e<sup>-</sup> = Cl<sup>-</sup> + 2H<sub>2</sub>O（E<sup>θ</sup> = 1.57 V）<br>HClO + H<sup>+</sup> + e<sup>-</sup> = 1/2Cl<sub>2</sub> + H<sub>2</sub>O（E<sup>θ</sup> = 1.611 V）<br>HClO<sub>2</sub> + 3H<sup>+</sup> + 2e<sup>-</sup> = 1/2Cl<sub>2</sub> + 2H<sub>2</sub>O（E<sup>θ</sup> = 1.628 V）<br>HClO<sub>2</sub> + 2H<sup>+</sup> + 2e<sup>-</sup> = HClO + H<sub>2</sub>O（E<sup>θ</sup> = 1.645 V）<br>2ClF<sub>3</sub> + 2e<sup>-</sup> = 2ClF + 4F<sup>-</sup>（E<sup>θ</sup> = 2.82 V）<br>ClO<sub>3</sub><sup>-</sup> + H<sub>2</sub>O + 2e<sup>-</sup> = ClO<sub>2</sub><sup>-</sup> + 2OH<sup>-</sup>（E<sup>θ</sup> = 0.33 V）<br>ClO<sub>4</sub><sup>-</sup> + H<sub>2</sub>O + 2e<sup>-</sup> = ClO<sub>3</sub><sup>-</sup> + 2OH<sup>-</sup>（E<sup>θ</sup> = 0.36 V）<br>ClO<sub>3</sub><sup>-</sup> + 3H<sub>2</sub>O + 6e<sup>-</sup> = Cl<sup>-</sup> + 6OH<sup>-</sup>（E<sup>θ</sup> = 0.62 V）<br>ClO<sub>2</sub><sup>-</sup> + H<sub>2</sub>O + 2e<sup>-</sup> = ClO<sup>-</sup> + 2OH<sup>-</sup>（E<sup>θ</sup> = 0.66 V）<br>ClO<sub>2</sub><sup>-</sup> + 2H<sub>2</sub>O + 4e<sup>-</sup> = Cl<sup>-</sup> + 4OH<sup>-</sup>（E<sup>θ</sup> = 0.76 V）<br>ClO<sup>-</sup> + H<sub>2</sub>O + 2e<sup>-</sup> = Cl<sup>-</sup> + 2OH<sup>-</sup>（E<sup>θ</sup> = 0.89 V）<br>ClO<sub>2</sub>(aq) + e<sup>-</sup> = ClO 2<sup>-</sup>（E<sup>θ</sup> = 0.954 V）<br>ClO<sub>2</sub>(g) + e<sup>-</sup> = ClO<sub>2</sub><sup>-</sup>（E<sup>θ</sup> = 1.16 V）"
                                         }
                      },
                      {
@@ -687,7 +687,7 @@
                                             "ionizationEnergy4":  "5877",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "K<sup>+</sup> + e<sup>-</sup> = K（E<sup>°</sup> = -2.928 V）"
+                                            "standardElectrodePotential":  "K<sup>+</sup> + e<sup>-</sup> = K（E<sup>θ</sup> = -2.928 V）"
                                         }
                      },
                      {
@@ -723,7 +723,7 @@
                                             "ionizationEnergy4":  "6491",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Ca<sup>2+</sup> + 2e<sup>-</sup> = Ca（E<sup>°</sup> = -2.868 V）<br>Ca(OH) + 2e<sup>-</sup> = Ca + 2OH-2（E<sup>°</sup> = -3.02 V）"
+                                            "standardElectrodePotential":  "Ca<sub>2</sub><sup>+</sup> + 2e<sup>-</sup> = Ca（E<sup>θ</sup> = -2.868 V）<br>Ca(OH)<sub>2</sub> + 2e<sup>-</sup> = Ca + 2OH<sup>-</sup>（E<sup>θ</sup> = -3.02 V）"
                                         }
                      },
                      {
@@ -739,9 +739,9 @@
                                             "casNumber":  "-",
                                             "electronShell":  "K2-L8-M9-N2",
                                             "summary":  "Scandium is a chemical element with symbol Sc and atomic number 21. A silvery-white metallic d-block element, it has historically been sometimes classified as a rare earth element, together with yttrium and the lanthanoids. It was discovered in 1879 by spectral analysis of the minerals euxenite and gadolinite from Scandinavia.",
-                                            "extension":  "钪作为第三副族首元、第一个“稀土”但常被排除在稀土族外的元素，其化学在轻质合金、固态照明和催化中体现高电荷小半径（Sc³⁺, 74.5 pm）的独特配位与光学性质。钪原子半径162 pm，第一电离能633.1 kJ/mol，电负性1.36，仅稳定+3氧化态（d⁰无色）。电子构型Ar3d¹4s²，Sc³⁺与Al³⁺半径接近，化学习性类似但碱性更强。\n\n钪单质六方密堆，银白色，较软。空气中表面氧化，溶于酸放出氢气。钪铝合金（Sc-Al）大幅提升强度与耐热性，用于航空航天；钪掺杂氧化锆（ScSZ）是中温固体氧化物燃料电池优质电解质；钪酸钠（NaScO₂）用于锂电正极材料。\n\n钪化合物多为离子型：Sc₂O₃（白色，难熔，用于激光基质）、ScF₃（难溶，紫外光学材料）、ScCl₃（易潮解，用于有机合成路易斯酸）。Sc³⁺配位数为6（八面体）或8（如Sc(acac)₃）。钪配合物催化烯烃聚合、酯化等。\n\n钪在生物体中作用不明，毒性低但细粉尘刺激。钪-46（⁴⁶Sc）示踪用于炼油过程监控。钪资源分散，主要从钨锡矿渣或铀尾矿回收，产量小价高。",
+                                            "extension":  "钪作为第三副族首元、第一个“稀土”但常被排除在稀土族外的元素，其化学在轻质合金、固态照明和催化中体现高电荷小半径（Sc³⁺, 74.5 pm）的独特配位与光学性质。钪原子半径162 pm，第一电离能633.1 kJ/mol，电负性1.36，仅稳定+3氧化态（d⁰无色）。电子构型[Ar]3d¹4s²，Sc³⁺与Al³⁺半径接近，化学习性类似但碱性更强。\n\n钪单质六方密堆，银白色，较软。空气中表面氧化，溶于酸放出氢气。钪铝合金（Sc-Al）大幅提升强度与耐热性，用于航空航天；钪掺杂氧化锆（ScSZ）是中温固体氧化物燃料电池优质电解质；钪酸钠（NaScO₂）用于锂电正极材料。\n\n钪化合物多为离子型：Sc₂O₃（白色，难熔，用于激光基质）、ScF₃（难溶，紫外光学材料）、ScCl₃（易潮解，用于有机合成路易斯酸）。Sc³⁺配位数为6（八面体）或8（如Sc(acac)₃）。钪配合物催化烯烃聚合、酯化等。\n\n钪在生物体中作用不明，毒性低但细粉尘刺激。钪-46（⁴⁶Sc）示踪用于炼油过程监控。钪资源分散，主要从钨锡矿渣或铀尾矿回收，产量小价高。",
                                             "atomicWeight":  "44.95591",
-                                            "density":  "2.99 g/cm3",
+                                            "density":  "2.99 g/cm<sup>3</sup>",
                                             "meltingPoint":  "1814 K",
                                             "boilingPoint":  "3109 K",
                                             "oxidationStates":  "+3",
@@ -759,7 +759,7 @@
                                             "ionizationEnergy4":  "7090.6",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Sc<sup>3+</sup> + 3e<sup>-</sup> = Sc（E<sup>°</sup> = -2.077 V）<br>Sc(OH) + 3e<sup>-</sup> = Sc + 3OH-3（E<sup>°</sup> = -2.61 V）"
+                                            "standardElectrodePotential":  "Sc 3<sup>+</sup> + 3e<sup>-</sup> = Sc（E<sup>θ</sup> = -2.077 V）<br>Sc(OH)<sub>3</sub> + 3e<sup>-</sup> = Sc + 3OH<sup>-</sup>（E<sup>θ</sup> = -2.61 V）"
                                         }
                      },
                      {
@@ -867,7 +867,7 @@
                                             "ionizationEnergy4":  "4743",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Cr<sup>2+</sup> + 2e<sup>-</sup> = Cr（E<sup>°</sup> = -0.913 V）<br>Cr<sup>3+</sup> + 3e<sup>-</sup> = Cr（E<sup>°</sup> = -0.744 V）<br>Cr<sup>3+</sup> + e<sup>-</sup> = Cr<sup>2+</sup>（E<sup>°</sup> = -0.408 V）<br>CrO<sup>2-</sup> + 14H<sup>+</sup> + 6e<sup>-</sup> = 2Cr<sup>3+</sup> + 7HO<sub>272</sub>（E<sup>°</sup> = 1.33 V）<br>HCrO<sup>-</sup> + 7H<sup>+</sup> + 3e<sup>-</sup> = Cr<sup>3+</sup> + 4HO<sub>42</sub>（E<sup>°</sup> = 1.35 V）<br>CrO<sub>2</sub> + 4H<sup>+</sup> + e<sup>-</sup> = Cr<sup>3+</sup> + 2HO<sub>2</sub>（E<sup>°</sup> = 1.48 V）<br>Cr(OH) + 3e<sup>-</sup> = Cr + 3OH-3（E<sup>°</sup> = -1.48 V）<br>CrO<sup>2-</sup> + 4HO + 3e<sup>-</sup> = Cr(OH) + 5OH-423（E<sup>°</sup> = -0.13 V）"
+                                            "standardElectrodePotential":  "Cr<sup>2+</sup> + 2e<sup>-</sup> = Cr（E<sup>θ</sup> = -0.913 V）<br>Cr<sup>3+</sup> + 3e<sup>-</sup> = Cr（E<sup>θ</sup> = -0.744 V）<br>Cr<sup>3+</sup> + e<sup>-</sup> = Cr<sup>2+</sup>（E<sup>θ</sup> = -0.408 V）<br>Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> + 14H<sup>+</sup> + 6e<sup>-</sup> = 2Cr<sup>3+</sup> + 7H<sub>2</sub>O（E<sup>θ</sup> = 1.33 V）<br>HCrO<sub>4</sub><sup>-</sup> + 7H<sup>+</sup> + 3e<sup>-</sup> = Cr<sup>3+</sup> + 4H<sub>2</sub>O（E<sup>θ</sup> = 1.35 V）<br>CrO<sub>2</sub> + 4H<sup>+</sup> + e<sup>-</sup> = Cr<sup>3+</sup> + 2H<sub>2</sub>O（E<sup>θ</sup> = 1.48 V）<br>Cr(OH)<sub>3</sub> + 3e<sup>-</sup> = Cr + 3OH<sup>-</sup>（E<sup>θ</sup> = -1.48 V）<br>CrO<sub>4</sub><sup>2-</sup> + 4H<sub>2</sub>O + 3e<sup>-</sup> = Cr(OH) 3 + 5OH<sup>-</sup>（E<sup>θ</sup> = -0.13 V）"
                                         }
                      },
                      {
@@ -903,7 +903,7 @@
                                             "ionizationEnergy4":  "4940",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Mn<sup>2+</sup> + 2e<sup>-</sup> = Mn（E<sup>°</sup> = -1.18 V）<br>MnO + 4H<sup>+</sup> + 2e<sup>-</sup> = Mn<sup>2+</sup> + 2HO<sub>22</sub>（E<sup>°</sup> = 1.224 V）<br>MnO<sup>-</sup> + 8H<sup>+</sup> + 5e<sup>-</sup> = Mn<sup>2+</sup> + 4HO<sub>42</sub>（E<sup>°</sup> = 1.507 V）<br>Mn<sup>3+</sup> + e<sup>-</sup> = Mn<sup>2+</sup>（E<sup>°</sup> = 1.5415 V）<br>MnO<sup>-</sup> + 4H<sup>+</sup> + 3e<sup>-</sup> = MnO + 2HO<sub>422</sub>（E<sup>°</sup> = 1.68 V）<br>Mn(OH) + 2e<sup>-</sup> = Mn + 2OH-2（E<sup>°</sup> = -1.55 V）<br>MnO + 2HO + 2e<sup>-</sup> = Mn(OH) + 2OH-222（E<sup>°</sup> = -0.05 V）<br>Mn(OH) + e<sup>-</sup> = Mn(OH) + OH-32（E<sup>°</sup> = 0.15 V）<br>MnO<sup>-</sup> + e<sup>-</sup> = MnO<sub>2</sub>-44（E<sup>°</sup> = 0.558 V）<br>MnO<sup>-</sup> + 2HO + 3e<sup>-</sup> = MnO + 4OH-422（E<sup>°</sup> = 0.595 V）<br>MnO<sup>2-</sup> + 2HO + 2e<sup>-</sup> = MnO + 4OH-422（E<sup>°</sup> = 0.6 V）"
+                                            "standardElectrodePotential":  "Mn<sup>2+</sup> + 2e<sup>-</sup> = Mn（E<sup>θ</sup> = -1.18 V）<br>MnO<sub>2</sub> + 4H<sup>+</sup> + 2e<sup>-</sup> = Mn<sup>2+</sup> + 2H<sub>2</sub>O（E<sup>θ</sup> = 1.224 V）<br>MnO<sub>4</sub><sup>-</sup> + 8H<sup>+</sup> + 5e<sup>-</sup> = Mn<sup>2+</sup> + 4H<sub>2</sub>O（E<sup>θ</sup> = 1.507 V）<br>Mn<sup>3+</sup> + e<sup>-</sup> = Mn<sup>2+</sup>（E<sup>θ</sup> = 1.5415 V）<br>MnO<sub>4</sub><sup>-</sup> + 4H<sup>+</sup> + 3e<sup>-</sup> = MnO<sub>2</sub> + 2H<sub>2</sub>O（E<sup>θ</sup> = 1.68 V）<br>Mn(OH)<sub>2</sub> + 2e<sup>-</sup> = Mn + 2OH<sup>-</sup>（E<sup>θ</sup> = -1.55 V）<br>MnO<sub>2</sub> + 2H<sub>2</sub>O + 2e<sup>-</sup> = Mn(OH)<sub>2</sub> + 2OH<sup>-</sup>（E<sup>θ</sup> = -0.05 V）<br>Mn(OH)<sub>3</sub> + e<sup>-</sup> = Mn(OH)<sub>2</sub> + OH<sup>-</sup>（E<sup>θ</sup> = 0.15 V）<br>MnO<sub>4</sub><sup>-</sup> + e<sup>-</sup> = MnO<sub>4</sub><sup>2-</sup>（E<sup>θ</sup> = 0.558 V）<br>MnO<sub>4</sub><sup>-</sup> + 2H<sub>2</sub>O + 3e<sup>-</sup> = MnO<sub>2</sub> + 4OH<sup>-</sup>（E<sup>θ</sup> = 0.595 V）<br>MnO<sub>4</sub><sup>2-</sup> + 2H<sub>2</sub>O + 2e<sup>-</sup> = MnO<sub>2</sub> + 4OH<sup>-</sup>（E<sup>θ</sup> = 0.6 V）"
                                         }
                      },
                      {
@@ -939,7 +939,7 @@
                                             "ionizationEnergy4":  "5290",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Fe<sup>2+</sup> + 2e<sup>-</sup> = Fe（E<sup>°</sup> = -0.447 V）<br>Fe<sup>3+</sup> + 3e<sup>-</sup> = Fe（E<sup>°</sup> = -0.037 V）<br>Fe<sup>3+</sup> + e<sup>-</sup> = Fe<sup>2+</sup>（E<sup>°</sup> = 0.771 V）<br>FeO + 8H<sup>+</sup> + 2e<sup>-</sup> = 3Fe<sup>2+</sup> + 4HO<sub>342</sub>（E<sup>°</sup> = 1.23 V）<br>FeO<sup>2-</sup> + 8H<sup>+</sup> + 3e<sup>-</sup> = Fe<sup>3+</sup> + 4HO<sub>42</sub>（E<sup>°</sup> = 2.2 V）<br>FeS(g) + 2e<sup>-</sup> = Fe + S<sup>2-</sup>（E<sup>°</sup> = -0.95 V）<br>Fe(OH) + 2e<sup>-</sup> = Fe + 2OH-2（E<sup>°</sup> = -0.877 V）<br>Fe(OH) + e<sup>-</sup> = Fe(OH) + OH-32（E<sup>°</sup> = -0.56 V）<br>FeO<sup>2-</sup> + 4HO + 3e<sup>-</sup> = Fe(OH) + 5OH-423（E<sup>°</sup> = 0.72 V）"
+                                            "standardElectrodePotential":  "Fe<sup>2+</sup> + 2e<sup>-</sup> = Fe（E<sup>θ</sup> = -0.447 V）<br>Fe<sup>3+</sup> + 3e<sup>-</sup> = Fe（E<sup>θ</sup> = -0.037 V）<br>Fe<sup>3+</sup> + e<sup>-</sup> = Fe<sup>2+</sup>（E<sup>θ</sup> = 0.771 V）<br>Fe<sub>3</sub>O<sub>4</sub> + 8H<sup>+</sup> + 2e<sup>-</sup> = 3Fe<sup>2+</sup> + 4H<sub>2</sub>O（E<sup>θ</sup> = 1.23 V）<br>FeO<sub>4</sub><sup>2-</sup> + 8H<sup>+</sup> + 3e<sup>-</sup> = Fe<sup>3+</sup> + 4H<sub>2</sub>O（E<sup>θ</sup> = 2.2 V）<br>FeS(g) + 2e<sup>-</sup> = Fe + S<sup>2-</sup>（E<sup>θ</sup> = -0.95 V）<br>Fe(OH)<sub>2</sub> + 2e<sup>-</sup> = Fe + 2OH<sup>-</sup>（E<sup>θ</sup> = -0.877 V）<br>Fe(OH)<sub>3</sub> + e<sup>-</sup> = Fe(OH) 2 + OH<sup>-</sup>（E<sup>θ</sup> = -0.56 V）<br>FeO<sub>4</sub><sup>2-</sup> + 4H<sub>2</sub>O + 3e<sup>-</sup> = Fe(OH)<sub>3</sub> + 5OH<sup>-</sup>（E<sup>θ</sup> = 0.72 V）"
                                         }
                      },
                      {
@@ -975,7 +975,7 @@
                                             "ionizationEnergy4":  "4950",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Co<sup>2+</sup> + 2e<sup>-</sup> = Co（E<sup>°</sup> = -0.28 V）<br>Co<sup>3+</sup> + e<sup>-</sup> = Co<sup>2+</sup>（E<sup>°</sup> = 1.808 V）<br>Co<sup>3+</sup> + e<sup>-</sup> = Co<sup>2+</sup>（E<sup>°</sup> = 1.83 V）<br>Co<sup>3+</sup> + e<sup>-</sup> = Co<sup>2+</sup>（E<sup>°</sup> = 1.92 V）<br>Co(OH) + 2e<sup>-</sup> = Co + 2OH-2（E<sup>°</sup> = -0.73 V）<br>CoCO + 2e<sup>-</sup> = Co + CO<sub>2</sub>-33（E<sup>°</sup> = -0.64 V）<br>[Co(NH)]<sup>3+</sup> + e<sup>-</sup> = [Co(NH)]<sub>2</sub> + 3636（E<sup>°</sup> = 0.108 V）<br>Co(OH) + e<sup>-</sup> = Co(OH) + OH-32（E<sup>°</sup> = 0.17 V）"
+                                            "standardElectrodePotential":  "Co<sup>2+</sup> + 2e<sup>-</sup> = Co（E<sup>θ</sup> = -0.28 V）<br>Co<sup>3+</sup> + e<sup>-</sup> = Co<sup>2+</sup>（E<sup>θ</sup> = 1.808 V）<br>Co<sup>3+</sup> + e<sup>-</sup> = Co<sup>2+</sup>（E<sup>θ</sup> = 1.83 V）<br>Co<sup>3+</sup> + e<sup>-</sup> = Co<sup>2+</sup>（E<sup>θ</sup> = 1.92 V）<br>Co(OH)<sub>2</sub> + 2e<sup>-</sup> = Co + 2OH<sup>-</sup>（E<sup>θ</sup> = -0.73 V）<br>CoCO<sub>3</sub> + 2e<sup>-</sup> = Co + CO<sub>3</sub><sup>2-</sup>（E<sup>θ</sup> = -0.64 V）<br>[Co(NH<sub>3</sub>)<sub>6</sub>]<sup>3+</sup> + e<sup>-</sup> = [Co(NH<sub>3</sub>)<sub>6</sub>]<sup>2+</sup>（E<sup>θ</sup> = 0.108 V）<br>Co(OH)<sub>3</sub> + e<sup>-</sup> = Co(OH)<sub>2</sub> + OH<sup>-</sup>（E<sup>θ</sup> = 0.17 V）"
                                         }
                      },
                      {
@@ -1011,7 +1011,7 @@
                                             "ionizationEnergy4":  "5300",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Ni<sup>2+</sup> + 2e<sup>-</sup> = Ni（E<sup>°</sup> = -0.257 V）<br>NiO + 4H<sup>+</sup> + 2e<sup>-</sup> = Ni<sup>2+</sup> + 2HO<sub>22</sub>（E<sup>°</sup> = 1.678 V）<br>NiO<sup>2-</sup> + 4H<sup>+</sup> + 2e<sup>-</sup> = NiO + 2HO<sub>422</sub>（E<sup>°</sup> = 1.8 V）<br>Ni(OH) + 2e<sup>-</sup> = Ni + 2OH-2（E<sup>°</sup> = -0.72 V）<br>NiO + 2HO + 2e<sup>-</sup> = Ni(OH) + 2OH-222（E<sup>°</sup> = 0.49 V）"
+                                            "standardElectrodePotential":  "Ni<sup>2+</sup> + 2e<sup>-</sup> = Ni（E<sup>θ</sup> = -0.257 V）<br>NiO<sub>2</sub> + 4H<sup>+</sup> + 2e<sup>-</sup> = Ni<sup>2+</sup> + 2H<sub>2</sub>O（E<sup>θ</sup> = 1.678 V）<br>NiO<sub>4</sub><sup>2-</sup> + 4H<sup>+</sup> + 2e<sup>-</sup> = NiO<sub>2</sub> + 2H<sub>2</sub>O（E<sup>θ</sup> = 1.8 V）<br>Ni(OH)<sub>2</sub> + 2e<sup>-</sup> = Ni + 2OH<sup>-</sup>（E<sup>θ</sup> = -0.72 V）<br>NiO<sub>2</sub> + 2H<sub>2</sub>O + 2e<sup>-</sup> = Ni(OH)<sub>2</sub> + 2OH<sup>-</sup>（E<sup>θ</sup> = 0.49 V）"
                                         }
                      },
                      {
@@ -1047,7 +1047,7 @@
                                             "ionizationEnergy4":  "5536",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "CuI + e<sup>-</sup> = Cu + I（E<sup>°</sup> = -0.1852 V）<br>CuBr + e<sup>-</sup> = Cu + Br<sup>-</sup>（E<sup>°</sup> = 0.033 V）<br>CuCl + e<sup>-</sup> = Cu + Cl<sup>-</sup>（E<sup>°</sup> = 0.137 V）<br>Cu<sup>2+</sup> + e<sup>-</sup> = Cu<sup>+</sup>（E<sup>°</sup> = 0.153 V）<br>Cu<sup>2+</sup> + 2e<sup>-</sup> = Cu（E<sup>°</sup> = 0.337 V）<br>Cu<sup>+</sup> + e<sup>-</sup> = Cu（E<sup>°</sup> = 0.521 V）<br>CuS(g) + 2e<sup>-</sup> = Cu + S<sub>2</sub>-2（E<sup>°</sup> = -0.89 V）<br>CuO + HO + 2e<sup>-</sup> = 2Cu + 2OH-22（E<sup>°</sup> = -0.358 V）<br>Cu(OH) + 2e<sup>-</sup> = Cu + 2OH-2（E<sup>°</sup> = -0.222 V）<br>2Cu(OH) + 2e<sup>-</sup> = CuO + 2OH<sup>-</sup> + HO<sub>222</sub>（E<sup>°</sup> = -0.08 V）"
+                                            "standardElectrodePotential":  "CuI + e<sup>-</sup> = Cu + I（E<sup>θ</sup> = -0.1852 V）<br>CuBr + e<sup>-</sup> = Cu + Br<sup>-</sup>（E<sup>θ</sup> = 0.033 V）<br>CuCl + e<sup>-</sup> = Cu + Cl<sup>-</sup>（E<sup>θ</sup> = 0.137 V）<br>Cu<sup>2+</sup> + e<sup>-</sup> = Cu<sup>+</sup>（E<sup>θ</sup> = 0.153 V）<br>Cu<sup>2+</sup> + 2e<sup>-</sup> = Cu（E<sup>θ</sup> = 0.337 V）<br>Cu<sup>+</sup> + e<sup>-</sup> = Cu（E<sup>θ</sup> = 0.521 V）<br>Cu<sub>2</sub> S(g) + 2e<sup>-</sup> = Cu + S<sup>2-</sup>（E<sup>θ</sup> = -0.89 V）<br>Cu<sub>2</sub>O + H<sub>2</sub>O + 2e<sup>-</sup> = 2Cu + 2OH<sup>-</sup>（E<sup>θ</sup> = -0.358 V）<br>Cu(OH)<sub>2</sub> + 2e<sup>-</sup> = Cu + 2OH<sup>-</sup>（E<sup>θ</sup> = -0.222 V）<br>2Cu(OH)<sub>2</sub> + 2e<sup>-</sup> = Cu<sub>2</sub>O + 2OH<sup>-</sup> + H<sub>2</sub>O（E<sup>θ</sup> = -0.08 V）"
                                         }
                      },
                      {
@@ -1083,7 +1083,7 @@
                                             "ionizationEnergy4":  "5731",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Zn<sup>2+</sup> + 2e<sup>-</sup> = Zn（E<sup>°</sup> = -0.7618 V）<br>Zn(OH) + 2e<sup>-</sup> = Zn + 2OH-2（E<sup>°</sup> = -1.249 V）<br>ZnCO + 2e<sup>-</sup> = Zn + CO<sub>2</sub>-33（E<sup>°</sup> = -1.06 V）"
+                                            "standardElectrodePotential":  "Zn<sub>2</sub><sup>+</sup> + 2e<sup>-</sup> = Zn（E<sup>θ</sup> = -0.7618 V）<br>Zn(OH)<sub>2</sub> + 2e<sup>-</sup> = Zn + 2OH<sup>-</sup>（E<sup>θ</sup> = -1.249 V）<br>ZnCO<sub>3</sub> + 2e<sup>-</sup> = Zn + CO<sub>3</sub><sup>2-</sup>（E<sup>θ</sup> = -1.06 V）"
                                         }
                      },
                      {
@@ -1191,7 +1191,7 @@
                                             "ionizationEnergy4":  "4837",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "As + 3H<sup>+</sup> + 3e<sup>-</sup> = AsH<sub>3</sub>（E<sup>°</sup> = -0.608 V）<br>HAsO(aq) + 3H<sup>+</sup> + 3e<sup>-</sup> = As + 2HO<sub>22</sub>（E<sup>°</sup> = 0.2476 V）<br>HAsO(aq) + 2H<sup>+</sup> + 2e<sup>-</sup> = HAsO + 2HO<sub>3422</sub>（E<sup>°</sup> = 0.56 V）<br>AsO<sup>3-</sup> + 2HO + 2e<sup>-</sup> = AsO<sup>-</sup> + 4OH-422（E<sup>°</sup> = -0.71 V）<br>AsO<sup>-</sup> + 2HO + 3e<sup>-</sup> = As + 4OH-22（E<sup>°</sup> = -0.68 V）"
+                                            "standardElectrodePotential":  "As + 3H<sup>+</sup> + 3e<sup>-</sup> = AsH<sub>3</sub>（E<sup>θ</sup> = -0.608 V）<br>HAsO<sub>2</sub>(aq) + 3H<sup>+</sup> + 3e<sup>-</sup> = As + 2H<sub>2</sub>O（E<sup>θ</sup> = 0.2476 V）<br>H<sub>3</sub>AsO<sub>4</sub>(aq) + 2H<sup>+</sup> + 2e<sup>-</sup> = HAsO<sub>2</sub> + 2H<sub>2</sub>O（E<sup>θ</sup> = 0.56 V）<br>AsO<sub>4</sub><sup>3-</sup> + 2H<sub>2</sub>O + 2e<sup>-</sup> = AsO<sub>2</sub><sup>-</sup> + 4OH<sup>-</sup>（E<sup>θ</sup> = -0.71 V）<br>AsO<sub>2</sub><sup>-</sup> + 2H<sub>2</sub>O + 3e<sup>-</sup> = As + 4OH<sup>-</sup>（E<sup>θ</sup> = -0.68 V）"
                                         }
                      },
                      {
@@ -1227,7 +1227,7 @@
                                             "ionizationEnergy4":  "4144",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "H<sub>2</sub>SeO<sub>3</sub> + 4H<sup>+</sup> + 4e<sup>-</sup> = Se + 3H<sub>2</sub>O（E<sup>°</sup> = -0.74 V）<br>Se + 2H<sup>+</sup> + 2e<sup>-</sup> = HSe(aq)<sub>2</sub>（E<sup>°</sup> = -0.399 V）<br>HSeO + 4H<sup>+</sup> + 4e<sup>-</sup> = Se + 3HO<sub>232</sub>（E<sup>°</sup> = 0.74 V）<br>SeO<sup>2-</sup> + 4H<sup>+</sup> + 2e<sup>-</sup> = HSeO + HO<sub>4232</sub>（E<sup>°</sup> = 1.151 V）<br>Se + 2e<sup>-</sup> = Se<sup>2-</sup>（E<sup>°</sup> = -0.92 V）<br>SeO<sup>2-</sup> + 3HO + 4e<sup>-</sup> = Se + 6OH-32（E<sup>°</sup> = -0.366 V）<br>SeO<sup>2-</sup> + HO + 2e<sup>-</sup> = SeO<sup>2-</sup> + 2OH-423（E<sup>°</sup> = 0.05 V）"
+                                            "standardElectrodePotential":  "H<sub>2</sub>SeO<sub>3</sub> + 4H<sup>+</sup> + 4e<sup>-</sup> = Se + 3H<sub>2</sub>O（E<sup>θ</sup> = -0.74 V）<br>Se + 2H<sup>+</sup> + 2e<sup>-</sup> = H<sub>2</sub> Se(aq)（E<sup>θ</sup> = -0.399 V）<br>H<sub>2</sub> SeO<sub>3</sub> + 4H<sup>+</sup> + 4e<sup>-</sup> = Se + 3H<sub>2</sub>O（E<sup>θ</sup> = 0.74 V）<br>SeO<sub>4</sub><sup>2-</sup> + 4H<sup>+</sup> + 2e<sup>-</sup> = H<sub>2</sub>SeO<sub>3</sub> + H<sub>2</sub>O（E<sup>θ</sup> = 1.151 V）<br>Se + 2e<sup>-</sup> = Se<sup>2-</sup>（E<sup>θ</sup> = -0.92 V）<br>SeO<sub>3</sub><sup>2-</sup> + 3H<sub>2</sub>O + 4e<sup>-</sup> = Se + 6OH<sup>-</sup>（E<sup>θ</sup> = -0.366 V）<br>SeO<sub>4</sub><sup>2-</sup> + H<sub>2</sub>O + 2e<sup>-</sup> = SeO<sub>3</sub><sup>2-</sup> + 2OH<sup>-</sup>（E<sup>θ</sup> = 0.05 V）"
                                         }
                      },
                      {
@@ -1263,7 +1263,7 @@
                                             "ionizationEnergy4":  "4560",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Br<sub>2</sub>(lq) + 2e<sup>-</sup> = 2Br<sup>-</sup>（E<sup>°</sup> = 1.0652 V）<br>Br<sub>2</sub>(aq) + 2e<sup>-</sup> = 2Br<sup>-</sup>（E<sup>°</sup> = 1.087 V）<br>HBrO + H<sup>+</sup> + 2e<sup>-</sup> = Br<sup>-</sup> + HO<sub>2</sub>（E<sup>°</sup> = 1.331 V）<br>BrO<sup>-</sup> + 6H<sup>+</sup> + 6e<sup>-</sup> = Br<sup>-</sup> + 3HO<sub>32</sub>（E<sup>°</sup> = 1.424 V）<br>BrO<sup>-</sup> + 6H<sup>+</sup> + 5e<sup>-</sup> = l/2Br + 3HO<sub>322</sub>（E<sup>°</sup> = 1.52 V）<br>HBrO + H<sup>+</sup> + e<sup>-</sup> = l/2Br(aq) + HO<sub>22</sub>（E<sup>°</sup> = 1.595 V）<br>BrO<sup>-</sup> + 2H<sup>+</sup> + 2e<sup>-</sup> = BrO<sup>-</sup> + HO<sub>432</sub>（E<sup>°</sup> = 1.763 V）<br>BrO<sup>-</sup> + 3HO + 6e<sup>-</sup> = Br<sup>-</sup> + 6OH-32（E<sup>°</sup> = 0.61 V）<br>BrO<sup>-</sup> + HO + 2e<sup>-</sup> = Br<sup>-</sup> + 2OH-2（E<sup>°</sup> = 0.761 V）<br>BrO<sup>-</sup> + HO + 2e<sup>-</sup> = BrO<sup>-</sup> + 2OH-423（E<sup>°</sup> = 0.93 V）"
+                                            "standardElectrodePotential":  "Br<sub>2</sub>(lq) + 2e<sup>-</sup> = 2Br<sup>-</sup>（E<sup>θ</sup> = 1.0652 V）<br>Br<sub>2</sub>(aq) + 2e<sup>-</sup> = 2Br<sup>-</sup>（E<sup>θ</sup> = 1.087 V）<br>HBrO + H<sup>+</sup> + 2e<sup>-</sup> = Br<sup>-</sup> + H<sub>2</sub>O（E<sup>θ</sup> = 1.331 V）<br>BrO<sub>3</sub><sup>-</sup> + 6H<sup>+</sup> + 6e<sup>-</sup> = Br<sup>-</sup> + 3H<sub>2</sub>O（E<sup>θ</sup> = 1.424 V）<br>BrO<sub>3</sub><sup>-</sup> + 6H<sup>+</sup> + 5e<sup>-</sup> = 1/2Br 2 + 3H<sub>2</sub>O（E<sup>θ</sup> = 1.52 V）<br>HBrO + H<sup>+</sup> + e<sup>-</sup> = 1/2Br 2(aq) + H<sub>2</sub>O（E<sup>θ</sup> = 1.595 V）<br>BrO<sub>4</sub><sup>-</sup> + 2H<sup>+</sup> + 2e<sup>-</sup> = BrO<sub>3</sub><sup>-</sup> + H<sub>2</sub>O（E<sup>θ</sup> = 1.763 V）<br>BrO<sub>3</sub><sup>-</sup> + 3H<sub>2</sub>O + 6e<sup>-</sup> = Br<sup>-</sup> + 6OH<sup>-</sup>（E<sup>θ</sup> = 0.61 V）<br>BrO<sup>-</sup> + H<sub>2</sub>O + 2e<sup>-</sup> = Br<sup>-</sup> + 2OH<sup>-</sup>（E<sup>θ</sup> = 0.761 V）<br>BrO<sub>4</sub><sup>-</sup> + H<sub>2</sub>O + 2e<sup>-</sup> = BrO<sub>3</sub><sup>-</sup> + 2OH<sup>-</sup>（E<sup>θ</sup> = 0.93 V）"
                                         }
                      },
                      {
@@ -1298,7 +1298,7 @@
                                             "ionizationEnergy4":  "5070",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "KrF + 2e<sup>-</sup> = Kr + 2F-(25度以下进行)<sub>2</sub>（E<sup>°</sup> = 3.05 V）"
+                                            "standardElectrodePotential":  "KrF<sub>2</sub> + 2e<sup>-</sup> = Kr + 2F<sup>-</sup>(25 度以下进行)（E<sup>θ</sup> = 3.05 V）"
                                         }
                      },
                      {
@@ -1334,7 +1334,7 @@
                                             "ionizationEnergy4":  "5080",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Rb<sup>+</sup> + e<sup>-</sup> = Rb（E<sup>°</sup> = -2.98 V）"
+                                            "standardElectrodePotential":  "Rb<sup>+</sup> + e<sup>-</sup> = Rb（E<sup>θ</sup> = -2.98 V）"
                                         }
                      },
                      {
@@ -1370,7 +1370,7 @@
                                             "ionizationEnergy4":  "5500",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Sr<sup>2+</sup> + 2e<sup>-</sup> = Sr（E<sup>°</sup> = -2.894 V）<br>Sr(OH) + 2e<sup>-</sup> = Sr + 2OH-2（E<sup>°</sup> = -2.88 V）"
+                                            "standardElectrodePotential":  "Sr<sup>2+</sup> + 2e<sup>-</sup> = Sr（E<sup>θ</sup> = -2.894 V）<br>Sr(OH)<sub>2</sub> + 2e<sup>-</sup> = Sr + 2OH<sup>-</sup>（E<sup>θ</sup> = -2.88 V）"
                                         }
                      },
                      {
@@ -1586,7 +1586,7 @@
                                             "ionizationEnergy4":  "-",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "RuO + e<sup>-</sup> = RuO-44（E<sup>°</sup> = 1.0 V）"
+                                            "standardElectrodePotential":  "RuO<sub>4</sub> + e<sup>-</sup> = RuO<sub>4</sub><sup>-</sup>（E<sup>θ</sup> = 1 V）"
                                         }
                      },
                      {
@@ -1658,7 +1658,7 @@
                                             "ionizationEnergy4":  "-",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Pd<sup>2+</sup> + 2e<sup>-</sup> = Pd（E<sup>°</sup> = 0.951 V）<br>Pd(OH) + 2e<sup>-</sup> = Pd + 2OH-2（E<sup>°</sup> = 0.07 V）"
+                                            "standardElectrodePotential":  "Pd<sup>2+</sup> + 2e<sup>-</sup> = Pd（E<sup>θ</sup> = 0.951 V）<br>Pd(OH)<sub>2</sub> + 2e<sup>-</sup> = Pd + 2OH<sup>-</sup>（E<sup>θ</sup> = 0.07 V）"
                                         }
                      },
                      {
@@ -1694,7 +1694,7 @@
                                             "ionizationEnergy4":  "-",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "AgI + e<sup>-</sup> = Ag + I（E<sup>°</sup> = -0.15224 V）<br>AgS + 2H<sup>+</sup> + 2e<sup>-</sup> = 2Ag + HS<sub>22</sub>（E<sup>°</sup> = -0.0366 V）<br>AgBr + e<sup>-</sup> = Ag + Br<sup>-</sup>（E<sup>°</sup> = 0.07133 V）<br>AgCl + e<sup>-</sup> = Ag + Cl<sup>-</sup>（E<sup>°</sup> = 0.2223 V）<br>AgIO + e<sup>-</sup> = Ag + IO-33（E<sup>°</sup> = 0.354 V）<br>AgCrO + 2e<sup>-</sup> = 2Ag + CrO<sub>2</sub>-244（E<sup>°</sup> = 0.447 V）<br>AgCO + 2e<sup>-</sup> = 2Ag + CO<sub>2</sub>-22424（E<sup>°</sup> = 0.4647 V）<br>AgBrO + e<sup>-</sup> = Ag + BrO-33（E<sup>°</sup> = 0.546 V）<br>AgNO + e<sup>-</sup> = Ag + NO-22（E<sup>°</sup> = 0.564 V）<br>AgSO<sub>4</sub> + 2e<sup>-</sup> = 2Ag + SO<sub>2</sub>-24（E<sup>°</sup> = 0.654 V）<br>AgF + e<sup>-</sup> = Ag + F<sup>-</sup>（E<sup>°</sup> = 0.779 V）<br>Ag<sup>+</sup> + e<sup>-</sup> = Ag（E<sup>°</sup> = 0.7991 V）<br>Ag<sup>2+</sup> + e<sup>-</sup> = Ag<sup>+</sup>（E<sup>°</sup> = 1.93 V）<br>Ag<sup>2+</sup> + e<sup>-</sup> = Ag<sup>+</sup>（E<sup>°</sup> = 1.98 V）<br>Ag<sup>2+</sup> + e<sup>-</sup> = Ag<sup>+</sup>（E<sup>°</sup> = 2.0 V）<br>AgS + 2e<sup>-</sup> = Ag + S<sub>2</sub>-2（E<sup>°</sup> = -0.691 V）<br>AgCN + e<sup>-</sup> = Ag + CN<sup>-</sup>（E<sup>°</sup> = -0.017 V）<br>AgO + HO + 2e<sup>-</sup> = 2Ag + 2OH-22（E<sup>°</sup> = 0.345 V）<br>2AgO + HO + 2e<sup>-</sup> = AgO + 2OH-22（E<sup>°</sup> = 0.607 V）"
+                                            "standardElectrodePotential":  "AgI + e<sup>-</sup> = Ag + I（E<sup>θ</sup> = -0.15224 V）<br>Ag<sub>2</sub> S + 2H<sup>+</sup> + 2e<sup>-</sup> = 2Ag + H<sub>2</sub>S（E<sup>θ</sup> = -0.0366 V）<br>AgBr + e<sup>-</sup> = Ag + Br<sup>-</sup>（E<sup>θ</sup> = 0.07133 V）<br>AgCl + e<sup>-</sup> = Ag + Cl<sup>-</sup>（E<sup>θ</sup> = 0.2223 V）<br>AgIO<sub>3</sub> + e<sup>-</sup> = Ag + IO<sub>3</sub><sup>-</sup>（E<sup>θ</sup> = 0.354 V）<br>Ag<sub>2</sub>CrO<sub>4</sub> + 2e<sup>-</sup> = 2Ag + CrO<sub>4</sub><sup>2-</sup>（E<sup>θ</sup> = 0.447 V）<br>Ag<sub>2</sub>C<sub>2</sub>O<sub>4</sub> + 2e<sup>-</sup> = 2Ag + C<sub>2</sub>O<sub>4</sub><sup>2-</sup>（E<sup>θ</sup> = 0.4647 V）<br>AgBrO<sub>3</sub> + e<sup>-</sup> = Ag + BrO<sub>3</sub><sup>-</sup>（E<sup>θ</sup> = 0.546 V）<br>AgNO<sub>2</sub> + e<sup>-</sup> = Ag + NO<sub>2</sub><sup>-</sup>（E<sup>θ</sup> = 0.564 V）<br>Ag<sub>2</sub> SO<sub>4</sub> + 2e<sup>-</sup> = 2Ag + SO<sub>4</sub><sup>2-</sup>（E<sup>θ</sup> = 0.654 V）<br>AgF + e<sup>-</sup> = Ag + F<sup>-</sup>（E<sup>θ</sup> = 0.779 V）<br>Ag<sup>+</sup> + e<sup>-</sup> = Ag（E<sup>θ</sup> = 0.7991 V）<br>Ag<sup>2+</sup> + e<sup>-</sup> = Ag<sup>+</sup>（E<sup>θ</sup> = 1.93 V）<br>Ag<sup>2+</sup> + e<sup>-</sup> = Ag<sup>+</sup>（E<sup>θ</sup> = 1.98 V）<br>Ag<sup>2+</sup> + e<sup>-</sup> = Ag<sup>+</sup>（E<sup>θ</sup> = 2 V）<br>Ag<sub>2</sub> S + 2e<sup>-</sup> = Ag + S<sup>2-</sup>（E<sup>θ</sup> = -0.691 V）<br>AgCN + e<sup>-</sup> = Ag + CN<sup>-</sup>（E<sup>θ</sup> = -0.017 V）<br>Ag<sub>2</sub>O + H<sub>2</sub>O + 2e<sup>-</sup> = 2Ag + 2OH<sup>-</sup>（E<sup>θ</sup> = 0.345 V）<br>2AgO + H<sub>2</sub>O + 2e<sup>-</sup> = Ag<sub>2</sub>O + 2OH<sup>-</sup>（E<sup>θ</sup> = 0.607 V）"
                                         }
                      },
                      {
@@ -1802,7 +1802,7 @@
                                             "ionizationEnergy4":  "3930.3",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Sn<sup>2+</sup> + 2e<sup>-</sup> = Sn（E<sup>°</sup> = -0.1375 V）<br>Sn<sup>4+</sup> + 2e<sup>-</sup> = Sn<sup>2+</sup>（E<sup>°</sup> = 0.151 V）<br>SnO + 2HO + 4e<sup>-</sup> = Sn + 4OH-22（E<sup>°</sup> = -0.954 V）<br>HSnO<sup>-</sup> + HO + 2e<sup>-</sup> = Sn + 3OH-22（E<sup>°</sup> = -0.909 V）"
+                                            "standardElectrodePotential":  "Sn<sup>2+</sup> + 2e<sup>-</sup> = Sn（E<sup>θ</sup> = -0.1375 V）<br>Sn<sup>4+</sup> + 2e<sup>-</sup> = Sn<sup>2+</sup>（E<sup>θ</sup> = 0.151 V）<br>SnO<sub>2</sub> + 2H<sub>2</sub>O + 4e<sup>-</sup> = Sn + 4OH<sup>-</sup>（E<sup>θ</sup> = -0.954 V）<br>HSnO<sub>2</sub><sup>-</sup> + H<sub>2</sub>O + 2e<sup>-</sup> = Sn + 3OH<sup>-</sup>（E<sup>θ</sup> = -0.909 V）"
                                         }
                      },
                      {
@@ -1874,7 +1874,7 @@
                                             "ionizationEnergy4":  "3610",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Te + 2H<sup>+</sup> + 2e<sup>-</sup> = H<sub>2</sub>Te（E<sup>°</sup> = -0.793 V）<br>TeO + 4H<sup>+</sup> + 4e<sup>-</sup> = Te + 2HO<sub>22</sub>（E<sup>°</sup> = 0.593 V）<br>HTeO + 2H<sup>+</sup> + 2e<sup>-</sup> = TeO + 4HO<sub>6622</sub>（E<sup>°</sup> = 1.02 V）<br>Te + 2e<sup>-</sup> = Te<sup>2-</sup>（E<sup>°</sup> = -1.143 V）<br>TeO<sup>2-</sup> + 3HO + 4e<sup>-</sup> = Te + 6OH<sub>32</sub>（E<sup>°</sup> = -0.57 V）<br>TeO<sup>2-</sup> + HO + 2e<sup>-</sup> = TeO<sup>2-</sup> + 2OH-423（E<sup>°</sup> = 0.4 V）"
+                                            "standardElectrodePotential":  "Te + 2H<sup>+</sup> + 2e<sup>-</sup> = H<sub>2</sub>Te（E<sup>θ</sup> = -0.793 V）<br>TeO<sub>2</sub> + 4H<sup>+</sup> + 4e<sup>-</sup> = Te + 2H<sub>2</sub>O（E<sup>θ</sup> = 0.593 V）<br>H<sub>6</sub>TeO<sub>6</sub> + 2H<sup>+</sup> + 2e<sup>-</sup> = TeO<sub>2</sub> + 4H<sub>2</sub>O（E<sup>θ</sup> = 1.02 V）<br>Te + 2e<sup>-</sup> = Te<sub>2</sub><sup>-</sup>（E<sup>θ</sup> = -1.143 V）<br>TeO<sub>3</sub><sup>2-</sup> + 3H<sub>2</sub>O + 4e<sup>-</sup> = Te + 6OH<sup>-</sup>（E<sup>θ</sup> = -0.57 V）<br>TeO<sub>4</sub><sup>2-</sup> + H<sub>2</sub>O + 2e<sup>-</sup> = TeO<sub>3</sub><sup>2-</sup> + 2OH<sup>-</sup>（E<sup>θ</sup> = 0.4 V）"
                                         }
                      },
                      {
@@ -1910,7 +1910,7 @@
                                             "ionizationEnergy4":  "-",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "I<sub>2</sub> + 2e<sup>-</sup> = 2I<sup>-</sup>（E<sup>°</sup> = 0.5355 V）<br>2IO<sup>-</sup> + 12H<sup>+</sup> + 10e<sup>-</sup> = I(s) + 6HO<sub>322</sub>（E<sup>°</sup> = 1.195 V）<br>2HIO + 2H<sup>+</sup> + 2e<sup>-</sup> = I + 2HO<sub>22</sub>（E<sup>°</sup> = 1.439 V）<br>HIO + H<sup>+</sup> + 2e<sup>-</sup> = IO<sup>-</sup> + 3HO<sub>5632</sub>（E<sup>°</sup> = 1.603 V）<br>IO<sup>-</sup> + 2HO + 4e<sup>-</sup> = IO<sup>-</sup> + 4OH-32（E<sup>°</sup> = 0.15 V）<br>IO<sup>-</sup> + 3HO + 6e<sup>-</sup> = I<sup>-</sup> + 6OH-32（E<sup>°</sup> = 0.26 V）<br>IO<sup>-</sup> + HO + 2e<sup>-</sup> = I<sup>-</sup> + 2OH-2（E<sup>°</sup> = 0.485 V）<br>HIO<sup>2-</sup> + 2e<sup>-</sup> = IO<sup>-</sup> + 3OH-363（E<sup>°</sup> = 0.7 V）"
+                                            "standardElectrodePotential":  "I<sub>2</sub> + 2e<sup>-</sup> = 2I<sup>-</sup>（E<sup>θ</sup> = 0.5355 V）<br>2IO<sub>3</sub><sup>-</sup> + 12H<sup>+</sup> + 10e<sup>-</sup> = I<sub>2</sub>(s) + 6H<sub>2</sub>O（E<sup>θ</sup> = 1.195 V）<br>2HIO + 2H<sup>+</sup> + 2e<sup>-</sup> = I<sub>2</sub> + 2H<sub>2</sub>O（E<sup>θ</sup> = 1.439 V）<br>H<sub>5</sub>IO<sub>6</sub> + H<sup>+</sup> + 2e<sup>-</sup> = IO<sub>3</sub><sup>-</sup> + 3H<sub>2</sub>O（E<sup>θ</sup> = 1.603 V）<br>IO<sub>3</sub><sup>-</sup> + 2H<sub>2</sub>O + 4e<sup>-</sup> = IO<sup>-</sup> + 4OH<sup>-</sup>（E<sup>θ</sup> = 0.15 V）<br>IO<sub>3</sub><sup>-</sup> + 3H<sub>2</sub>O + 6e<sup>-</sup> = I<sup>-</sup> + 6OH<sup>-</sup>（E<sup>θ</sup> = 0.26 V）<br>IO<sup>-</sup> + H<sub>2</sub>O + 2e<sup>-</sup> = I<sup>-</sup> + 2OH<sup>-</sup>（E<sup>θ</sup> = 0.485 V）<br>H<sub>3</sub>IO<sub>6</sub><sup>2-</sup> + 2e<sup>-</sup> = IO<sub>3</sub><sup>-</sup> + 3OH<sup>-</sup>（E<sup>θ</sup> = 0.7 V）"
                                         }
                      },
                      {
@@ -1945,7 +1945,7 @@
                                             "ionizationEnergy4":  "-",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "XeO + 6H<sup>+</sup> + 6e<sup>-</sup> = Xe + 3HO<sub>32</sub>（E<sup>°</sup> = 2.1 V）<br>HXeO + 2H<sup>+</sup> + 2e<sup>-</sup> = XeO + 3HO<sub>4632</sub>（E<sup>°</sup> = 2.6 V）<br>XeF + 2e<sup>-</sup> = Xe + 2F-2（E<sup>°</sup> = 2.64 V）<br>XeF + 2e<sup>-</sup> = Xe + 4F-4（E<sup>°</sup> = 2.7 V）<br>XeF + 6e<sup>-</sup> = Xe + 6F-6（E<sup>°</sup> = 2.857 V）<br>HXeO<sup>63-</sup> + 2HO + 2e<sup>-</sup> = HXeO<sup>-</sup> + 4OH-24（E<sup>°</sup> = 0.94 V）<br>HXeO<sup>-</sup> + 3HO + 6e<sup>-</sup> = Xe + 7OH-42（E<sup>°</sup> = 1.24 V）"
+                                            "standardElectrodePotential":  "XeO<sub>3</sub> + 6H<sup>+</sup> + 6e<sup>-</sup> = Xe + 3H<sub>2</sub>O（E<sup>θ</sup> = 2.1 V）<br>H<sub>4</sub>XeO<sub>6</sub> + 2H<sup>+</sup> + 2e<sup>-</sup> = XeO<sub>3</sub> + 3H<sub>2</sub>O（E<sup>θ</sup> = 2.6 V）<br>XeF<sub>2</sub> + 2e<sup>-</sup> = Xe + 2F<sup>-</sup>（E<sup>θ</sup> = 2.64 V）<br>XeF<sub>4</sub> + 2e<sup>-</sup> = Xe + 4F<sup>-</sup>（E<sup>θ</sup> = 2.7 V）<br>XeF<sub>6</sub> + 6e<sup>-</sup> = Xe + 6F<sup>-</sup>（E<sup>θ</sup> = 2.857 V）<br>HXeO<sub>63</sub><sup>-</sup> + 2H<sub>2</sub>O + 2e<sup>-</sup> = HXeO<sub>4</sub><sup>-</sup> + 4OH<sup>-</sup>（E<sup>θ</sup> = 0.94 V）<br>HXe O<sub>4</sub><sup>-</sup> + 3H<sub>2</sub>O + 6e<sup>-</sup> = Xe + 7OH<sup>-</sup>（E<sup>θ</sup> = 1.24；0.9 V）"
                                         }
                      },
                      {
@@ -1981,7 +1981,7 @@
                                             "ionizationEnergy4":  "-",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Cs<sup>+</sup> + e<sup>-</sup> = Cs（E<sup>°</sup> = -3.026 V）"
+                                            "standardElectrodePotential":  "Cs<sup>+</sup> + e<sup>-</sup> = Cs（E<sup>θ</sup> = -3.026 V）"
                                         }
                      },
                      {
@@ -2017,7 +2017,7 @@
                                             "ionizationEnergy4":  "-",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Ba<sup>2+</sup> + 2e<sup>-</sup> = Ba（E<sup>°</sup> = -2.912 V）<br>Ba(OH)·8HO + 2e<sup>-</sup> = Ba + 2OH<sup>-</sup> + ·8HO<sub>222</sub>（E<sup>°</sup> = -2.99 V）<br>Ba(OH) + 2e<sup>-</sup> = Ba + 2OH-2（E<sup>°</sup> = -2.81 V）"
+                                            "standardElectrodePotential":  "Ba<sub>2</sub><sup>+</sup> + 2e<sup>-</sup> = Ba（E<sup>θ</sup> = -2.912 V）<br>Ba(OH)<sub>2</sub>·8H<sub>2</sub>O + 2e<sup>-</sup> = Ba + 2OH<sup>-</sup> + ·8H<sub>2</sub>O（E<sup>θ</sup> = -2.99 V）<br>Ba(OH)<sub>2</sub> + 2e<sup>-</sup> = Ba + 2OH<sup>-</sup>（E<sup>θ</sup> = -2.81 V）"
                                         }
                      },
                      {
@@ -2053,7 +2053,7 @@
                                             "ionizationEnergy4":  "4819",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "La(OH) + 3e<sup>-</sup> = La + 3OH-3（E<sup>°</sup> = -2.9 V）"
+                                            "standardElectrodePotential":  "La(OH)<sub>3</sub> + 3e<sup>-</sup> = La + 3OH<sup>-</sup>（E<sup>θ</sup> = -2.9 V）"
                                         }
                      },
                      {
@@ -2089,7 +2089,7 @@
                                             "ionizationEnergy4":  "3547",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Ce<sup>3+</sup> + 3e<sup>-</sup> = Ce（E<sup>°</sup> = -2.336 V）<br>Ce<sup>4+</sup> + e<sup>-</sup> = Ce<sup>3+</sup>（E<sup>°</sup> = 1.74 V）<br>Ce(OH) + 3e<sup>-</sup> = Ce + 3OH-3（E<sup>°</sup> = -2.87 V）"
+                                            "standardElectrodePotential":  "Ce<sub>3</sub><sup>+</sup> + 3e<sup>-</sup> = Ce（E<sup>θ</sup> = -2.336 V）<br>Ce<sub>4</sub><sup>+</sup> + e<sup>-</sup> = Ce<sub>3</sub><sup>+</sup>（E<sup>θ</sup> = 1.74 V）<br>Ce(OH)<sub>3</sub> + 3e<sup>-</sup> = Ce + 3OH<sup>-</sup>（E<sup>θ</sup> = -2.87 V）"
                                         }
                      },
                      {
@@ -2125,7 +2125,7 @@
                                             "ionizationEnergy4":  "3761",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Pr<sup>4+</sup> + e<sup>-</sup> = Pr<sup>3+</sup>（E<sup>°</sup> = 3.2±0.2 V）<br>Pr(OH) + 3e<sup>-</sup> = Pr + 3OH-3（E<sup>°</sup> = -2.85 V）"
+                                            "standardElectrodePotential":  "Pr<sub>4</sub><sup>+</sup> + e<sup>-</sup> = Pr<sub>3</sub><sup>+</sup>（E<sup>θ</sup> = 3.2±0.2 V）<br>Pr(OH)<sub>3</sub> + 3e<sup>-</sup> = Pr + 3OH<sup>-</sup>（E<sup>θ</sup> = -2.85 V）"
                                         }
                      },
                      {
@@ -2341,7 +2341,7 @@
                                             "ionizationEnergy4":  "3839",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Tb<sup>4+</sup> + e<sup>-</sup> = Tb<sup>3+</sup>（E<sup>°</sup> = 3.1±0.2 V）<br>Tb(OH) + 3e<sup>-</sup> = Tb + 3OH-3（E<sup>°</sup> = -2.79 V）"
+                                            "standardElectrodePotential":  "Tb<sub>4</sub><sup>+</sup> + e<sup>-</sup> = Tb<sub>3</sub><sup>+</sup>（E<sup>θ</sup> = 3.1±0.2 V）<br>Tb(OH)<sub>3</sub> + 3e<sup>-</sup> = Tb + 3OH<sup>-</sup>（E<sup>θ</sup> = -2.79 V）"
                                         }
                      },
                      {
@@ -2809,7 +2809,7 @@
                                             "ionizationEnergy4":  "-",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "[PtCl]<sup>2-</sup> + 2e<sup>-</sup> = [PtCl]<sup>2-</sup> + 2Cl-64（E<sup>°</sup> = 0.68 V）<br>[PtCl]<sup>2-</sup> + 2e<sup>-</sup> = Pt + 4Cl-4（E<sup>°</sup> = 0.73 V）<br>PtO + 4H<sup>+</sup> + 4e<sup>-</sup> = Pt + 2HO<sub>22</sub>（E<sup>°</sup> = 1.045 V）<br>Pt<sup>2+</sup> + 2e<sup>-</sup> = Pt（E<sup>°</sup> = 1.188 V）<br>PtF + e<sup>-</sup> = PtF-66（E<sup>°</sup> = 2.924 V）<br>Pt(OH) + 2e<sup>-</sup> = Pt + 2OH-2（E<sup>°</sup> = 0.14 V）"
+                                            "standardElectrodePotential":  "[PtCl<sub>6</sub>]2<sup>-</sup> + 2e<sup>-</sup> = [PtCl<sub>4</sub>]2<sup>-</sup> + 2Cl<sup>-</sup>（E<sup>θ</sup> = 0.68 V）<br>[PtCl<sub>4</sub>]2<sup>-</sup> + 2e<sup>-</sup> = Pt + 4Cl<sup>-</sup>（E<sup>θ</sup> = 0.73 V）<br>PtO<sub>2</sub> + 4H<sup>+</sup> + 4e<sup>-</sup> = Pt + 2H<sub>2</sub>O（E<sup>θ</sup> = 1.045 V）<br>Pt<sub>2</sub><sup>+</sup> + 2e<sup>-</sup> = Pt（E<sup>θ</sup> = 1.188 V）<br>PtF<sub>6</sub> + e<sup>-</sup> = PtF<sub>6</sub><sup>-</sup>（E<sup>θ</sup> = 2.924 V）<br>Pt(OH)<sub>2</sub> + 2e<sup>-</sup> = Pt + 2OH<sup>-</sup>（E<sup>θ</sup> = 0.14 V）"
                                         }
                      },
                      {
@@ -2845,7 +2845,7 @@
                                             "ionizationEnergy4":  "-",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "AuBr<sup>-</sup> + e<sup>-</sup> = Au + 2Br-2（E<sup>°</sup> = 0.959 V）<br>[AuCl]<sup>-</sup> + 3e<sup>-</sup> = Au + 4Cl-4（E<sup>°</sup> = 1.002 V）<br>AuO + 6H<sup>+</sup> + 6e<sup>-</sup> = 2Au + 3HO<sub>232</sub>（E<sup>°</sup> = 1.36 V）<br>Au<sup>3+</sup> + 2e<sup>-</sup> = Au<sup>+</sup>（E<sup>°</sup> = 1.41 V）<br>Au<sup>3+</sup> + 3e<sup>-</sup> = Au（E<sup>°</sup> = 1.498 V）<br>Au<sup>+</sup> + e<sup>-</sup> = Au（E<sup>°</sup> = 1.691 V）"
+                                            "standardElectrodePotential":  "AuBr<sub>2</sub><sup>-</sup> + e<sup>-</sup> = Au + 2Br<sup>-</sup>（E<sup>θ</sup> = 0.959 V）<br>[AuCl<sub>4</sub>]<sup>-</sup> + 3e<sup>-</sup> = Au + 4Cl<sup>-</sup>（E<sup>θ</sup> = 1.002 V）<br>Au<sub>2</sub>O<sub>3</sub> + 6H<sup>+</sup> + 6e<sup>-</sup> = 2Au + 3H<sub>2</sub>O（E<sup>θ</sup> = 1.36 V）<br>Au<sub>3</sub><sup>+</sup> + 2e<sup>-</sup> = Au<sup>+</sup>（E<sup>θ</sup> = 1.41 V）<br>Au<sub>3</sub><sup>+</sup> + 3e<sup>-</sup> = Au（E<sup>θ</sup> = 1.498 V）<br>Au<sup>+</sup> + e<sup>-</sup> = Au（E<sup>θ</sup> = 1.691 V）"
                                         }
                      },
                      {
@@ -2881,7 +2881,7 @@
                                             "ionizationEnergy4":  "-",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "HgI + 2e<sup>-</sup> = 2Hg + 2I-22（E<sup>°</sup> = -0.0405 V）<br>HgBr + 2e<sup>-</sup> = 2Hg + 2Br-22（E<sup>°</sup> = 0.13923 V）<br>HgCl + 2e<sup>-</sup> = 2Hg + 2Cl-22（E<sup>°</sup> = 0.268 V）<br>HgSO<sub>4</sub> + 2e<sup>-</sup> = 2Hg + SO<sub>2</sub>-24（E<sup>°</sup> = 0.614 V）<br>Hg<sup>2+</sup> + 2e<sup>-</sup> = 2Hg<sub>2</sub>（E<sup>°</sup> = 0.788 V）<br>Hg<sup>2+</sup> + 2e<sup>-</sup> = Hg(lq)（E<sup>°</sup> = 0.853 V）<br>2Hg<sup>2+</sup> + 2e<sup>-</sup> = Hg<sub>2</sub> + 2（E<sup>°</sup> = 0.92 V）<br>HgS + 2e<sup>-</sup> = Hg + S<sup>2-</sup>（E<sup>°</sup> = -0.69 V）<br>HgO + HO + 2e<sup>-</sup> = Hg + 2OH-2（E<sup>°</sup> = 0.0977 V）"
+                                            "standardElectrodePotential":  "Hg<sub>2</sub>I<sub>2</sub> + 2e<sup>-</sup> = 2Hg + 2I<sup>-</sup>（E<sup>θ</sup> = -0.0405 V）<br>Hg<sub>2</sub>Br 2 + 2e<sup>-</sup> = 2Hg + 2Br<sup>-</sup>（E<sup>θ</sup> = 0.13923 V）<br>Hg<sub>2</sub>Cl<sub>2</sub> + 2e<sup>-</sup> = 2Hg + 2Cl<sup>-</sup>（E<sup>θ</sup> = 0.268 V）<br>Hg<sub>2</sub> SO<sub>4</sub> + 2e<sup>-</sup> = 2Hg + SO<sub>42</sub><sup>-</sup>（E<sup>θ</sup> = 0.614 V）<br>Hg<sub>22</sub><sup>+</sup> + 2e<sup>-</sup> = 2Hg（E<sup>θ</sup> = 0.788 V）<br>Hg<sub>2</sub><sup>+</sup> + 2e<sup>-</sup> = Hg(lq)（E<sup>θ</sup> = 0.853 V）<br>2Hg<sub>2</sub><sup>+</sup> + 2e<sup>-</sup> = Hg 22<sup>+</sup>（E<sup>θ</sup> = 0.92 V）<br>HgS + 2e<sup>-</sup> = Hg + S<sub>2</sub><sup>-</sup>（E<sup>θ</sup> = -0.69 V）<br>HgO + H<sub>2</sub>O + 2e<sup>-</sup> = Hg + 2OH<sup>-</sup>（E<sup>θ</sup> = 0.0977 V）"
                                         }
                      },
                      {
@@ -2917,7 +2917,7 @@
                                             "ionizationEnergy4":  "-",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "T<sup>13+</sup> + 2e<sup>-</sup> = Tl<sup>+</sup>（E<sup>°</sup> = 1.25 V）<br>Tl(OH) + e<sup>-</sup> = Tl + OH<sup>-</sup>（E<sup>°</sup> = -0.343 V）<br>Tl(OH) + 2e<sup>-</sup> = TlOH + 2OH-3（E<sup>°</sup> = -0.05 V）"
+                                            "standardElectrodePotential":  "T<sub>13</sub><sup>+</sup> + 2e<sup>-</sup> = Tl<sup>+</sup>（E<sup>θ</sup> = 1.25 V）<br>Tl(OH) + e<sup>-</sup> = Tl + OH<sup>-</sup>（E<sup>θ</sup> = -0.343 V）<br>Tl(OH)<sub>3</sub> + 2e<sup>-</sup> = TlOH + 2OH<sup>-</sup>（E<sup>θ</sup> = -0.05 V）"
                                         }
                      },
                      {
@@ -2953,7 +2953,7 @@
                                             "ionizationEnergy4":  "4083",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "PbI + 2e<sup>-</sup> = Pb + 2I-2（E<sup>°</sup> = -0.365 V）<br>PbBr + 2e<sup>-</sup> = Pb + 2Br-2（E<sup>°</sup> = -0.284 V）<br>PbI + 2e<sup>-</sup> = Pb + 2I-2（E<sup>°</sup> = -0.2675 V）<br>Pb<sup>2+</sup> + 2e<sup>-</sup> = Pb（E<sup>°</sup> = -0.1262 V）<br>PbO + 4H<sup>+</sup> + 2e<sup>-</sup> = Pb<sup>2+</sup> + 2HO<sub>22</sub>（E<sup>°</sup> = 1.455 V）<br>PbO + SO<sup>2-</sup> + 4H<sup>+</sup> + 2e<sup>-</sup> = PbSO + 2HO<sub>2442</sub>（E<sup>°</sup> = 1.69 V）<br>PbO + HO + 2e<sup>-</sup> = Pb + 2OH-2（E<sup>°</sup> = -0.581 V）<br>HPbO<sup>-</sup> + HO + 2e<sup>-</sup> = Pb + 3OH-22（E<sup>°</sup> = -0.54 V）<br>PbCO + 2e<sup>-</sup> = Pb + CO<sub>2</sub>-33（E<sup>°</sup> = -0.509 V）<br>PbO + HO + 2e<sup>-</sup> = PbO + 2OH-22（E<sup>°</sup> = 0.247 V）"
+                                            "standardElectrodePotential":  "PbI<sub>2</sub> + 2e<sup>-</sup> = Pb + 2I<sup>-</sup>（E<sup>θ</sup> = -0.365 V）<br>PbSO<sub>4</sub> + 2e<sup>-</sup> = Pb + SO<sub>42</sub><sup>-</sup>（E<sup>θ</sup> = -0.3588 V）<br>PbBr<sub>2</sub> + 2e<sup>-</sup> = Pb + 2Br<sup>-</sup>（E<sup>θ</sup> = -0.284 V）<br>PbI<sub>2</sub> + 2e<sup>-</sup> = Pb + 2I<sup>-</sup>（E<sup>θ</sup> = -0.2675 V）<br>Pb<sub>2</sub><sup>+</sup> + 2e<sup>-</sup> = Pb（E<sup>θ</sup> = -0.1262 V）<br>PbO<sub>2</sub> + 4H<sup>+</sup> + 2e<sup>-</sup> = Pb<sub>2</sub><sup>+</sup> + 2H<sub>2</sub>O（E<sup>θ</sup> = 1.455 V）<br>PbO<sub>2</sub> + SO<sub>42</sub><sup>-</sup> + 4H<sup>+</sup> + 2e<sup>-</sup> = PbSO<sub>4</sub> + 2H<sub>2</sub>O（E<sup>θ</sup> = 1.69 V）<br>PbO + H<sub>2</sub>O + 2e<sup>-</sup> = Pb + 2OH<sup>-</sup>（E<sup>θ</sup> = -0.581 V）<br>HPbO<sub>2</sub><sup>-</sup> + H<sub>2</sub>O + 2e<sup>-</sup> = Pb + 3OH<sup>-</sup>（E<sup>θ</sup> = -0.54 V）<br>PbCO<sub>3</sub> + 2e<sup>-</sup> = Pb + CO<sub>32</sub><sup>-</sup>（E<sup>θ</sup> = -0.509 V）<br>PbO<sub>2</sub> + H<sub>2</sub>O + 2e<sup>-</sup> = PbO + 2OH<sup>-</sup>（E<sup>θ</sup> = 0.247 V）"
                                         }
                      },
                      {
@@ -2989,7 +2989,7 @@
                                             "ionizationEnergy4":  "4370",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Bi<sup>3+</sup> + 3e<sup>-</sup> = Bi（E<sup>°</sup> = 0.308 V）<br>BiO<sup>-</sup> + 2H<sup>+</sup> + 2e<sup>-</sup> = Bi<sup>3+</sup> + HO<sub>32</sub>（E<sup>°</sup> = 2.03 V）<br>BiO + 3HO + 6e<sup>-</sup> = 2Bi + 6OH-232（E<sup>°</sup> = -0.46 V）"
+                                            "standardElectrodePotential":  "Bi<sub>3</sub><sup>+</sup> + 3e<sup>-</sup> = Bi（E<sup>θ</sup> = 0.308 V）<br>BiO<sub>3</sub><sup>-</sup> + 2H<sup>+</sup> + 2e<sup>-</sup> = Bi<sub>3</sub><sup>+</sup> + H<sub>2</sub>O（E<sup>θ</sup> = 2.03 V）<br>Bi<sub>2</sub>O<sub>3</sub> + 3H<sub>2</sub>O + 6e<sup>-</sup> = 2Bi + 6OH<sup>-</sup>（E<sup>θ</sup> = -0.46 V）"
                                         }
                      },
                      {
@@ -4237,3 +4237,7 @@
                      }
                  ]
 }
+
+
+
+

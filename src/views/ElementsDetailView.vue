@@ -13,6 +13,8 @@ onMounted(() => {
     <p>点击周期表元素后可查看其基础信息与常见性质。</p>
   </div>
   <div id="detail_card"></div>
+  <a id="detail_prev" class="detail_nav-arrow detail_nav-prev" href="#" aria-label="上一元素">&#x276E;</a>
+  <a id="detail_next" class="detail_nav-arrow detail_nav-next" href="#" aria-label="下一元素">&#x276F;</a>
   <div id="detail_sections">
     <div class="detail_section">
       <h3>常见性质</h3>

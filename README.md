@@ -14,6 +14,7 @@ ChemWeb 是一个面向高中阶段的化学学习平台，包含知识速览、
 - Vue 3 + Vite
 - Vue Router
 - ChemDoodle Web Components（本地离线资源）
+- RDKit 3D 后端（可选，用于 3D 构型生成）
 
 ## 本地资源说明（ChemDoodle）
 
@@ -24,6 +25,80 @@ ChemWeb 是一个面向高中阶段的化学学习平台，包含知识速览、
 - ChemDoodleWeb.css
 
 如果更换 ChemDoodle 版本，请确保以上文件路径与名称保持一致。
+
+## 3D 构型后端（RDKit）
+
+如需完整的环境安装与排障说明，请阅读：
+
+- [backend-rdkit/README-3D.md](backend-rdkit/README-3D.md)
+
+前端 3D 预览通过后端接口生成构型，默认接口地址来自 `.env`：
+
+```
+VITE_3D_API_BASE=http://localhost:8000
+```
+
+### 1) 运行环境要求
+
+- Python 3.10 或 3.11（不建议 3.12+，rdkit-pypi 可能缺少对应轮子）
+- 能访问 PyPI（建议使用官方源）
+
+### 2) 创建虚拟环境并安装依赖
+
+Windows (PowerShell)：
+
+```powershell
+cd backend-rdkit
+py -3.11 -m venv .venv
+.\.venv\Scripts\activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+macOS / Linux：
+
+```bash
+cd backend-rdkit
+python3.11 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+如果你使用了镜像源导致找不到 rdkit-pypi，请临时切换官方源：
+
+```bash
+pip install -i https://pypi.org/simple rdkit-pypi
+```
+
+### 3) 兼容性说明（重要）
+
+rdkit-pypi 需要 NumPy 1.x。若出现类似 `A module compiled using NumPy 1.x` 报错，请执行：
+
+```bash
+pip install "numpy<2"
+```
+
+### 4) 启动后端
+
+```bash
+cd backend-rdkit
+uvicorn app.main:app --host 0.0.0.0 --port 8000
+```
+
+健康检查：
+
+```
+http://localhost:8000/api/health
+```
+
+### 5) 前端 3D 预览离线资源
+
+3D 预览使用 3Dmol.js，本地离线文件位于：
+
+```
+public/3dmol/3Dmol-min.js
+```
 
 ## 开发与构建
 
@@ -45,7 +120,7 @@ npm run preview
 - /calculation：式量计算
 - /calculation/balancing：方程式配平
 - /extension：拓展知识
-- /ketcher：结构式编辑（ChemDoodle）
+- /chemdoodle：结构式编辑（ChemDoodle）
 
 说明：为了兼容旧版静态页面链接，路由中保留了若干 *.html 的重定向入口。
 

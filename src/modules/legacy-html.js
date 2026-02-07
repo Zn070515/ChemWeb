@@ -11,7 +11,7 @@ const ROUTE_MAP = [
   { match: /\/extension\.html$/i, replace: '/extension' },
   { match: /\/extension\/extension\.html$/i, replace: '/extension' },
   { match: /\/extension\/extension-reading\.html$/i, replace: '/extension/reading' },
-  { match: /\/ketcher\/ketcher\.html$/i, replace: '/ketcher' }
+  
 ]
 
 const normalizeRouteLink = (href) => {

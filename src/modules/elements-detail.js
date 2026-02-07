@@ -71,6 +71,10 @@ const render = async () => {
 	const data = await loadLocalData();
 	const elements = data?.elements ?? [];
 	const current = elements.find((item) => item.symbol === symbol) || elements[0] || {};
+	const currentIndex = Math.max(
+		0,
+		elements.findIndex((item) => item.symbol === current.symbol)
+	);
 
 	const number = current.number ?? "-";
 	const name = current.name ?? symbol;
@@ -159,6 +163,27 @@ const render = async () => {
 		const extensionText = pickValue(properties.extension);
 		const html = formatExtensionText(extensionText || "暂无详细介绍，敬请期待。");
 		extensionContainer.innerHTML = html;
+	}
+
+	const prevLink = document.getElementById("detail_prev");
+	const nextLink = document.getElementById("detail_next");
+	if (prevLink && nextLink) {
+		const prevItem = elements[currentIndex - 1];
+		const nextItem = elements[currentIndex + 1];
+		if (prevItem) {
+			prevLink.href = `/elements/detail?symbol=${prevItem.symbol}`;
+			prevLink.title = `${prevItem.name} (${prevItem.symbol})`;
+			prevLink.style.display = "flex";
+		} else {
+			prevLink.style.display = "none";
+		}
+		if (nextItem) {
+			nextLink.href = `/elements/detail?symbol=${nextItem.symbol}`;
+			nextLink.title = `${nextItem.name} (${nextItem.symbol})`;
+			nextLink.style.display = "flex";
+		} else {
+			nextLink.style.display = "none";
+		}
 	}
 };
 
