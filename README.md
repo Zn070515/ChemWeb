@@ -1,6 +1,6 @@
 # ChemWeb
 
-ChemWeb 是一个面向高中阶段的化学学习平台，包含知识速览、元素速查、式量计算与配平、拓展阅读，以及本地离线的化学结构式编辑器。
+ChemWeb 是一个面向高中阶段的化学学习平台，包含知识速览、元素速查、式量计算与配平、拓展阅读、常用数据速查，以及本地离线的化学结构式编辑器与 3D 预览。
 
 ## 功能概览
 
@@ -8,6 +8,8 @@ ChemWeb 是一个面向高中阶段的化学学习平台，包含知识速览、
 - 元素速查：元素列表与详情查询入口。
 - 计算与配平：式量计算与化学方程式配平工具页。
 - 结构式编辑：基于 ChemDoodle Web Components 免费版的 2D 编辑与 MOL 导出。
+- 常用数据速查：酸碱强度（Ka/Kb）、电极电势、常数表、Ksp 溶解性矩阵。
+- 3D 预览（可选）：前端调用 RDKit 后端生成构型。
 
 ## 技术栈
 
@@ -15,6 +17,7 @@ ChemWeb 是一个面向高中阶段的化学学习平台，包含知识速览、
 - Vue Router
 - ChemDoodle Web Components（本地离线资源）
 - RDKit 3D 后端（可选，用于 3D 构型生成）
+- markdown-it（用于渲染 3D 预览说明页）
 
 ## 本地资源说明（ChemDoodle）
 
@@ -121,6 +124,11 @@ npm run preview
 - /calculation/balancing：方程式配平
 - /extension：拓展知识
 - /chemdoodle：结构式编辑（ChemDoodle）
+- /datasets：实用性表速查入口
+- /datasets/acidity：酸碱强度（Ka/Kb）
+- /datasets/solubility：溶解度与 Ksp 矩阵
+- /datasets/electrode-potentials：电极电势
+- /datasets/constants：化学常数表
 
 说明：为了兼容旧版静态页面链接，路由中保留了若干 *.html 的重定向入口。
 
@@ -128,9 +136,13 @@ npm run preview
 
 ```
 public/
+	3dmol/                 # 3Dmol.js 本地离线资源
 	chemdoodle/            # ChemDoodle 本地离线资源
+	data/                  # 数据集 JSON
+	legacy/                # 旧版静态内容
 src/
 	assets/                # 站点与编辑器样式
+	modules/               # 旧版内容加载与交互
 	router/                # 路由配置
 	views/                 # 页面视图
 ```
