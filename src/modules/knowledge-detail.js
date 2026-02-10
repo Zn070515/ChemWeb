@@ -1,9 +1,10 @@
-const setupTopicDetails = () => {
+export const setupTopicDetails = () => {
 	const items = document.querySelectorAll(".container ol li");
 	items.forEach((item) => {
 		const detail = item.querySelector(".point-detail");
 		if (detail) {
 			item.classList.add("topic-item");
+			item.classList.add("is-open");
 			item.addEventListener("click", (event) => {
 				if (event.target.closest("a")) {
 					return;
@@ -26,7 +27,7 @@ const setupTopicDetails = () => {
 		button.textContent = text;
 
 		const generatedDetail = document.createElement("p");
-		generatedDetail.className = "topic-detail";
+		generatedDetail.className = "point-detail";
 		generatedDetail.textContent = "（待补充：点击此条目展开具体知识点）";
 
 		button.addEventListener("click", () => {
@@ -38,9 +39,3 @@ const setupTopicDetails = () => {
 		item.appendChild(generatedDetail);
 	});
 };
-
-if (document.readyState === "loading") {
-	document.addEventListener("DOMContentLoaded", setupTopicDetails);
-} else {
-	setupTopicDetails();
-}

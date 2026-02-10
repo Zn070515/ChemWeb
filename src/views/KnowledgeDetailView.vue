@@ -46,7 +46,8 @@ const loadContent = async () => {
   try {
     content.value = await loadLegacyHtml(legacyPath.value)
     await nextTick()
-    await import('../modules/knowledge-detail.js')
+    const module = await import('../modules/knowledge-detail.js')
+    module.setupTopicDetails?.()
   } catch (err) {
     error.value = 'Failed to load the content.'
   } finally {

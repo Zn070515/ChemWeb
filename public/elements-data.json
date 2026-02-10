@@ -19,7 +19,7 @@
                                             "casNumber":  "-",
                                             "electronShell":  "K1",
                                             "summary":  "Hydrogen is a chemical element with chemical symbol H and atomic number 1. With an atomic weight of 1.00794 u, hydrogen is the lightest element on the periodic table. Its monatomic form (H) is the most abundant chemical substance in the Universe, constituting roughly 75% of all baryonic mass.",
-                                            "extension":  "氢位于第一周期第一主族，原子半径为53pm。氢失去一个电子后变成H+，其半径只有约10-5埃（1埃=0.1nm）。之所以数值相差如此之大，因为氢原子的半径范围包括其电子云，氢离子就是一质子，其半径就是质子的半径。由于氢离子的半径太小，导致它的极化能力（使电子云变形的能力）极强（极化能力与电荷和半径有关，（正）电荷越多，半径越小，极化能力越强），从而非金属与氢形成的化学键几乎都是共价键，即使是电负性最强的氟原子，H-F也有89%左右的共价成分。而氢离子极强的极化能力导致它在水溶液中几乎不可能以一个裸露的质子存在，它会使水分子的电子云发生变化，换句话说，氢离子在水中以水合氢离子H3O+的形式存在。若氢离子浓度极低，还可以形成H9O4+离子（H3O+与三个水分子形成氢键）。\n\n氢负离子（H-）为208pm，是一种强碱（碱性强于OH-），同时也是一种强还原剂，在有机合成中这两种性质经常被用到。氢负离子一般只在金属氢化物中见到，其制备方法大多也是活泼金属如钾钙钠等单质与氢气共热。\n\n注1：关于极化能力与可极化性：极化能力见上，可极化性是指电子云的可变形性，一般负电荷越多，半径越大，可极化性越强。我们应当关注正离子的极化能力和负离子的可极化能力（不是说另一个就没有了，也有的，只是没那么明显，我们要抓主要的点）。副族元素既有好的极化能力也有好的可极化性（因为他们有d电子）你可以把可极化性想成一块橡皮泥的柔软程度，极化性就是你手捏他的力度。极化影响着很多化学性质。最著名的就是晶体的归类。比如AgF，AgCl是典型的离子晶体，他们晶体微粒间的极化程度小，倾向于离子键结合，而AgI由于碘离子的强可极化性，使AgI晶体微粒间以共价键为主，导致他们的物理化学性质有较大不同（如AgF极易溶于水，AgI极难溶于水）。另一个例子是FeCl2和FeCl3。易知氯化亚铁是离子晶体，氯化铁为分子晶体。是因为铁离子和亚铁离子半径差不多，但是铁离子的电荷较多，所以它的极化能力更强，即氯化铁中氯离子的电子云变形程度大，氯化铁中铁和氯倾向共价键，故而氯化铁晶体体现为分子晶体。\n\n注2：酸碱理论有很多，初高中阶段接触的都是较为原始的阿伦尼乌斯酸碱理论，即水中给出H+的是酸，水中给出OH-的是碱。再高一级的是布朗斯特-劳里理论，即能给出H+的是酸，能接受H+的是碱，并且不局限于水溶液。再往上是路易斯酸碱理论，即能接受孤电子对的是酸，能给出孤电子对的是碱，类似于高中的配位键。再往上是软硬酸碱理论，在此就不介绍了。我们讲的比较多的是布朗斯特-劳里理论和路易斯酸碱理论。氢负离子有一对孤电子对可给出，因而它是一种碱。有关酸碱理论的应用我们会在有机拓展部分展开。",
+                                            "extension":  "氢位于第一周期第一主族，原子半径为53pm。氢失去一个电子后变成H+，其半径只有约10<sup>-5</sup>埃（1埃=0.1nm）。之所以数值相差如此之大，因为氢原子的半径范围包括其电子云，氢离子就是一质子，其半径就是质子的半径。由于氢离子的半径太小，导致它的极化能力（使电子云变形的能力）极强（极化能力与电荷和半径有关，（正）电荷越多，半径越小，极化能力越强），从而非金属与氢形成的化学键几乎都是共价键，即使是电负性最强的氟原子，H-F也有89%左右的共价成分。而氢离子极强的极化能力导致它在水溶液中几乎不可能以一个裸露的质子存在，它会使水分子的电子云发生变化，换句话说，氢离子在水中以水合氢离子H3O+的形式存在。若氢离子浓度极低，还可以形成H9O4+离子（H3O+与三个水分子形成氢键）。\n\n氢负离子（H-）为208pm，是一种强碱（碱性强于OH-），同时也是一种强还原剂，在有机合成中这两种性质经常被用到。氢负离子一般只在金属氢化物中见到，其制备方法大多也是活泼金属如钾钙钠等单质与氢气共热。\n\n注1：关于极化能力与可极化性：极化能力见上，可极化性是指电子云的可变形性，一般负电荷越多，半径越大，可极化性越强。我们应当关注正离子的极化能力和负离子的可极化能力（不是说另一个就没有了，也有的，只是没那么明显，我们要抓主要的点）。副族元素既有好的极化能力也有好的可极化性（因为他们有d电子）你可以把可极化性想成一块橡皮泥的柔软程度，极化性就是你手捏他的力度。极化影响着很多化学性质。最著名的就是晶体的归类。比如AgF，AgCl是典型的离子晶体，他们晶体微粒间的极化程度小，倾向于离子键结合，而AgI由于碘离子的强可极化性，使AgI晶体微粒间以共价键为主，导致他们的物理化学性质有较大不同（如AgF极易溶于水，AgI极难溶于水）。另一个例子是FeCl2和FeCl3。易知氯化亚铁是离子晶体，氯化铁为分子晶体。是因为铁离子和亚铁离子半径差不多，但是铁离子的电荷较多，所以它的极化能力更强，即氯化铁中氯离子的电子云变形程度大，氯化铁中铁和氯倾向共价键，故而氯化铁晶体体现为分子晶体。\n\n注2：酸碱理论有很多，初高中阶段接触的都是较为原始的阿伦尼乌斯酸碱理论，即水中给出H+的是酸，水中给出OH-的是碱。再高一级的是布朗斯特-劳里理论，即能给出H+的是酸，能接受H+的是碱，并且不局限于水溶液。再往上是路易斯酸碱理论，即能接受孤电子对的是酸，能给出孤电子对的是碱，类似于高中的配位键。再往上是软硬酸碱理论，在此就不介绍了。我们讲的比较多的是布朗斯特-劳里理论和路易斯酸碱理论。氢负离子有一对孤电子对可给出，因而它是一种碱。有关酸碱理论的应用我们会在有机拓展部分展开。",
                                             "atomicWeight":  "1.00800",
                                             "density":  "8.988E-05 g/cm3",
                                             "meltingPoint":  "13.81 K",
@@ -147,7 +147,7 @@
                                             "ionizationEnergy4":  "21006.6",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "Be<sub>2</sub><sup>+</sup> + 2e<sup>-</sup> = Be（E<sup>θ</sup> = -1.847 V）<br>Be<sub>2</sub>O<sub>32</sub><sup>-</sup> + 3H<sub>2</sub>O + 4e<sup>-</sup> = 2Be + 6OH<sup>-</sup>（E<sup>θ</sup> = -2.63 V）<br>BeO + H<sub>2</sub>O + e<sup>-</sup> = Be + 2OH<sup>-</sup>（E<sup>θ</sup> = -2.613 V）"
+                                            "standardElectrodePotential":  "Be<sup>2+</sup> + 2e<sup>-</sup> = Be（E<sup>θ</sup> = -1.847 V）<br>Be<sub>2</sub>O<sub>3</sub><sup>2-</sup> + 3H<sub>2</sub>O + 4e<sup>-</sup> = 2Be + 6OH<sup>-</sup>（E<sup>θ</sup> = -2.63 V）<br>BeO + H<sub>2</sub>O + e<sup>-</sup> = Be + 2OH<sup>-</sup>（E<sup>θ</sup> = -2.613 V）"
                                         }
                      },
                      {
@@ -183,7 +183,7 @@
                                             "ionizationEnergy4":  "25025.8",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "H<sub>3</sub>BO 3 + 3H<sup>+</sup> + 3e<sup>-</sup> = B + 3H<sub>2</sub>O（E<sup>θ</sup> = -0.87 V）<br>H<sub>2</sub>BO 3<sup>-</sup> + H<sub>2</sub>O + 3e<sup>-</sup> = B + 4OH<sup>-</sup>（E<sup>θ</sup> = -1.79 V）"
+                                            "standardElectrodePotential":  "H<sub>3</sub>BO<sub>3</sub> + 3H<sup>+</sup> + 3e<sup>-</sup> = B + 3H<sub>2</sub>O（E<sup>θ</sup> = -0.87 V）<br>H<sub>2</sub>BO<sub>3</sub><sup>-</sup> + H<sub>2</sub>O + 3e<sup>-</sup> = B + 4OH<sup>-</sup>（E<sup>θ</sup> = -1.79 V）"
                                         }
                      },
                      {
@@ -471,7 +471,7 @@
                                             "ionizationEnergy4":  "11577",
                                             "crystalPacking":  "-",
                                             "crystalCell":  "-",
-                                            "standardElectrodePotential":  "AlF 63<sup>-</sup> + 3e<sup>-</sup> = Al + 6F<sup>-</sup>（E<sup>θ</sup> = -2.069 V）<br>Al 3<sup>+</sup> + 3e<sup>-</sup> = Al（E<sup>θ</sup> = -1.662 V）<br>H<sub>2</sub>AlO<sub>3</sub><sup>-</sup> + H<sub>2</sub>O + 3e<sup>-</sup> = Al + OH<sup>-</sup>（E<sup>θ</sup> = -2.33 V）<br>Al(OH)<sub>3</sub> + 3e<sup>-</sup> = Al + 3OH<sup>-</sup>（E<sup>θ</sup> = -2.3 V）"
+                                            "standardElectrodePotential":  "AlF<sub>6</sub>3<sup>-</sup> + 3e<sup>-</sup> = Al + 6F<sup>-</sup>（E<sup>θ</sup> = -2.069 V）<br>Al 3<sup>+</sup> + 3e<sup>-</sup> = Al（E<sup>θ</sup> = -1.662 V）<br>H<sub>2</sub>AlO<sub>3</sub><sup>-</sup> + H<sub>2</sub>O + 3e<sup>-</sup> = Al + OH<sup>-</sup>（E<sup>θ</sup> = -2.33 V）<br>Al(OH)<sub>3</sub> + 3e<sup>-</sup> = Al + 3OH<sup>-</sup>（E<sup>θ</sup> = -2.3 V）"
                                         }
                      },
                      {

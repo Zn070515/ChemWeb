@@ -5,6 +5,11 @@ import KnowledgeDetailView from '../views/KnowledgeDetailView.vue'
 import ElementsView from '../views/ElementsView.vue'
 import ElementsDetailView from '../views/ElementsDetailView.vue'
 import Readme3DView from '../views/Readme3DView.vue'
+import DatasetsView from '../views/DatasetsView.vue'
+import SolubilityView from '../views/SolubilityView.vue'
+import AcidityView from '../views/AcidityView.vue'
+import ElectrodePotentialsView from '../views/ElectrodePotentialsView.vue'
+import ConstantsView from '../views/ConstantsView.vue'
 import CalculationView from '../views/CalculationView.vue'
 import BalancingView from '../views/BalancingView.vue'
 import ExtensionView from '../views/ExtensionView.vue'
@@ -27,6 +32,15 @@ const router = createRouter({
     { path: '/elements', name: 'elements', component: ElementsView },
     { path: '/elements/detail', name: 'elements-detail', component: ElementsDetailView },
     { path: '/docs/3d-readme', name: 'readme-3d', component: Readme3DView },
+    { path: '/datasets', name: 'datasets', component: DatasetsView },
+    { path: '/datasets/solubility', name: 'solubility', component: SolubilityView },
+    { path: '/datasets/acidity', name: 'acidity', component: AcidityView },
+    {
+      path: '/datasets/electrode-potentials',
+      name: 'electrode-potentials',
+      component: ElectrodePotentialsView
+    },
+    { path: '/datasets/constants', name: 'constants', component: ConstantsView },
     {
       path: '/elements/detail.html',
       redirect: (to) => ({ path: '/elements/detail', query: to.query })

@@ -2,8 +2,6 @@
 
 本说明专门用于 ChemWeb 的 3D 预览功能（RDKit 后端）。内容覆盖环境准备、安装、启动、前端联调、以及常见错误排查。
 
-若仍有解决不了的问题，请致信`302025510036@zjut.edu.cn`
-
 ## 一、功能依赖与总体结构
 
 3D 预览需要：
@@ -27,9 +25,40 @@
 
 不建议使用 Python 3.12+，因为 rdkit-pypi 可能没有可用轮子。
 
-## 三、后端安装与启动
+## 三、快速开始（推荐）
 
-### 新手指引（熟悉PowerShell/CMD的可跳过）
+1) 安装 Python 3.11。
+2) 进入 backend-rdkit 目录并创建虚拟环境。
+3) 安装依赖。
+4) 启动后端并访问健康检查。
+
+如果你是第一次接触命令行或 PATH，请看下面的“详细安装与新手指引”。
+
+## 四、详细安装与启动
+
+### 1) 下载安装 Python
+
+Windows：
+
+1) 打开官网：https://www.python.org/downloads/
+2) 下载 Python 3.11.x（Windows installer）。
+3) 安装时勾选“Add Python to PATH”，再点击 Install。
+4) 安装完成后，打开 PowerShell 执行：
+
+```
+python --version
+```
+
+若显示类似 `Python 3.11.x`，说明安装成功。
+
+macOS / Linux：
+
+- 建议使用系统包管理器安装 Python 3.11（例如 Homebrew / apt / dnf）。
+- 安装后执行 `python3.11 --version` 验证。
+
+提示：如果安装时没有勾选“Add Python to PATH”，请按下面的 Path 设置步骤补上。
+
+### 2) 新手指引（熟悉 PowerShell/CMD 的可跳过）
 
 如何唤起`powershell`：按下`win+R`，在弹出的框里填入`powershell`，回车即可。
 
@@ -50,8 +79,7 @@
 `cd`是一个“传送符”，告诉系统它得去哪。 后面跟着参数得是完整路径，否则会报错。
 完整路径就是从盘符开始到目标文件（夹）结束的一个字符串，如`C:\Users\your_addr\Desktop\ChemWeb\backend-rdkit`
 
-另外，成功下载了Python3.x之后建议将其添加到系统路径中， 
-步骤如下（Windows 10/11）：
+如果没有勾选“Add Python to PATH”，请手动添加系统路径（Windows 10/11）：
 
 1) 打开“设置” -> “系统” -> “关于” -> “高级系统设置”。
 2) 在“系统属性”窗口中点击“环境变量”。
@@ -68,9 +96,7 @@ Python 3.11.9
 ```
 版本号有由你下载的安装包决定，此处仅作为示例。
 
-## 安装步骤
-
-### 1) Windows（PowerShell）
+### 3) Windows（PowerShell）
 
 ```powershell
 cd C:\Users\your_addr\Desktop\ChemWeb\backend-rdkit (完整路径仅做示例)
@@ -80,7 +106,7 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 2) macOS / Linux（bash）
+### 4) macOS / Linux（bash）
 
 ```bash
 cd backend-rdkit
@@ -90,7 +116,7 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 3) 启动服务
+### 5) 启动服务
 
 ```bash
 cd backend-rdkit
@@ -109,7 +135,7 @@ http://localhost:8000/api/health
 {"status":"ok"}
 ```
 
-## 四、前端配置
+## 五、前端配置
 
 根目录 `.env` 里设置后端地址：
 
@@ -119,9 +145,7 @@ VITE_3D_API_BASE=http://localhost:8000
 
 前端启动后即可在结构式编辑页面进行 3D 预览。
 
-## 五、常见问题与解决方案
-
-### 常见报错示例（文字版）
+## 六、常见报错对照表
 
 以下按“一条报错 + 一条解法”的方式整理，便于快速对照：
 
@@ -174,99 +198,37 @@ Failed to fetch
 ```
 解法：检查后端是否启动、端口是否正确、以及前端 `.env` 的 VITE_3D_API_BASE 是否指向可访问地址。
 
-### 1) rdkit-pypi 安装失败或找不到包
+## 七、其他常见问题（非报错文本）
 
-现象：
+1) Uvicorn 启动但前端请求失败
 
-- `ERROR: No matching distribution found for rdkit-pypi`
-
-原因：
-
-- Python 版本不匹配（常见：3.12+）
-- 镜像源缺少 `rdkit-pypi`
-
-解决：
-
-- 改用 `Python 3.10/3.11`
-- 临时切换官方源：
-
-```bash
-pip install -i https://pypi.org/simple rdkit-pypi
-```
-
-### 2) NumPy 版本冲突
-
-现象：
-
-- `A module compiled using NumPy 1.x cannot be run in NumPy 2.x`
-
-解决：
-
-```bash
-pip install "numpy<2"
-```
-
-### 3) 启动服务时报错：ImportError / DLL load failed
-
-现象：
-
-- `ImportError: DLL load failed while importing rdBase`
-
-原因：
-
-- 依赖库不完整或 Python 架构不一致（32/64 位）
-
-解决：
-
-- 确认 Python 为 64 位
-- 删除 `venv` 后重建并重新安装
-
-```bash
-# Windows
-rmdir /s /q .venv
-py -3.11 -m venv .venv
-.\.venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-### 4) Uvicorn 启动但前端请求失败
-
-现象：
-
-- 3D 预览按钮无反应
-- 浏览器控制台报 404/500
-
-检查：
-
-- 后端是否运行在 8000 端口
+- 检查后端是否运行在 8000 端口
 - `.env` 中的 VITE_3D_API_BASE 是否正确
 - 访问 `http://localhost:8000/api/health` 是否返回 OK
 
-### 5) 跨域或 Mixed Content 报错
-
-现象：
-
-- 浏览器提示 `CORS` 或 `Mixed Content`
-
-原因：
-
-- 前端使用 `https`，后端为 `http`
-
-解决：
+2) 跨域或 Mixed Content 报错
 
 - 本地开发建议全部使用 `http`
 - 生产环境需用反向代理或同域部署
 
-### 6) 3Dmol.js 未加载或显示空白
-
-现象：
-
-- 3D 预览弹窗空白
-
-检查：
+3) 3Dmol.js 未加载或显示空白
 
 - 文件是否存在：`public/3dmol/3Dmol-min.js`
 - 浏览器控制台是否有 `3Dmol` 未定义
+
+4) 分子结构异常、扭曲或过于平面
+
+- 尝试在 2D 编辑器中补全结构后再生成
+- 如果数据源异常，可在后端对 SDF 做进一步修正
+
+## 八、验证清单
+
+- [ ] Python 版本 3.10/3.11
+- [ ] 依赖安装完成且无报错
+- [ ] `http://localhost:8000/api/health` 正常
+- [ ] 前端 `.env` 指向正确后端地址
+- [ ] 3Dmol.js 文件存在且可被访问
+- [ ] 3D 预览按钮可正常显示与关闭
 
 ### 7) 分子结构异常、扭曲或过于平面
 
@@ -280,7 +242,7 @@ pip install -r requirements.txt
 - 尝试在 2D 编辑器中补全结构后再生成
 - 如果数据源异常，可在后端对 SDF 做进一步修正
 
-## 六、验证清单
+## 八、验证清单
 
 - [ ] Python 版本 3.10/3.11
 - [ ] 依赖安装完成且无报错
@@ -289,7 +251,7 @@ pip install -r requirements.txt
 - [ ] 3Dmol.js 文件存在且可被访问
 - [ ] 3D 预览按钮可正常显示与关闭
 
-## 七、可选：离线安装
+## 九、可选：离线安装
 
 如果无法联网：
 
@@ -304,8 +266,12 @@ pip download -r requirements.txt -d wheels
 pip install --no-index --find-links=wheels -r requirements.txt
 ```
 
-## 八、维护建议
+## 十、维护建议
 
 - 如果更新 rdkit 版本，请同步更新 requirements.txt
 - 如果更换端口，记得更新 `.env` 中的 VITE_3D_API_BASE
 - 保持 3Dmol.js 为本地离线版本，避免 CDN 不稳定
+
+## 十一、联系
+
+若仍有解决不了的问题，请致信 302025510036@zjut.edu.cn

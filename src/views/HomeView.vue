@@ -52,5 +52,9 @@ const go = (path) => {
       <h3>化学结构式编辑器</h3>
       <p>基于 ChemDoodle Web Components 的结构式绘制与导出。</p>
     </div>
+    <div id="section_6" @click="go('/datasets')">
+      <h3>实用性表速查</h3>
+      <p>溶解度、酸强度、电极电势与化学常数四大数据集。</p>
+    </div>
   </div>
 </template>

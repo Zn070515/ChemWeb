@@ -1,0 +1,487 @@
+{
+  "generatedAt": "2026-02-10",
+  "acids": [
+    {
+      "name": "H3BO3",
+      "formula": "H3BO3",
+      "kaValues": ["5.8e-10"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "H2CO3",
+      "formula": "H2CO3",
+      "kaValues": ["4.3e-7", "5.6e-11"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "HF",
+      "formula": "HF",
+      "kaValues": ["6.6e-4"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "Al(OH)3",
+      "formula": "Al(OH)3",
+      "kaValues": ["6.3e-13"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "H2SiO3",
+      "formula": "H2SiO3",
+      "kaValues": ["1.7e-10", "1.6e-12"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "H3PO4",
+      "formula": "H3PO4",
+      "kaValues": ["7.1e-3", "6.3e-8", "4.2e-13"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "H2SO3",
+      "formula": "H2SO3",
+      "kaValues": ["1.7e-2", "6.4e-8"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "H2S2O3",
+      "formula": "H2S2O3",
+      "kaValues": ["1e-1~1e0", "1e-14以下"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "HClO",
+      "formula": "HClO",
+      "kaValues": ["3.0e-8"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "HClO2",
+      "formula": "HClO2",
+      "kaValues": ["1.1e-2"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "HClO3",
+      "formula": "HClO3",
+      "kaValues": ["1e1以上"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "H3AsO4",
+      "formula": "H3AsO4",
+      "kaValues": ["5.8e-3", "1.1e-7", "3.2e-12"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "H2SeO4",
+      "formula": "H2SeO4",
+      "kaValues": ["1e0以上", "1.2e-2"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "HBrO",
+      "formula": "HBrO",
+      "kaValues": ["2.5e-9"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "HBrO2",
+      "formula": "HBrO2",
+      "kaValues": ["1e-1"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "HBrO3",
+      "formula": "HBrO3",
+      "kaValues": ["1e0以上"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "HIO",
+      "formula": "HIO",
+      "kaValues": ["2.3e-11"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "HIO2",
+      "formula": "HIO2",
+      "kaValues": ["4e-1"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "HIO3",
+      "formula": "HIO3",
+      "kaValues": ["0.75"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "H5IO6",
+      "formula": "H5IO6",
+      "kaValues": ["5.1e-4", "2e-7", "1e-14以下"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "H2CrO4",
+      "formula": "H2CrO4",
+      "kaValues": ["1e0以上", "3.2e-7"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "H2Cr2O7",
+      "formula": "H2Cr2O7",
+      "kaValues": ["1e0以上"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "HCOOH",
+      "formula": "HCOOH",
+      "kaValues": ["1.8e-4"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "CH3COOH",
+      "formula": "CH3COOH",
+      "kaValues": ["1.8e-5"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "C2H5COOH",
+      "formula": "C2H5COOH",
+      "kaValues": ["1.3e-5"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "PhCOOH",
+      "formula": "PhCOOH",
+      "kaValues": ["6.3e-5"],
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "o-HOPhCOOH（邻位）",
+      "formula": "o-HOPhCOOH",
+      "kaValues": ["1.1e-3", "3.6e-14"],
+      "temperatureC": 25,
+      "source": "用户提供",
+      "render": false
+    },
+    {
+      "name": "p-HOPhCOOH（对位）",
+      "formula": "p-HOPhCOOH",
+      "kaValues": ["2.6e-5", "5e-10"],
+      "temperatureC": 25,
+      "source": "用户提供",
+      "render": false
+    },
+    {
+      "name": "m-HOPhCOOH（间位）",
+      "formula": "m-HOPhCOOH",
+      "kaValues": ["1.8e-5", "1.2e-9"],
+      "temperatureC": 25,
+      "source": "用户提供",
+      "render": false
+    }
+  ],
+  "bases": [
+    {
+      "name": "NH3·H2O",
+      "formula": "NH3·H2O",
+      "kbValue": "1.8e-5",
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "Be(OH)2",
+      "formula": "Be(OH)2",
+      "kbValue": "1e-5",
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "Mg(OH)2",
+      "formula": "Mg(OH)2",
+      "kbValue": "2.3e-3",
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "Al(OH)3",
+      "formula": "Al(OH)3",
+      "kbValue": "1.4e-2",
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "Ga(OH)3",
+      "formula": "Ga(OH)3",
+      "kbValue": "1e-6~1e-5",
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "Pb(OH)2",
+      "formula": "Pb(OH)2",
+      "kbValue": "9.6e-4",
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "Sn(OH)2",
+      "formula": "Sn(OH)2",
+      "kbValue": "3e-4",
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "Sn(OH)4",
+      "formula": "Sn(OH)4",
+      "kbValue": "1e-14以下",
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "Sb(OH)3",
+      "formula": "Sb(OH)3",
+      "kbValue": "1e-14",
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "Bi(OH)3",
+      "formula": "Bi(OH)3",
+      "kbValue": "4e-31",
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "Cu(OH)2",
+      "formula": "Cu(OH)2",
+      "kbValue": "4.5e-7",
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "Fe(OH)2",
+      "formula": "Fe(OH)2",
+      "kbValue": "2.0e-4",
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "Fe(OH)3",
+      "formula": "Fe(OH)3",
+      "kbValue": "3.6e-12",
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "Zn(OH)2",
+      "formula": "Zn(OH)2",
+      "kbValue": "3.3e-5",
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "Cr(OH)3",
+      "formula": "Cr(OH)3",
+      "kbValue": "1e-8",
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "Mn(OH)2",
+      "formula": "Mn(OH)2",
+      "kbValue": "5.3e-3",
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "Co(OH)2",
+      "formula": "Co(OH)2",
+      "kbValue": "6.3e-4",
+      "temperatureC": 25,
+      "source": "用户提供"
+    },
+    {
+      "name": "Ni(OH)2",
+      "formula": "Ni(OH)2",
+      "kbValue": "1.8e-4",
+      "temperatureC": 25,
+      "source": "用户提供"
+    }
+  ],
+  "ksp": {
+    "cations": [
+      { "symbol": "Mg", "label": "Mg<sup>2+</sup>" },
+      { "symbol": "Ca", "label": "Ca<sup>2+</sup>" },
+      { "symbol": "Sr", "label": "Sr<sup>2+</sup>" },
+      { "symbol": "Ba", "label": "Ba<sup>2+</sup>" },
+      { "symbol": "Al", "label": "Al<sup>3+</sup>" },
+      { "symbol": "Ag", "label": "Ag<sup>+</sup>" },
+      { "symbol": "Pb", "label": "Pb<sup>2+</sup>" },
+      { "symbol": "Cu", "label": "Cu<sup>2+</sup>" },
+      { "symbol": "Fe3", "label": "Fe<sup>3+</sup>" },
+      { "symbol": "Fe2", "label": "Fe<sup>2+</sup>" },
+      { "symbol": "Zn", "label": "Zn<sup>2+</sup>" },
+      { "symbol": "Cr3", "label": "Cr<sup>3+</sup>" }
+    ],
+    "anions": [
+      { "symbol": "CO3", "label": "CO<sub>3</sub><sup>2-</sup>" },
+      { "symbol": "PO4", "label": "PO<sub>4</sub><sup>3-</sup>" },
+      { "symbol": "CrO4", "label": "CrO<sub>4</sub><sup>2-</sup>" },
+      { "symbol": "Cr2O7", "label": "Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup>" },
+      { "symbol": "MnO4", "label": "MnO<sub>4</sub><sup>-</sup>" },
+      { "symbol": "Cl", "label": "Cl<sup>-</sup>" },
+      { "symbol": "SO4", "label": "SO<sub>4</sub><sup>2-</sup>" },
+      { "symbol": "SO3", "label": "SO<sub>3</sub><sup>2-</sup>" }
+    ],
+    "matrix": {
+      "Mg": {
+        "CO3": { "solubility": "微溶", "ksp": "3.5e-8" },
+        "PO4": { "solubility": "难溶", "ksp": "1e-24" },
+        "CrO4": { "solubility": "易溶", "ksp": null },
+        "Cr2O7": { "solubility": "易溶", "ksp": null },
+        "MnO4": { "solubility": "易溶", "ksp": null },
+        "Cl": { "solubility": "易溶", "ksp": null },
+        "SO4": { "solubility": "可溶", "ksp": null },
+        "SO3": { "solubility": "微溶", "ksp": "3e-3" }
+      },
+      "Ca": {
+        "CO3": { "solubility": "微溶", "ksp": "4.8e-9" },
+        "PO4": { "solubility": "难溶", "ksp": "2e-29" },
+        "CrO4": { "solubility": "微溶", "ksp": "7.1e-4" },
+        "Cr2O7": { "solubility": "易溶", "ksp": null },
+        "MnO4": { "solubility": "易溶", "ksp": null },
+        "Cl": { "solubility": "易溶", "ksp": null },
+        "SO4": { "solubility": "微溶", "ksp": "4.9e-5" },
+        "SO3": { "solubility": "微溶", "ksp": null }
+      },
+      "Sr": {
+        "CO3": { "solubility": "微溶", "ksp": "1.1e-10" },
+        "PO4": { "solubility": "难溶", "ksp": "4e-28" },
+        "CrO4": { "solubility": "难溶", "ksp": "3.6e-5" },
+        "Cr2O7": { "solubility": "易溶", "ksp": null },
+        "MnO4": { "solubility": "易溶", "ksp": null },
+        "Cl": { "solubility": "易溶", "ksp": null },
+        "SO4": { "solubility": "微溶", "ksp": null },
+        "SO3": { "solubility": "难溶", "ksp": null }
+      },
+      "Ba": {
+        "CO3": { "solubility": "难溶", "ksp": "5.1e-9" },
+        "PO4": { "solubility": "难溶", "ksp": "3e-23" },
+        "CrO4": { "solubility": "难溶", "ksp": "1.2e-10" },
+        "Cr2O7": { "solubility": "可溶", "ksp": null },
+        "MnO4": { "solubility": "易溶", "ksp": null },
+        "Cl": { "solubility": "易溶", "ksp": null },
+        "SO4": { "solubility": "难溶", "ksp": "1.1e-10" },
+        "SO3": { "solubility": "难溶", "ksp": null }
+      },
+      "Al": {
+        "CO3": { "solubility": "-", "ksp": null },
+        "PO4": { "solubility": "-", "ksp": null },
+        "CrO4": { "solubility": "-", "ksp": null },
+        "Cr2O7": { "solubility": "-", "ksp": null },
+        "MnO4": { "solubility": "-", "ksp": null },
+        "Cl": { "solubility": "易溶", "ksp": null },
+        "SO4": { "solubility": "可溶", "ksp": null },
+        "SO3": { "solubility": "-", "ksp": null }
+      },
+      "Ag": {
+        "CO3": { "solubility": "难溶", "ksp": "8.5e-12" },
+        "PO4": { "solubility": "难溶", "ksp": "1.8e-18" },
+        "CrO4": { "solubility": "难溶", "ksp": "1.1e-12" },
+        "Cr2O7": { "solubility": "可溶", "ksp": null },
+        "MnO4": { "solubility": "可溶", "ksp": null },
+        "Cl": { "solubility": "难溶", "ksp": "1.8e-10" },
+        "SO4": { "solubility": "微溶", "ksp": null },
+        "SO3": { "solubility": "难溶", "ksp": null }
+      },
+      "Pb": {
+        "CO3": { "solubility": "难溶", "ksp": "7.4e-14" },
+        "PO4": { "solubility": "难溶", "ksp": "1e-32" },
+        "CrO4": { "solubility": "难溶", "ksp": "1.8e-14" },
+        "Cr2O7": { "solubility": "可溶", "ksp": null },
+        "MnO4": { "solubility": "可溶", "ksp": null },
+        "Cl": { "solubility": "微溶", "ksp": "1.7e-5" },
+        "SO4": { "solubility": "微溶", "ksp": null },
+        "SO3": { "solubility": "难溶", "ksp": null }
+      },
+      "Cu": {
+        "CO3": { "solubility": "-", "ksp": null },
+        "PO4": { "solubility": "难溶", "ksp": "1.4e-37" },
+        "CrO4": { "solubility": "微溶", "ksp": null },
+        "Cr2O7": { "solubility": "可溶", "ksp": null },
+        "MnO4": { "solubility": "可溶", "ksp": null },
+        "Cl": { "solubility": "易溶", "ksp": null },
+        "SO4": { "solubility": "可溶", "ksp": null },
+        "SO3": { "solubility": "微溶", "ksp": null }
+      },
+      "Fe3": {
+        "CO3": { "solubility": "-", "ksp": null },
+        "PO4": { "solubility": "难溶", "ksp": "1e-22" },
+        "CrO4": { "solubility": "-", "ksp": null },
+        "Cr2O7": { "solubility": "-", "ksp": null },
+        "MnO4": { "solubility": "可溶", "ksp": null },
+        "Cl": { "solubility": "易溶", "ksp": null },
+        "SO4": { "solubility": "可溶", "ksp": null },
+        "SO3": { "solubility": "-", "ksp": null }
+      },
+      "Fe2": {
+        "CO3": { "solubility": "难溶", "ksp": "3.1e-11" },
+        "PO4": { "solubility": "难溶", "ksp": "1e-30" },
+        "CrO4": { "solubility": "微溶", "ksp": null },
+        "Cr2O7": { "solubility": "可溶", "ksp": null },
+        "MnO4": { "solubility": "可溶", "ksp": null },
+        "Cl": { "solubility": "易溶", "ksp": null },
+        "SO4": { "solubility": "可溶", "ksp": null },
+        "SO3": { "solubility": "难溶", "ksp": null }
+      },
+      "Zn": {
+        "CO3": { "solubility": "-", "ksp": null },
+        "PO4": { "solubility": "难溶", "ksp": "9e-33" },
+        "CrO4": { "solubility": "微溶", "ksp": null },
+        "Cr2O7": { "solubility": "可溶", "ksp": null },
+        "MnO4": { "solubility": "可溶", "ksp": null },
+        "Cl": { "solubility": "易溶", "ksp": null },
+        "SO4": { "solubility": "可溶", "ksp": null },
+        "SO3": { "solubility": "微溶", "ksp": null }
+      },
+      "Cr3": {
+        "CO3": { "solubility": "-", "ksp": null },
+        "PO4": { "solubility": "-", "ksp": null },
+        "CrO4": { "solubility": "-", "ksp": null },
+        "Cr2O7": { "solubility": "-", "ksp": null },
+        "MnO4": { "solubility": "-", "ksp": null },
+        "Cl": { "solubility": "易溶", "ksp": null },
+        "SO4": { "solubility": "可溶", "ksp": null },
+        "SO3": { "solubility": "-", "ksp": null }
+      }
+    }
+  }
+}
